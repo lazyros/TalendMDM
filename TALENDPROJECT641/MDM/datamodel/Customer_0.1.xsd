@@ -1,8 +1,15 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:import namespace="http://www.w3.org/2001/XMLSchema"/>
 <xsd:element name="Customer">
 <xsd:complexType>
 <xsd:all>
 <xsd:element name="CustomerId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="FirstName" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="LastName" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="DateOfBirth" type="xsd:date"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Adresses" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="PhoneNumbers" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Email" type="xsd:string"/>
 </xsd:all>
 </xsd:complexType>
 <xsd:unique name="Customer">
@@ -14,6 +21,7 @@
 <xsd:complexType>
 <xsd:all>
 <xsd:element name="AddressId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="BuildingIdentifier" type="xsd:string"/>
 </xsd:all>
 </xsd:complexType>
 <xsd:unique name="Address">
