@@ -1,5 +1,4 @@
-<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
-  <xsd:import namespace="http://www.w3.org/2001/XMLSchema"/>  
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">    
   <xsd:element name="pCustomer"> 
     <xsd:complexType> 
       <xsd:all> 
@@ -171,8 +170,10 @@
     <xsd:element name="pPhone">
 <xsd:complexType>
 <xsd:all>
-<xsd:element name="pPhoneId" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="PhoneNumber" type="PhoneNumberType"/>
+                <xsd:element maxOccurs="1" minOccurs="0" name="PhoneNumber" type="PhoneNumberType">
+<xsd:annotation/>
+</xsd:element>
+                <xsd:element name="pPhoneId" type="xsd:string"/>
 </xsd:all>
 </xsd:complexType>
 <xsd:unique name="pPhone">
