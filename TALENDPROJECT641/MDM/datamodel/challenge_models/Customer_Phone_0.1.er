@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ermodel="http://org.talend.mdm.datamodel.ermodel/1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <ermodel:ModelContainer xmi:id="_A7nlIBBjEea4IMlqHSkreQ">
+    <entityContainer xmi:type="ermodel:EntityContainer" xmi:id="_A7nlIRBjEea4IMlqHSkreQ">
+      <entities xmi:type="ermodel:Entity" xmi:id="_dT2f0BCAEea4IMlqHSkreQ" name="Address" type="_dT2f4BCAEea4IMlqHSkreQ">
+        <elements xmi:type="ermodel:Element" xmi:id="_dT2f2RCAEea4IMlqHSkreQ" name="AddressId" type="_dT2f2hCAEea4IMlqHSkreQ" key="true" minOccurs="1" maxOccurs="1"/>
+        <elements xmi:type="ermodel:Element" xmi:id="_dT2f2xCAEea4IMlqHSkreQ" name="BuildingIdentifier" type="_dT2f2hCAEea4IMlqHSkreQ" maxOccurs="1"/>
+        <elements xmi:type="ermodel:Element" xmi:id="_dT2f3BCAEea4IMlqHSkreQ" name="Thouroughfare" type="_dT2f2hCAEea4IMlqHSkreQ" maxOccurs="1"/>
+        <elements xmi:type="ermodel:Element" xmi:id="_dT2f3RCAEea4IMlqHSkreQ" name="Locality" type="_dT2f2hCAEea4IMlqHSkreQ" maxOccurs="1"/>
+        <elements xmi:type="ermodel:Element" xmi:id="_dT2f3hCAEea4IMlqHSkreQ" name="AdministrativeArea" type="_dT2f2hCAEea4IMlqHSkreQ" maxOccurs="1"/>
+        <elements xmi:type="ermodel:Element" xmi:id="_dT2f3xCAEea4IMlqHSkreQ" name="Postcode" type="_dT2f2hCAEea4IMlqHSkreQ" maxOccurs="1"/>
+      </entities>
+      <entities xmi:type="ermodel:Entity" xmi:id="_dT2f4RCAEea4IMlqHSkreQ" name="Country" type="_dT_pxBCAEea4IMlqHSkreQ">
+        <elements xmi:type="ermodel:Element" xmi:id="_dT_pwBCAEea4IMlqHSkreQ" name="ISO_NumericCode" type="_dT2f2hCAEea4IMlqHSkreQ" key="true" minOccurs="1" maxOccurs="1"/>
+        <elements xmi:type="ermodel:Element" xmi:id="_dT_pwRCAEea4IMlqHSkreQ" name="ISO_Alpha-2" type="_dT2f2hCAEea4IMlqHSkreQ" minOccurs="1" maxOccurs="1"/>
+        <elements xmi:type="ermodel:Element" xmi:id="_dT_pwhCAEea4IMlqHSkreQ" name="ISO-Alpha-3" type="_dT2f2hCAEea4IMlqHSkreQ" minOccurs="1" maxOccurs="1"/>
+        <elements xmi:type="ermodel:Element" xmi:id="_dT_pwxCAEea4IMlqHSkreQ" name="Name" type="_dT2f2hCAEea4IMlqHSkreQ" minOccurs="1" maxOccurs="1"/>
+      </entities>
+      <entities xmi:type="ermodel:Entity" xmi:id="_dT_pxRCAEea4IMlqHSkreQ" name="Customer" type="_dT_p1hCAEea4IMlqHSkreQ">
+        <elements xmi:type="ermodel:Element" xmi:id="_dT_pzhCAEea4IMlqHSkreQ" name="CustomerId" type="_dT2f2hCAEea4IMlqHSkreQ" key="true" minOccurs="1" maxOccurs="1"/>
+        <elements xmi:type="ermodel:Element" xmi:id="_dT_pzxCAEea4IMlqHSkreQ" name="FirstName" type="_dT2f2hCAEea4IMlqHSkreQ" minOccurs="1" maxOccurs="1"/>
+        <elements xmi:type="ermodel:Element" xmi:id="_dT_p0BCAEea4IMlqHSkreQ" name="LastName" type="_dT2f2hCAEea4IMlqHSkreQ" minOccurs="1" maxOccurs="1"/>
+        <elements xmi:type="ermodel:Element" xmi:id="_dT_p0hCAEea4IMlqHSkreQ" name="DateOfBirth" type="_dT_p0RCAEea4IMlqHSkreQ" maxOccurs="1"/>
+        <elements xmi:type="ermodel:Element" xmi:id="_dT_p0xCAEea4IMlqHSkreQ" name="Addresses" type="_dT2f2hCAEea4IMlqHSkreQ" maxOccurs="1"/>
+        <elements xmi:type="ermodel:Element" xmi:id="_dT_p1BCAEea4IMlqHSkreQ" name="PhoneNumbers" type="_dT2f2hCAEea4IMlqHSkreQ" maxOccurs="1"/>
+        <elements xmi:type="ermodel:Element" xmi:id="_dT_p1RCAEea4IMlqHSkreQ" name="Email" type="_dT2f2hCAEea4IMlqHSkreQ" maxOccurs="1"/>
+      </entities>
+    </entityContainer>
+    <typeContainer xmi:type="ermodel:TypeContainer" xmi:id="_A7nlIhBjEea4IMlqHSkreQ">
+      <types xmi:type="ermodel:ComplexType" xmi:id="_dT_p3RCAEea4IMlqHSkreQ" name="anyType" namespace="http://www.w3.org/2001/XMLSchema"/>
+      <types xmi:type="ermodel:ComplexType" xmi:id="_dT2f4BCAEea4IMlqHSkreQ" name="ANONYMOUS_0" namespace="" superType="_dT_p3RCAEea4IMlqHSkreQ" anonymous="true">
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p1xCAEea4IMlqHSkreQ" name="AddressId" type="_dT2f2hCAEea4IMlqHSkreQ" minOccurs="1" maxOccurs="1"/>
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p2BCAEea4IMlqHSkreQ" name="BuildingIdentifier" type="_dT2f2hCAEea4IMlqHSkreQ" maxOccurs="1"/>
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p2RCAEea4IMlqHSkreQ" name="Thouroughfare" type="_dT2f2hCAEea4IMlqHSkreQ" maxOccurs="1"/>
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p2hCAEea4IMlqHSkreQ" name="Locality" type="_dT2f2hCAEea4IMlqHSkreQ" maxOccurs="1"/>
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p2xCAEea4IMlqHSkreQ" name="AdministrativeArea" type="_dT2f2hCAEea4IMlqHSkreQ" maxOccurs="1"/>
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p3BCAEea4IMlqHSkreQ" name="Postcode" type="_dT2f2hCAEea4IMlqHSkreQ" maxOccurs="1"/>
+      </types>
+      <types xmi:type="ermodel:SimpleType" xmi:id="_dT_p3hCAEea4IMlqHSkreQ" name="anyType" namespace="http://www.w3.org/2001/XMLSchema"/>
+      <types xmi:type="ermodel:SimpleType" xmi:id="_dT_p3xCAEea4IMlqHSkreQ" name="anySimpleType" namespace="http://www.w3.org/2001/XMLSchema" superType="_dT_p3hCAEea4IMlqHSkreQ"/>
+      <types xmi:type="ermodel:SimpleType" xmi:id="_dT2f2hCAEea4IMlqHSkreQ" name="string" namespace="http://www.w3.org/2001/XMLSchema" superType="_dT_p3xCAEea4IMlqHSkreQ"/>
+      <types xmi:type="ermodel:ComplexType" xmi:id="_dT_pxBCAEea4IMlqHSkreQ" name="ANONYMOUS_1" namespace="" superType="_dT_p3RCAEea4IMlqHSkreQ" anonymous="true">
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p4BCAEea4IMlqHSkreQ" name="ISO_NumericCode" type="_dT2f2hCAEea4IMlqHSkreQ" minOccurs="1" maxOccurs="1"/>
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p4RCAEea4IMlqHSkreQ" name="ISO_Alpha-2" type="_dT2f2hCAEea4IMlqHSkreQ" minOccurs="1" maxOccurs="1"/>
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p4hCAEea4IMlqHSkreQ" name="ISO-Alpha-3" type="_dT2f2hCAEea4IMlqHSkreQ" minOccurs="1" maxOccurs="1"/>
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p4xCAEea4IMlqHSkreQ" name="Name" type="_dT2f2hCAEea4IMlqHSkreQ" minOccurs="1" maxOccurs="1"/>
+      </types>
+      <types xmi:type="ermodel:ComplexType" xmi:id="_dT_p1hCAEea4IMlqHSkreQ" name="ANONYMOUS_2" namespace="" superType="_dT_p3RCAEea4IMlqHSkreQ" anonymous="true">
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p5BCAEea4IMlqHSkreQ" name="CustomerId" type="_dT2f2hCAEea4IMlqHSkreQ" minOccurs="1" maxOccurs="1"/>
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p5RCAEea4IMlqHSkreQ" name="FirstName" type="_dT2f2hCAEea4IMlqHSkreQ" minOccurs="1" maxOccurs="1"/>
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p5hCAEea4IMlqHSkreQ" name="LastName" type="_dT2f2hCAEea4IMlqHSkreQ" minOccurs="1" maxOccurs="1"/>
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p5xCAEea4IMlqHSkreQ" name="DateOfBirth" type="_dT_p0RCAEea4IMlqHSkreQ" maxOccurs="1"/>
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p6BCAEea4IMlqHSkreQ" name="Addresses" type="_dT2f2hCAEea4IMlqHSkreQ" maxOccurs="1"/>
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p6RCAEea4IMlqHSkreQ" name="PhoneNumbers" type="_dT2f2hCAEea4IMlqHSkreQ" maxOccurs="1"/>
+        <elements xmi:type="ermodel:TypeElement" xmi:id="_dT_p6hCAEea4IMlqHSkreQ" name="Email" type="_dT2f2hCAEea4IMlqHSkreQ" maxOccurs="1"/>
+      </types>
+      <types xmi:type="ermodel:SimpleType" xmi:id="_dT_p0RCAEea4IMlqHSkreQ" name="date" namespace="http://www.w3.org/2001/XMLSchema" superType="_dT_p3xCAEea4IMlqHSkreQ"/>
+    </typeContainer>
+  </ermodel:ModelContainer>
+  <notation:Diagram xmi:id="_A7nlIxBjEea4IMlqHSkreQ" type="ERmodel" element="_A7nlIBBjEea4IMlqHSkreQ" name="Customer_0.1.er" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_NAdJ0hCAEea4IMlqHSkreQ" type="2002" element="_A7nlIhBjEea4IMlqHSkreQ">
+      <children xmi:type="notation:BasicCompartment" xmi:id="_NAdJ1xCAEea4IMlqHSkreQ" type="7002" collapsed="true"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_NAdJ0xCAEea4IMlqHSkreQ"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_NAdJ1BCAEea4IMlqHSkreQ"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_NAdJ1RCAEea4IMlqHSkreQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NAdJ1hCAEea4IMlqHSkreQ"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_NAdJ2BCAEea4IMlqHSkreQ" type="2006" element="_A7nlIRBjEea4IMlqHSkreQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_NAdJ3RCAEea4IMlqHSkreQ" type="7003">
+        <children xmi:type="notation:Node" xmi:id="_dT2f0RCAEea4IMlqHSkreQ" type="3004" element="_dT2f0BCAEea4IMlqHSkreQ">
+          <children xmi:type="notation:DecorationNode" xmi:id="_dT2f1RCAEea4IMlqHSkreQ" type="5007"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_dT2f1hCAEea4IMlqHSkreQ" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_dT2f1xCAEea4IMlqHSkreQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_dT2f2BCAEea4IMlqHSkreQ"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_dT2f0hCAEea4IMlqHSkreQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_dT2f0xCAEea4IMlqHSkreQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dT2f1BCAEea4IMlqHSkreQ" x="28" y="80"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_dT2f4hCAEea4IMlqHSkreQ" type="3004" element="_dT2f4RCAEea4IMlqHSkreQ">
+          <children xmi:type="notation:DecorationNode" xmi:id="_dT2f5hCAEea4IMlqHSkreQ" type="5007"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_dT2f5xCAEea4IMlqHSkreQ" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_dT2f6BCAEea4IMlqHSkreQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_dT2f6RCAEea4IMlqHSkreQ"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_dT2f4xCAEea4IMlqHSkreQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_dT2f5BCAEea4IMlqHSkreQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dT2f5RCAEea4IMlqHSkreQ" x="304" y="80"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_dT_pxhCAEea4IMlqHSkreQ" type="3004" element="_dT_pxRCAEea4IMlqHSkreQ">
+          <children xmi:type="notation:DecorationNode" xmi:id="_dT_pyhCAEea4IMlqHSkreQ" type="5007"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_dT_pyxCAEea4IMlqHSkreQ" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_dT_pzBCAEea4IMlqHSkreQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_dT_pzRCAEea4IMlqHSkreQ"/>
+          </children>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_dT_pxxCAEea4IMlqHSkreQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_dT_pyBCAEea4IMlqHSkreQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dT_pyRCAEea4IMlqHSkreQ" x="568" y="80"/>
+        </children>
+      </children>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_NAdJ2RCAEea4IMlqHSkreQ"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_NAdJ2hCAEea4IMlqHSkreQ"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_NAdJ2xCAEea4IMlqHSkreQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_NAdJ3BCAEea4IMlqHSkreQ"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_A7nlJBBjEea4IMlqHSkreQ"/>
+  </notation:Diagram>
+</xmi:XMI>
