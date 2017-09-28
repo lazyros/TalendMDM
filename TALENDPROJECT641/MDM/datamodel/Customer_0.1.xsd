@@ -1,1 +1,35 @@
-<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"/>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="Customer">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="CustomerId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Customer">
+<xsd:selector xpath="."/>
+<xsd:field xpath="CustomerId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Address">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="AddressId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Address">
+<xsd:selector xpath="."/>
+<xsd:field xpath="AddressId"/>
+</xsd:unique>
+</xsd:element>
+<xsd:element name="Country">
+<xsd:complexType>
+<xsd:all>
+<xsd:element name="CountryId" type="xsd:string"/>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Country">
+<xsd:selector xpath="."/>
+<xsd:field xpath="CountryId"/>
+</xsd:unique>
+</xsd:element>
+</xsd:schema>
