@@ -1,0 +1,232 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+  <xsd:element name="sCustomer"> 
+    <xsd:complexType> 
+      <xsd:all> 
+        <xsd:element maxOccurs="1" minOccurs="1" name="IdCustomer" type="AUTO_INCREMENT"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Label_EN">Identifier</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="1" name="FirstName" type="String255Type"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>  
+            <xsd:appinfo source="X_Label_EN">First Name</xsd:appinfo>  
+            <xsd:appinfo source="X_Label_FR">Prenom</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="1" name="LastName" type="String255Type"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>  
+            <xsd:appinfo source="X_Label_EN">Last Name</xsd:appinfo>  
+            <xsd:appinfo source="X_Label_FR">Nom</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="DateOfBirth" type="xsd:date"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Label_EN">Date of Birth</xsd:appinfo>  
+            <xsd:appinfo source="X_Display_Format_EN">%tD</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="Addresses" type="ListAddressesType"> 
+          <xsd:annotation/> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="PhoneNumbers" type="ListPhoneNumbersType"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Label_EN">Phone</xsd:appinfo>  
+            <xsd:appinfo source="X_AutoExpand">true</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="Email" type="String255Type"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="1" name="Status" type="StatusType"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Default_Value_Rule">'Pending validation'</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="LegacyId_Sys1" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>  
+            <xsd:appinfo source="X_Label_EN">SAP Identifier</xsd:appinfo>  
+            <xsd:appinfo source="X_Description_EN">Record identifier in the SAP system</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="LegacyId_Sys2" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>  
+            <xsd:appinfo source="X_Label_EN">HR Identifier</xsd:appinfo>  
+            <xsd:appinfo source="X_Description_EN">Record identifier in the HR system</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="StagingId" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>  
+            <xsd:appinfo source="X_Visible_Rule">fn:false()</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element> 
+      </xsd:all> 
+    </xsd:complexType>  
+    <xsd:unique name="sCustomer"> 
+      <xsd:selector xpath="."/>  
+      <xsd:field xpath="IdCustomer"/> 
+    </xsd:unique> 
+  </xsd:element>  
+  <xsd:element name="sAddress"> 
+    <xsd:complexType> 
+      <xsd:all> 
+        <xsd:element maxOccurs="1" minOccurs="1" name="IdAddress" type="AUTO_INCREMENT"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Label_EN">Identifier</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="BuildingIdentifier" type="String255Type"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>  
+            <xsd:appinfo source="X_Label_EN">Building Identifier</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="Thoroughfare" type="String255Type"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="Locality" type="String255Type"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="AdministrativeArea" type="String255Type"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>  
+            <xsd:appinfo source="X_Label_EN">Administrative Area</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="0" name="Postcode" type="String255Type"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>  
+            <xsd:appinfo source="X_Label_EN">Postal Code</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="1" name="FkCountry" type="xsd:string"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_ForeignKey">sCountry/ISO_NumericCode</xsd:appinfo>  
+            <xsd:appinfo source="X_ForeignKey_NotSep">true</xsd:appinfo>  
+            <xsd:appinfo source="X_Label_EN">Country</xsd:appinfo>  
+            <xsd:appinfo source="X_ForeignKeyInfo">sCountry/ISO_Alpha-2</xsd:appinfo>  
+            <xsd:appinfo source="X_ForeignKeyInfo">sCountry/ISO_Alpha-3</xsd:appinfo>  
+            <xsd:appinfo source="X_ForeignKeyInfo">sCountry/Name</xsd:appinfo>  
+            <xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element> 
+      </xsd:all> 
+    </xsd:complexType>  
+    <xsd:unique name="sAddress"> 
+      <xsd:selector xpath="."/>  
+      <xsd:field xpath="IdAddress"/> 
+    </xsd:unique> 
+  </xsd:element>  
+  <xsd:element name="sCountry"> 
+    <xsd:complexType> 
+      <xsd:all> 
+        <xsd:element maxOccurs="1" minOccurs="1" name="ISO_NumericCode" type="xsd:int"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Label_EN">ISO Numeric Code</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="1" name="ISO_Alpha-2" type="ISO_TwoType"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 2 characters</xsd:appinfo>  
+            <xsd:appinfo source="X_Label_EN">2-letter ISO Code</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="1" name="ISO_Alpha-3" type="ISO_ThreeType"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 3 characters</xsd:appinfo>  
+            <xsd:appinfo source="X_Label_EN">3-letter ISO Code</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element>  
+        <xsd:element maxOccurs="1" minOccurs="1" name="Name" type="String255Type"> 
+          <xsd:annotation> 
+            <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo> 
+          </xsd:annotation> 
+        </xsd:element> 
+      </xsd:all> 
+    </xsd:complexType>  
+    <xsd:unique name="sCountry"> 
+      <xsd:selector xpath="."/>  
+      <xsd:field xpath="ISO_NumericCode"/> 
+    </xsd:unique> 
+  </xsd:element>  
+  <xsd:simpleType name="AUTO_INCREMENT"> 
+    <xsd:restriction base="xsd:string"/> 
+  </xsd:simpleType>  
+  <xsd:simpleType name="String255Type"> 
+    <xsd:restriction base="xsd:string"> 
+      <xsd:maxLength value="255"/> 
+    </xsd:restriction> 
+  </xsd:simpleType>  
+  <xsd:simpleType name="ISO_TwoType"> 
+    <xsd:restriction base="xsd:string"> 
+      <xsd:maxLength value="2"/> 
+    </xsd:restriction> 
+  </xsd:simpleType>  
+  <xsd:simpleType name="ISO_ThreeType"> 
+    <xsd:restriction base="xsd:string"> 
+      <xsd:maxLength value="3"/> 
+    </xsd:restriction> 
+  </xsd:simpleType>  
+  <xsd:complexType name="ListAddressesType"> 
+    <xsd:sequence> 
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="FkAddress" type="xsd:string"> 
+        <xsd:annotation> 
+          <xsd:appinfo source="X_ForeignKey_NotSep">false</xsd:appinfo>  
+          <xsd:appinfo source="X_ForeignKey">sAddress/IdAddress</xsd:appinfo>  
+          <xsd:appinfo source="X_ForeignKeyInfo">sAddress/BuildingIdentifier</xsd:appinfo>  
+          <xsd:appinfo source="X_ForeignKeyInfo">sAddress/Thoroughfare</xsd:appinfo>  
+          <xsd:appinfo source="X_ForeignKeyInfo">sAddress/Locality</xsd:appinfo>  
+          <xsd:appinfo source="X_ForeignKeyInfo">sAddress/Postcode</xsd:appinfo>  
+          <xsd:appinfo source="X_ForeignKeyInfo">sAddress/FkCountry</xsd:appinfo>  
+          <xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo> 
+        </xsd:annotation> 
+      </xsd:element> 
+    </xsd:sequence> 
+  </xsd:complexType>  
+  <xsd:complexType name="ListPhoneNumbersType"> 
+    <xsd:sequence> 
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="PhoneNumber" type="PhoneNumberType"> 
+        <xsd:annotation> 
+          <xsd:appinfo source="X_AutoExpand">true</xsd:appinfo>  
+          <xsd:appinfo source="X_Label_EN">Phone</xsd:appinfo> 
+        </xsd:annotation> 
+      </xsd:element> 
+    </xsd:sequence> 
+  </xsd:complexType>  
+  <xsd:complexType name="PhoneNumberType"> 
+    <xsd:all> 
+      <xsd:element maxOccurs="1" minOccurs="1" name="Number" type="String255Type"> 
+        <xsd:annotation/> 
+      </xsd:element>  
+      <xsd:element maxOccurs="1" minOccurs="1" name="TypeEnum" type="PhoneType"> 
+        <xsd:annotation> 
+          <xsd:appinfo source="X_Label_EN">Type</xsd:appinfo> 
+        </xsd:annotation> 
+      </xsd:element> 
+    </xsd:all> 
+  </xsd:complexType>  
+  <xsd:simpleType name="PhoneType"> 
+    <xsd:restriction base="xsd:string"> 
+      <xsd:enumeration value="Home"/>  
+      <xsd:enumeration value="Work"/>  
+      <xsd:enumeration value="Mobile"/> 
+    </xsd:restriction> 
+  </xsd:simpleType>  
+  <xsd:simpleType name="StatusType"> 
+    <xsd:restriction base="xsd:string"> 
+      <xsd:enumeration value="Pending validation"/>  
+      <xsd:enumeration value="Validated"/>  
+      <xsd:enumeration value="Rejected"/> 
+    </xsd:restriction> 
+  </xsd:simpleType> 
+</xsd:schema>
