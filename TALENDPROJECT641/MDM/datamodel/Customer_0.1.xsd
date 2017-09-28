@@ -1,15 +1,14 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<xsd:import namespace="http://www.w3.org/2001/XMLSchema"/>
 <xsd:element name="Customer">
 <xsd:complexType>
 <xsd:all>
 <xsd:element name="CustomerId" type="AUTO_INCREMENT"/>
-<xsd:element maxOccurs="1" minOccurs="1" name="FirstName" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="1" name="LastName" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="FirstName" type="String255Type"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="LastName" type="String255Type"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="DateOfBirth" type="xsd:date"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="Adresses" type="ListAddressesType"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="PhoneNumbers" type="ListPhoneNumbersType"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="Email" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Email" type="String255Type"/>
 </xsd:all>
 </xsd:complexType>
 <xsd:unique name="Customer">
@@ -21,11 +20,15 @@
 <xsd:complexType>
 <xsd:all>
 <xsd:element name="AddressId" type="AUTO_INCREMENT"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="BuildingIdentifier" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="Thoroughfare" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="Locality" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="AdministrativeArea" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="Postcode" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="BuildingIdentifier" type="String255Type">
+<xsd:annotation>
+<xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="Thoroughfare" type="String255Type"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Locality" type="String255Type"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="AdministrativeArea" type="String255Type"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Postcode" type="String255Type"/>
 <xsd:element maxOccurs="1" minOccurs="1" name="FkCountry" type="xsd:string">
 <xsd:annotation>
 <xsd:appinfo source="X_ForeignKey">Country/ISO_NumericCode</xsd:appinfo>
@@ -43,9 +46,17 @@
 <xsd:complexType>
 <xsd:all>
 <xsd:element maxOccurs="1" minOccurs="1" name="ISO_NumericCode" type="xsd:int"/>
-<xsd:element maxOccurs="1" minOccurs="1" name="ISO_Alpha-2" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="1" name="ISO_Alpha-3" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="1" name="Name" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="ISO_Alpha-2" type="ISO_TwoType">
+<xsd:annotation>
+<xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 2 characters</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="ISO_Alpha-3" type="ISO_ThreeType">
+<xsd:annotation>
+<xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 3 characters</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Name" type="String255Type"/>
 </xsd:all>
 </xsd:complexType>
 <xsd:unique name="Country">
@@ -79,8 +90,30 @@
 </xsd:complexType>
 <xsd:complexType name="PhoneNumberType">
 <xsd:all>
-<xsd:element maxOccurs="1" minOccurs="1" name="Number" type="xsd:string"/>
-<xsd:element maxOccurs="1" minOccurs="1" name="TypeEnum" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="Number" type="String255Type"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="TypeEnum" type="PhoneType"/>
 </xsd:all>
 </xsd:complexType>
+<xsd:simpleType name="String255Type">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="255"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="ISO_TwoType">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="2"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="ISO_ThreeType">
+<xsd:restriction base="xsd:string">
+<xsd:maxLength value="3"/>
+</xsd:restriction>
+</xsd:simpleType>
+<xsd:simpleType name="PhoneType">
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="Home"/>
+<xsd:enumeration value="Work"/>
+<xsd:enumeration value="Mobile"/>
+</xsd:restriction>
+</xsd:simpleType>
 </xsd:schema>
