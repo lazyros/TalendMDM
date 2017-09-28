@@ -1,4 +1,5 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:import namespace="http://www.w3.org/2001/XMLSchema"/>
 <xsd:element name="Customer">
 <xsd:complexType>
 <xsd:all>
@@ -61,6 +62,12 @@
 <xsd:annotation>
 <xsd:appinfo source="X_ForeignKey_NotSep">false</xsd:appinfo>
 <xsd:appinfo source="X_ForeignKey">Address/AddressId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/BuildingIdentifier</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/Thoroughfare</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/Locality</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/AdministrativeArea</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/Postcode</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Address/FkCountry</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 </xsd:sequence>
