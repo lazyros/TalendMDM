@@ -1,13 +1,12 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-<xsd:import namespace="http://www.w3.org/2001/XMLSchema"/>
 <xsd:element name="Customer">
 <xsd:complexType>
 <xsd:all>
-<xsd:element name="CustomerId" type="xsd:string"/>
+<xsd:element name="CustomerId" type="AUTO_INCREMENT"/>
 <xsd:element maxOccurs="1" minOccurs="1" name="FirstName" type="xsd:string"/>
 <xsd:element maxOccurs="1" minOccurs="1" name="LastName" type="xsd:string"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="DateOfBirth" type="xsd:date"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="Adresses" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Adresses" type="ListAddressesType"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="PhoneNumbers" type="xsd:string"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="Email" type="xsd:string"/>
 </xsd:all>
@@ -20,8 +19,18 @@
 <xsd:element name="Address">
 <xsd:complexType>
 <xsd:all>
-<xsd:element name="AddressId" type="xsd:string"/>
+<xsd:element name="AddressId" type="AUTO_INCREMENT"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="BuildingIdentifier" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Thoroughfare" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Locality" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="AdministrativeArea" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Postcode" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="FkCountry" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey">Country/ISO_NumericCode</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">false</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
 </xsd:all>
 </xsd:complexType>
 <xsd:unique name="Address">
@@ -32,12 +41,28 @@
 <xsd:element name="Country">
 <xsd:complexType>
 <xsd:all>
-<xsd:element name="CountryId" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="ISO_NumericCode" type="xsd:int"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="ISO_Alpha-2" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="ISO_Alpha-3" type="xsd:string"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="Name" type="xsd:string"/>
 </xsd:all>
 </xsd:complexType>
 <xsd:unique name="Country">
 <xsd:selector xpath="."/>
-<xsd:field xpath="CountryId"/>
+<xsd:field xpath="ISO_NumericCode"/>
 </xsd:unique>
 </xsd:element>
+<xsd:simpleType name="AUTO_INCREMENT">
+<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
+<xsd:complexType name="ListAddressesType">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="1" name="FKAddress" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey_NotSep">false</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey">Address/AddressId</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:sequence>
+</xsd:complexType>
 </xsd:schema>
