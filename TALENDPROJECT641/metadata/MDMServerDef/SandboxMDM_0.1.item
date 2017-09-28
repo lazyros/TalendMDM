@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmmetadata:MDMServerDef xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmmetadata="http://www.talend.org/metadata/mdmserverdef" xmi:id="_FErV0KSkEee3X_8LIffIuQ" name="SandboxMDM" label="" host="server01" passwd="YdTnhbqBAdo=" url="http://server01:8180/talendmdm/services/soap" user="admin" algorithm="CommonV2"/>
