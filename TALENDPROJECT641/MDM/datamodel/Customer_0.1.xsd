@@ -4,15 +4,39 @@
 <xsd:complexType>
 <xsd:all>
 <xsd:element name="CustomerId" type="AUTO_INCREMENT"/>
-<xsd:element maxOccurs="1" minOccurs="1" name="FirstName" type="String255Type"/>
-<xsd:element maxOccurs="1" minOccurs="1" name="LastName" type="String255Type"/>
+<xsd:element maxOccurs="1" minOccurs="1" name="FirstName" type="String255Type">
+<xsd:annotation>
+<xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="LastName" type="String255Type">
+<xsd:annotation>
+<xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="DateOfBirth" type="xsd:date"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="Adresses" type="ListAddressesType"/>
 <xsd:element maxOccurs="1" minOccurs="0" name="PhoneNumbers" type="ListPhoneNumbersType"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="Email" type="String255Type"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="LegacyId_Sys1" type="String255Type"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="LegacyId_Sys2" type="String255Type"/>
-<xsd:element maxOccurs="1" minOccurs="0" name="StagingId" type="String255Type"/>
+<xsd:element maxOccurs="1" minOccurs="0" name="Email" type="String255Type">
+<xsd:annotation>
+<xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="LegacyId_Sys1" type="String255Type">
+<xsd:annotation>
+<xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="LegacyId_Sys2" type="String255Type">
+<xsd:annotation>
+<xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="0" name="StagingId" type="String255Type">
+<xsd:annotation>
+<xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
 </xsd:all>
 </xsd:complexType>
 <xsd:unique name="Customer">
