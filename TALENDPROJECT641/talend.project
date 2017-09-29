@@ -124,6 +124,8 @@
       <relatedItems xmi:id="_8Ob9kKRtEeeL8dXu-sPh5Q" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_8Ob9kaRtEeeL8dXu-sPh5Q" id="_YL4dQAEkEeSoqvm5NVIptg - CountryOut" version="Latest" type="schema"/>
       <relatedItems xmi:id="_8Ob9kqRtEeeL8dXu-sPh5Q" id="_q6hJ0AEoEeSoqvm5NVIptg - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_Uffi8KUxEee4K_iHNpWFIg" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Uffi8aUxEee4K_iHNpWFIg" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_8Ob9k6RtEeeL8dXu-sPh5Q">
       <baseItem xmi:id="_8Ob9lKRtEeeL8dXu-sPh5Q" id="_PxLfAoexEeSuyN9SETMU9Q" version="0.1" type="job"/>
