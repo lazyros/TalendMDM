@@ -33,7 +33,7 @@
 <xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
-<xsd:element maxOccurs="1" minOccurs="0" name="Adresses" type="ListAddressesType">
+<xsd:element maxOccurs="1" minOccurs="0" name="Addresses" type="ListAddressesType">
 <xsd:annotation>
 <xsd:appinfo source="X_Write"/>
 <xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
