@@ -355,7 +355,40 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tMDMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="192">
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="XML_Entity"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MDM_Address_Id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="AddrStagingId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CustStagingId"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="addr_to_MDM" name="tLogRow_2">
+      <column comment="" key="false" length="-1" name="XML_Entity" nullable="true" pattern="" precision="-1" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MDM_Address_Id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="0" key="true" length="10" name="AddrStagingId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="CustStagingId" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMDMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="992" posY="192">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMOutput_1" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_YL4dQAEkEeSoqvm5NVIptg - AddressOut" show="false"/>
@@ -707,55 +740,55 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="row7" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="CustStagingId" type="id_Integer" outgoingConnections="//@node.13/@nodeData/@connections.8" xpath="row7/CustStagingId" nullable="false"/>
-        <nodes name="first_name" type="id_String" outgoingConnections="//@node.13/@nodeData/@connections.0" xpath="row7/first_name"/>
-        <nodes name="last_name" type="id_String" outgoingConnections="//@node.13/@nodeData/@connections.1" xpath="row7/last_name"/>
-        <nodes name="dob" type="id_Date" outgoingConnections="//@node.13/@nodeData/@connections.2" xpath="row7/dob"/>
-        <nodes name="legacy_id_1" type="id_Integer" outgoingConnections="//@node.13/@nodeData/@connections.6" xpath="row7/legacy_id_1"/>
-        <nodes name="legacy_id_2" type="id_Integer" outgoingConnections="//@node.13/@nodeData/@connections.7" xpath="row7/legacy_id_2"/>
-        <nodes name="phone1" type="id_String" outgoingConnections="//@node.13/@nodeData/@connections.4" xpath="row7/phone1"/>
-        <nodes name="phone2" type="id_String" outgoingConnections="//@node.13/@nodeData/@connections.9" xpath="row7/phone2"/>
-        <nodes name="email" type="id_String" outgoingConnections="//@node.13/@nodeData/@connections.5" xpath="row7/email"/>
-        <nodes name="MDM_Address_Id" type="id_String" outgoingConnections="//@node.13/@nodeData/@connections.3" xpath="row7/MDM_Address_Id"/>
+        <nodes name="CustStagingId" type="id_Integer" outgoingConnections="//@node.14/@nodeData/@connections.8" xpath="row7/CustStagingId" nullable="false"/>
+        <nodes name="first_name" type="id_String" outgoingConnections="//@node.14/@nodeData/@connections.0" xpath="row7/first_name"/>
+        <nodes name="last_name" type="id_String" outgoingConnections="//@node.14/@nodeData/@connections.1" xpath="row7/last_name"/>
+        <nodes name="dob" type="id_Date" outgoingConnections="//@node.14/@nodeData/@connections.2" xpath="row7/dob"/>
+        <nodes name="legacy_id_1" type="id_Integer" outgoingConnections="//@node.14/@nodeData/@connections.6" xpath="row7/legacy_id_1"/>
+        <nodes name="legacy_id_2" type="id_Integer" outgoingConnections="//@node.14/@nodeData/@connections.7" xpath="row7/legacy_id_2"/>
+        <nodes name="phone1" type="id_String" outgoingConnections="//@node.14/@nodeData/@connections.4" xpath="row7/phone1"/>
+        <nodes name="phone2" type="id_String" outgoingConnections="//@node.14/@nodeData/@connections.9" xpath="row7/phone2"/>
+        <nodes name="email" type="id_String" outgoingConnections="//@node.14/@nodeData/@connections.5" xpath="row7/email"/>
+        <nodes name="MDM_Address_Id" type="id_String" outgoingConnections="//@node.14/@nodeData/@connections.3" xpath="row7/MDM_Address_Id"/>
       </inputTrees>
       <outputTrees name="to_MDM">
         <nodes name="MDM_Customer" expression="" type="id_Document" xpath="to_MDM/MDM_Customer" pattern="" nullable="false">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="Customer" expression="" type="id_String" xpath="to_MDM.MDM_Customer:/Customer" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="CustomerId" type="id_String" xpath="to_MDM.MDM_Customer:/Customer/CustomerId"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="FirstName" expression="row7.first_name" type="id_String" incomingConnections="//@node.13/@nodeData/@connections.0" xpath="to_MDM.MDM_Customer:/Customer/FirstName"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="LastName" expression="row7.last_name" type="id_String" incomingConnections="//@node.13/@nodeData/@connections.1" xpath="to_MDM.MDM_Customer:/Customer/LastName"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="DateOfBirth" expression="TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,row7.dob)  " type="id_Date" incomingConnections="//@node.13/@nodeData/@connections.2" xpath="to_MDM.MDM_Customer:/Customer/DateOfBirth" pattern="&quot;dd-MM-yyyy&quot;" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="FirstName" expression="row7.first_name" type="id_String" incomingConnections="//@node.14/@nodeData/@connections.0" xpath="to_MDM.MDM_Customer:/Customer/FirstName"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="LastName" expression="row7.last_name" type="id_String" incomingConnections="//@node.14/@nodeData/@connections.1" xpath="to_MDM.MDM_Customer:/Customer/LastName"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="DateOfBirth" expression="TalendDate.formatDate(&quot;yyyy-MM-dd&quot;,row7.dob)  " type="id_Date" incomingConnections="//@node.14/@nodeData/@connections.2" xpath="to_MDM.MDM_Customer:/Customer/DateOfBirth" pattern="&quot;dd-MM-yyyy&quot;" optional="true"/>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="Addresses" type="id_String" xpath="to_MDM.MDM_Customer:/Customer/Addresses" main="true">
-              <children xsi:type="TalendXMLMap:OutputTreeNode" name="FkAddress" expression="MDM.createFK(row7.MDM_Address_Id) " type="id_String" incomingConnections="//@node.13/@nodeData/@connections.3" xpath="to_MDM.MDM_Customer:/Customer/Addresses/FkAddress" loop="true" main="true"/>
+              <children xsi:type="TalendXMLMap:OutputTreeNode" name="FkAddress" expression="MDM.createFK(row7.MDM_Address_Id) " type="id_String" incomingConnections="//@node.14/@nodeData/@connections.3" xpath="to_MDM.MDM_Customer:/Customer/Addresses/FkAddress" loop="true" main="true"/>
             </children>
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="PhoneNumbers" expression="" type="id_String" xpath="to_MDM.MDM_Customer:/Customer/PhoneNumbers" optional="true">
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="PhoneNumber" type="id_String" xpath="to_MDM.MDM_Customer:/Customer/PhoneNumbers/PhoneNumber">
-                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Number" expression="row7.phone1" type="id_String" incomingConnections="//@node.13/@nodeData/@connections.4" xpath="to_MDM.MDM_Customer:/Customer/PhoneNumbers/PhoneNumber/Number"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Number" expression="row7.phone1" type="id_String" incomingConnections="//@node.14/@nodeData/@connections.4" xpath="to_MDM.MDM_Customer:/Customer/PhoneNumbers/PhoneNumber/Number"/>
                 <children xsi:type="TalendXMLMap:OutputTreeNode" name="TypeEnum" expression="&quot;Home&quot;" type="id_String" xpath="to_MDM.MDM_Customer:/Customer/PhoneNumbers/PhoneNumber/TypeEnum"/>
               </children>
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="PhoneNumber" expression="" type="id_String" xpath="to_MDM.MDM_Customer:/Customer/PhoneNumbers/PhoneNumber">
-                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Number" expression=" row7.phone2" type="id_String" incomingConnections="//@node.13/@nodeData/@connections.9" xpath="to_MDM.MDM_Customer:/Customer/PhoneNumbers/PhoneNumber/Number"/>
+                <children xsi:type="TalendXMLMap:OutputTreeNode" name="Number" expression=" row7.phone2" type="id_String" incomingConnections="//@node.14/@nodeData/@connections.9" xpath="to_MDM.MDM_Customer:/Customer/PhoneNumbers/PhoneNumber/Number"/>
                 <children xsi:type="TalendXMLMap:OutputTreeNode" name="TypeEnum" expression="&quot;Work&quot;" type="id_String" xpath="to_MDM.MDM_Customer:/Customer/PhoneNumbers/PhoneNumber/TypeEnum"/>
               </children>
             </children>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Email" expression="row7.email" type="id_String" incomingConnections="//@node.13/@nodeData/@connections.5" xpath="to_MDM.MDM_Customer:/Customer/Email" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="LegacyId_Sys1" expression="row7.legacy_id_1" type="id_String" incomingConnections="//@node.13/@nodeData/@connections.6" xpath="to_MDM.MDM_Customer:/Customer/LegacyId_Sys1" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="LegacyId_Sys2" expression="row7.legacy_id_2" type="id_String" incomingConnections="//@node.13/@nodeData/@connections.7" xpath="to_MDM.MDM_Customer:/Customer/LegacyId_Sys2" optional="true"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="StagingId" expression="Integer.toString(row7.CustStagingId)" type="id_String" incomingConnections="//@node.13/@nodeData/@connections.8" xpath="to_MDM.MDM_Customer:/Customer/StagingId" optional="true" aggregate="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="Email" expression="row7.email" type="id_String" incomingConnections="//@node.14/@nodeData/@connections.5" xpath="to_MDM.MDM_Customer:/Customer/Email" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="LegacyId_Sys1" expression="row7.legacy_id_1" type="id_String" incomingConnections="//@node.14/@nodeData/@connections.6" xpath="to_MDM.MDM_Customer:/Customer/LegacyId_Sys1" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="LegacyId_Sys2" expression="row7.legacy_id_2" type="id_String" incomingConnections="//@node.14/@nodeData/@connections.7" xpath="to_MDM.MDM_Customer:/Customer/LegacyId_Sys2" optional="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="StagingId" expression="Integer.toString(row7.CustStagingId)" type="id_String" incomingConnections="//@node.14/@nodeData/@connections.8" xpath="to_MDM.MDM_Customer:/Customer/StagingId" optional="true" aggregate="true"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.13/@nodeData/@inputTrees.0/@nodes.1" target="//@node.13/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.13/@nodeData/@inputTrees.0/@nodes.2" target="//@node.13/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.13/@nodeData/@inputTrees.0/@nodes.3" target="//@node.13/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.13/@nodeData/@inputTrees.0/@nodes.9" target="//@node.13/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.13/@nodeData/@inputTrees.0/@nodes.6" target="//@node.13/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5/@children.0/@children.0"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.13/@nodeData/@inputTrees.0/@nodes.8" target="//@node.13/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.13/@nodeData/@inputTrees.0/@nodes.4" target="//@node.13/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.7"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.13/@nodeData/@inputTrees.0/@nodes.5" target="//@node.13/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.8"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.13/@nodeData/@inputTrees.0/@nodes.0" target="//@node.13/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.9"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.13/@nodeData/@inputTrees.0/@nodes.7" target="//@node.13/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5/@children.1/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.14/@nodeData/@inputTrees.0/@nodes.1" target="//@node.14/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.14/@nodeData/@inputTrees.0/@nodes.2" target="//@node.14/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.14/@nodeData/@inputTrees.0/@nodes.3" target="//@node.14/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.14/@nodeData/@inputTrees.0/@nodes.9" target="//@node.14/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.4/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.14/@nodeData/@inputTrees.0/@nodes.6" target="//@node.14/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.14/@nodeData/@inputTrees.0/@nodes.8" target="//@node.14/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.14/@nodeData/@inputTrees.0/@nodes.4" target="//@node.14/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.7"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.14/@nodeData/@inputTrees.0/@nodes.5" target="//@node.14/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.8"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.14/@nodeData/@inputTrees.0/@nodes.0" target="//@node.14/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.9"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.14/@nodeData/@inputTrees.0/@nodes.7" target="//@node.14/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.5/@children.1/@children.0"/>
     </nodeData>
   </node>
   <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="672">
@@ -1000,7 +1033,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="withGBFk" show="false"/>
   </connection>
-  <connection connectorName="FLOW" label="addr_to_MDM" lineStyle="0" metaname="addr_to_MDM" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tMDMOutput_1">
+  <connection connectorName="FLOW" label="addr_to_MDM" lineStyle="0" metaname="addr_to_MDM" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tLogRow_2">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
       <elementValue elementRef="TRACE_COLUMN" value="XML_Entity"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
@@ -1026,6 +1059,10 @@
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tMDMOutput_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
   </connection>
   <connection connectorName="OUTPUT" label="row3" lineStyle="0" metaname="OUTPUT" offsetLabelX="0" offsetLabelY="0" source="tMDMOutput_1" target="tFilterColumns_1">
     <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
