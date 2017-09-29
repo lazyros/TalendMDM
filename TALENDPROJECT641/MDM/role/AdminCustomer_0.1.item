@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSRoleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_cXAmIKSfEeeL8dXu-sPh5Q" name="AdminCustomer" description="[EN:Administrator]">
+<mdmserverobject:WSRoleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_cXAmIKSfEeeL8dXu-sPh5Q" name="AdminCustomer" description="[EN:Administrator]" timestamp="1506656767261" digestValue="f1d9f7afcaf9d1a2ad3244cfdcd9cacd" lastServerName="SandboxMDM">
   <specification xmi:id="_9nv8IKShEeeL8dXu-sPh5Q" admin="true" objectType="Transformer V2"/>
   <specification xmi:id="_9nv8IaShEeeL8dXu-sPh5Q" objectType="Data Cluster">
     <instance xmi:id="_9nv8IqShEeeL8dXu-sPh5Q" instanceName="Customer"/>
