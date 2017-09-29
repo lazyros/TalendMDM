@@ -4,11 +4,11 @@
   <searchableBusinessElements>Customer/FirstName</searchableBusinessElements>
   <searchableBusinessElements>Customer/LastName</searchableBusinessElements>
   <searchableBusinessElements>Customer/DateOfBirth</searchableBusinessElements>
-  <searchableBusinessElements>Customer/Adresses</searchableBusinessElements>
+  <searchableBusinessElements>Customer/Addresses</searchableBusinessElements>
   <viewableBusinessElements>Customer/CustomerId</viewableBusinessElements>
   <viewableBusinessElements>Customer/FirstName</viewableBusinessElements>
   <viewableBusinessElements>Customer/LastName</viewableBusinessElements>
   <viewableBusinessElements>Customer/DateOfBirth</viewableBusinessElements>
-  <viewableBusinessElements>Customer/Adresses</viewableBusinessElements>
-  <isTransformerActive xmi:id="_NqrXwqSjEee3X_8LIffIuQ"/>
+  <viewableBusinessElements>Customer/Addresses</viewableBusinessElements>
+  <isTransformerActive xmi:id="_sIb7oKVcEeeLzth9O2W44w"/>
 </mdmserverobject:WSViewE>
