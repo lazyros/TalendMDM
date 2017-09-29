@@ -104,6 +104,7 @@
       <relatedItems xmi:id="_8Ob9gKRtEeeL8dXu-sPh5Q" id="_0jf5QAEHEeSoqvm5NVIptg - metadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_ZtXmYKTLEee4K_iHNpWFIg" id="DataMasking" version="Latest" type="routine"/>
       <relatedItems xmi:id="_ZtXmYaTLEee4K_iHNpWFIg" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yrhuoKUvEee4K_iHNpWFIg" id="_WIxAIKUsEee4K_iHNpWFIg" version="Latest" type="property"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_8Ob9gaRtEeeL8dXu-sPh5Q">
       <baseItem xmi:id="_8Ob9gqRtEeeL8dXu-sPh5Q" id="_PxLfAYexEeSuyN9SETMU9Q" version="0.1" type="job"/>
