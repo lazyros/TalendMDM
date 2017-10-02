@@ -23,7 +23,12 @@
   <specification xmi:id="_BM9UzafCEeeLzth9O2W44w" objectType="Configuration Info"/>
   <specification xmi:id="_BM9UzqfCEeeLzth9O2W44w" admin="true" objectType="Item"/>
   <specification xmi:id="_BM9Uz6fCEeeLzth9O2W44w" objectType="Service"/>
-  <specification xmi:id="_BM9U0KfCEeeLzth9O2W44w" objectType="View"/>
+  <specification xmi:id="_BM9U0KfCEeeLzth9O2W44w" objectType="View">
+    <instance xmi:id="_GMetUKfDEeeLzth9O2W44w" instanceName="Browse_items_pPhone"/>
+    <instance xmi:id="_GPIYsKfDEeeLzth9O2W44w" instanceName="Browse_items_pAddress"/>
+    <instance xmi:id="_GRIj0KfDEeeLzth9O2W44w" instanceName="Browse_items_pCountry"/>
+    <instance xmi:id="_GTWxYKfDEeeLzth9O2W44w" instanceName="Browse_items_pCustomer"/>
+  </specification>
   <specification xmi:id="_BM9U0afCEeeLzth9O2W44w" objectType="Menu">
     <instance xmi:id="_BM9U0qfCEeeLzth9O2W44w" instanceName="WelcomePortal">
       <parameter><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
