@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_N6_gsKeNEeeLzth9O2W44w" name="Browse_items_rPhoneNumber" description="[EN:rPhoneNumber]" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_N6_gsKeNEeeLzth9O2W44w" name="Browse_items_rPhoneNumber" description="[EN:rPhoneNumber]" timestamp="1506961225456" digestValue="c7e1c874aa8b2bbc2a879fa4e43d50d1" lastServerName="SandboxMDM" transformerPK="">
   <searchableBusinessElements>rPhoneNumber/IdPhoneNumber</searchableBusinessElements>
   <searchableBusinessElements>rPhoneNumber/FkCustomer</searchableBusinessElements>
   <searchableBusinessElements>rPhoneNumber/Number</searchableBusinessElements>
