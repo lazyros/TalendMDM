@@ -97,12 +97,14 @@
 <xsd:element name="AddressId" type="AUTO_INCREMENT">
 <xsd:annotation>
 <xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Identifier</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="BuildingIdentifier" type="String255Type">
 <xsd:annotation>
 <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>
 <xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Building Identifier</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="Thoroughfare" type="String255Type">
@@ -121,12 +123,14 @@
 <xsd:annotation>
 <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>
 <xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Administrative Area</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="Postcode" type="String255Type">
 <xsd:annotation>
 <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>
 <xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Postal Code</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
                 <xsd:element maxOccurs="1" minOccurs="1" name="FkCountry" type="xsd:string">
@@ -138,6 +142,7 @@
 <xsd:appinfo source="X_ForeignKeyInfo">Country/Name</xsd:appinfo>
 <xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
 <xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Country</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
             </xsd:all>
