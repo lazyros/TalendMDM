@@ -83,6 +83,7 @@
 <xsd:annotation>
 <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>
 <xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
+<xsd:appinfo source="X_Visible_Rule">fn:false()</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
             </xsd:all>
