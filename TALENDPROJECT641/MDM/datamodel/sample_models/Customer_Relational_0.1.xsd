@@ -1,32 +1,38 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <xsd:import namespace="http://www.w3.org/2001/XMLSchema"/>
     <xsd:element name="rCustomer">
         
-<xsd:complexType>
+        <xsd:annotation>
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
+</xsd:annotation>
+        <xsd:complexType>
 <xsd:all>
 <xsd:element maxOccurs="1" minOccurs="1" name="IdCustomer" type="AUTO_INCREMENT">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="1" name="FirstName" type="String255Type">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="1" name="LastName" type="String255Type">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="DateOfBirth" type="xsd:date">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 </xsd:all>
@@ -46,12 +52,16 @@
 </xsd:simpleType>
 <xsd:element name="rPhoneNumber">
         
+        <xsd:annotation>
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
+</xsd:annotation>
         <xsd:complexType>
 <xsd:all>
 <xsd:element maxOccurs="1" minOccurs="1" name="IdPhoneNumber" type="AUTO_INCREMENT">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
                 <xsd:element maxOccurs="1" minOccurs="1" name="FkCustomer" type="xsd:string">
@@ -64,18 +74,21 @@
 <xsd:appinfo source="X_ForeignKeyInfo">rCustomer/LastName</xsd:appinfo>
 <xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
                 <xsd:element maxOccurs="1" minOccurs="1" name="Number" type="String255Type">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
                 <xsd:element maxOccurs="1" minOccurs="1" name="TypeEnum" type="PhoneType">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
             </xsd:all>
@@ -94,42 +107,51 @@
 </xsd:simpleType>
     <xsd:element name="rAddress">
 
-<xsd:complexType>
+        <xsd:annotation>
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
+</xsd:annotation>
+        <xsd:complexType>
 <xsd:all>
 <xsd:element maxOccurs="1" minOccurs="1" name="IdAddress" type="AUTO_INCREMENT">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="BuildingIdentifier" type="String255Type">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="Thoroughfare" type="String255Type">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="Locality" type="String255Type">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="AdministrativeArea" type="String255Type">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="Postcode" type="String255Type">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="Country" type="xsd:string">
@@ -138,6 +160,7 @@
 
 <xsd:appinfo source="X_ForeignKey">rCountry/ISO_NumericCode</xsd:appinfo>
 <xsd:appinfo source="X_ForeignKey_NotSep">false</xsd:appinfo>
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 </xsd:all>
@@ -149,12 +172,16 @@
 </xsd:element>
     <xsd:element name="rCustomerAddress">
 
-<xsd:complexType>
+        <xsd:annotation>
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
+</xsd:annotation>
+        <xsd:complexType>
 <xsd:all>
 <xsd:element maxOccurs="1" minOccurs="1" name="IdCustomerAddress" type="AUTO_INCREMENT">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="FkCustomer" type="xsd:string">
@@ -166,6 +193,7 @@
 <xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="FkAddress" type="xsd:string">
@@ -177,24 +205,28 @@
 <xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="IsBilling" type="xsd:boolean">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="IsContact" type="xsd:boolean">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="0" name="IsShipping" type="xsd:boolean">
 <xsd:annotation>
 
 
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 </xsd:all>
@@ -205,28 +237,35 @@
 </xsd:unique>
 </xsd:element>
     <xsd:element name="rCountry">
-<xsd:complexType>
+        <xsd:annotation>
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
+</xsd:annotation>
+        <xsd:complexType>
 <xsd:all>
                 <xsd:element maxOccurs="1" minOccurs="1" name="ISO_NumericCode" type="xsd:int">
 <xsd:annotation>
 <xsd:appinfo source="X_Label_EN">ISO Numeric Code</xsd:appinfo>
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
                 <xsd:element maxOccurs="1" minOccurs="1" name="ISO_Alpha-2" type="ISO_TwoType">
 <xsd:annotation>
 <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 2 characters</xsd:appinfo>
 <xsd:appinfo source="X_Label_EN">2-letter ISO Code</xsd:appinfo>
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="1" name="ISO_Alpha-3" type="ISO_ThreeType">
 <xsd:annotation>
 <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 3 characters</xsd:appinfo>
 <xsd:appinfo source="X_Label_EN">3-letter ISO Code</xsd:appinfo>
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="1" name="Name" type="String255Type">
 <xsd:annotation>
 <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>
+<xsd:appinfo source="X_Write">AdminRelational</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 </xsd:all>
