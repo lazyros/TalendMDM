@@ -47,6 +47,7 @@
                 <xsd:element maxOccurs="1" minOccurs="1" name="Status" type="StatusType">
 <xsd:annotation>
 <xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
+<xsd:appinfo source="X_Default_Value_Rule">'Pending validation'</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
                 <xsd:element maxOccurs="1" minOccurs="0" name="LegacyId_Sys1" type="String255Type">
