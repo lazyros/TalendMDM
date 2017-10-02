@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_GNgBAafDEeeLzth9O2W44w" name="Browse_items_pAddress" description="[EN:pAddress]" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_GNgBAafDEeeLzth9O2W44w" name="Browse_items_pAddress" description="[EN:pAddress]" timestamp="1506984780132" digestValue="4fe271df1e2376c8304f608ce2c9438c" lastServerName="SandboxMDM" transformerPK="">
   <searchableBusinessElements>pAddress/AddressId</searchableBusinessElements>
   <searchableBusinessElements>pAddress/BuildingIdentifier</searchableBusinessElements>
   <searchableBusinessElements>pAddress/Thoroughfare</searchableBusinessElements>

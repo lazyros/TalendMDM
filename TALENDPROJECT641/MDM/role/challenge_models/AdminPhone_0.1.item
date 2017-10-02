@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSRoleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_BM9UwKfCEeeLzth9O2W44w" name="AdminPhone" description="[EN:Administrator]">
+<mdmserverobject:WSRoleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_BM9UwKfCEeeLzth9O2W44w" name="AdminPhone" description="[EN:Administrator]" timestamp="1506984780078" digestValue="b90af8f5e5f3d249955985d07f19e65d" lastServerName="SandboxMDM">
   <specification xmi:id="_ddgj0KfDEeeLzth9O2W44w" admin="true" objectType="Transformer V2"/>
   <specification xmi:id="_ddgj0afDEeeLzth9O2W44w" objectType="Data Cluster">
     <instance xmi:id="_ddgj0qfDEeeLzth9O2W44w" instanceName="Customer_Phone_Rosa"/>

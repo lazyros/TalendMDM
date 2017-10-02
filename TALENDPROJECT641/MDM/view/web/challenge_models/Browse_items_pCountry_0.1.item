@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_GP2xcKfDEeeLzth9O2W44w" name="Browse_items_pCountry" description="[EN:pCountry]" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_GP2xcKfDEeeLzth9O2W44w" name="Browse_items_pCountry" description="[EN:pCountry]" timestamp="1506984780205" digestValue="68fd23831505313c675c1fcae2864602" lastServerName="SandboxMDM" transformerPK="">
   <searchableBusinessElements>pCountry/ISO_NumericCode</searchableBusinessElements>
   <searchableBusinessElements>pCountry/ISO_Alpha-2</searchableBusinessElements>
   <searchableBusinessElements>pCountry/ISO_Alpha-3</searchableBusinessElements>
