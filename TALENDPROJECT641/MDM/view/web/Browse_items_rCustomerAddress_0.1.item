@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_OC3DQaeNEeeLzth9O2W44w" name="Browse_items_rCustomerAddress" description="[EN:rCustomerAddress]" transformerPK="">
+  <searchableBusinessElements>rCustomerAddress/IdCustomerAddress</searchableBusinessElements>
+  <searchableBusinessElements>rCustomerAddress/FkCustomer</searchableBusinessElements>
+  <searchableBusinessElements>rCustomerAddress/FkAddress</searchableBusinessElements>
+  <searchableBusinessElements>rCustomerAddress/IsBilling</searchableBusinessElements>
+  <searchableBusinessElements>rCustomerAddress/IsContact</searchableBusinessElements>
+  <viewableBusinessElements>rCustomerAddress/IdCustomerAddress</viewableBusinessElements>
+  <viewableBusinessElements>rCustomerAddress/FkCustomer</viewableBusinessElements>
+  <viewableBusinessElements>rCustomerAddress/FkAddress</viewableBusinessElements>
+  <viewableBusinessElements>rCustomerAddress/IsBilling</viewableBusinessElements>
+  <viewableBusinessElements>rCustomerAddress/IsContact</viewableBusinessElements>
+  <isTransformerActive xmi:id="_OC3DQqeNEeeLzth9O2W44w"/>
+</mdmserverobject:WSViewE>

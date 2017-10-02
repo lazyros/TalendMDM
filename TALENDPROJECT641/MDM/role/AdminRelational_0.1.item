@@ -13,7 +13,13 @@
   <specification xmi:id="_Aj0rRaeNEeeLzth9O2W44w" admin="true" objectType="Transformer"/>
   <specification xmi:id="_Aj0rRqeNEeeLzth9O2W44w" objectType="Stored Procedure"/>
   <specification xmi:id="_Aj0rR6eNEeeLzth9O2W44w" objectType="Service"/>
-  <specification xmi:id="_Aj0rSKeNEeeLzth9O2W44w" objectType="View"/>
+  <specification xmi:id="_Aj0rSKeNEeeLzth9O2W44w" objectType="View">
+    <instance xmi:id="_N7i6UKeNEeeLzth9O2W44w" instanceName="Browse_items_rPhoneNumber"/>
+    <instance xmi:id="_N-x0gKeNEeeLzth9O2W44w" instanceName="Browse_items_rCountry"/>
+    <instance xmi:id="_OBz6YKeNEeeLzth9O2W44w" instanceName="Browse_items_rCustomer"/>
+    <instance xmi:id="_OEzkAKeNEeeLzth9O2W44w" instanceName="Browse_items_rCustomerAddress"/>
+    <instance xmi:id="_OIrXYKeNEeeLzth9O2W44w" instanceName="Browse_items_rAddress"/>
+  </specification>
   <specification xmi:id="_Aj0rSaeNEeeLzth9O2W44w" objectType="Routing Rule">
     <instance xmi:id="_Aj0rSqeNEeeLzth9O2W44w" instanceName=".*">
       <parameter></parameter>

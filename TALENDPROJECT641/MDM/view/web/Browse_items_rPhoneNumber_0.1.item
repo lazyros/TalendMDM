@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_N6_gsKeNEeeLzth9O2W44w" name="Browse_items_rPhoneNumber" description="[EN:rPhoneNumber]" transformerPK="">
+  <searchableBusinessElements>rPhoneNumber/IdPhoneNumber</searchableBusinessElements>
+  <searchableBusinessElements>rPhoneNumber/FkCustomer</searchableBusinessElements>
+  <searchableBusinessElements>rPhoneNumber/Number</searchableBusinessElements>
+  <searchableBusinessElements>rPhoneNumber/TypeEnum</searchableBusinessElements>
+  <viewableBusinessElements>rPhoneNumber/IdPhoneNumber</viewableBusinessElements>
+  <viewableBusinessElements>rPhoneNumber/FkCustomer</viewableBusinessElements>
+  <viewableBusinessElements>rPhoneNumber/Number</viewableBusinessElements>
+  <viewableBusinessElements>rPhoneNumber/TypeEnum</viewableBusinessElements>
+  <isTransformerActive xmi:id="_N6_gsaeNEeeLzth9O2W44w"/>
+</mdmserverobject:WSViewE>
