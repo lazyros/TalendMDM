@@ -161,18 +161,21 @@
 <xsd:element maxOccurs="1" minOccurs="1" name="ISO_NumericCode" type="xsd:int">
 <xsd:annotation>
 <xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">ISO Numeric Code</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="1" name="ISO_Alpha-2" type="ISO_TwoType">
 <xsd:annotation>
 <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 2 characters</xsd:appinfo>
 <xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">ISO 2-letter Code</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="1" name="ISO_Alpha-3" type="ISO_ThreeType">
 <xsd:annotation>
 <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 3 characters</xsd:appinfo>
 <xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">ISO 3-letter Code</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
 <xsd:element maxOccurs="1" minOccurs="1" name="Name" type="String255Type">
