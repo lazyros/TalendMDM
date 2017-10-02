@@ -38,9 +38,14 @@
 <xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
-<xsd:element maxOccurs="1" minOccurs="0" name="Email" type="String255Type">
+                <xsd:element maxOccurs="1" minOccurs="0" name="Email" type="String255Type">
 <xsd:annotation>
 <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>
+<xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+                <xsd:element maxOccurs="1" minOccurs="1" name="Status" type="StatusType">
+<xsd:annotation>
 <xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
@@ -228,6 +233,13 @@
 <xsd:enumeration value="Home"/>
 <xsd:enumeration value="Work"/>
 <xsd:enumeration value="Mobile"/>
+</xsd:restriction>
+</xsd:simpleType>
+    <xsd:simpleType name="StatusType">
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="Pending validation"/>
+<xsd:enumeration value="Validated"/>
+<xsd:enumeration value="Rejected"/>
 </xsd:restriction>
 </xsd:simpleType>
 </xsd:schema>
