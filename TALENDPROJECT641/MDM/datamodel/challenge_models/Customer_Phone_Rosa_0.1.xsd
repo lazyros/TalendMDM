@@ -128,7 +128,7 @@
   <xsd:element name="pPhone"> 
     <xsd:complexType> 
       <xsd:all> 
-        <xsd:element name="pPhoneId" type="xsd:string"/>     
+        <xsd:element name="pPhoneId" type="UUID"/>     
                 <xsd:element maxOccurs="1" minOccurs="0" name="PhoneNumber" type="PhoneNumberType"/>
             </xsd:all> 
     </xsd:complexType>  
@@ -137,4 +137,7 @@
       <xsd:field xpath="pPhoneId"/> 
     </xsd:unique> 
   </xsd:element> 
+    <xsd:simpleType name="UUID">
+<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
 </xsd:schema>
