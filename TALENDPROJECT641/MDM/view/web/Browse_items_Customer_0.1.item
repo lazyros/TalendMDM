@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_NqrXwaSjEee3X_8LIffIuQ" name="Browse_items_Customer" description="[EN:Customer]" timestamp="1506969387420" digestValue="d8f830817f5912a55064a571c46070c6" lastServerName="SandboxMDM" transformerPK="">
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_NqrXwaSjEee3X_8LIffIuQ" name="Browse_items_Customer" description="[EN:Customer]" timestamp="1506970618626" digestValue="f6d618b5d91cef2869eaf06007c3e962" lastServerName="SandboxMDM" transformerPK="">
   <searchableBusinessElements>Customer/FirstName</searchableBusinessElements>
   <searchableBusinessElements>Customer/LastName</searchableBusinessElements>
   <searchableBusinessElements>Customer/DateOfBirth</searchableBusinessElements>
