@@ -57,13 +57,13 @@
                 <xsd:element maxOccurs="1" minOccurs="0" name="LegacyId_Sys1" type="String255Type">
 <xsd:annotation>
 <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>
-<xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
+
 </xsd:annotation>
 </xsd:element>
                 <xsd:element maxOccurs="1" minOccurs="0" name="LegacyId_Sys2" type="String255Type">
 <xsd:annotation>
 <xsd:appinfo source="X_Facet_EN">The length of the value for this field must not exceed 255 characters</xsd:appinfo>
-<xsd:appinfo source="X_Write">AdminCustomer</xsd:appinfo>
+
 </xsd:annotation>
 </xsd:element>
                 <xsd:element maxOccurs="1" minOccurs="0" name="StagingId" type="String255Type">
