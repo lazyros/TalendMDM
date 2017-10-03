@@ -1,0 +1,287 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" blockDefault="" elementFormDefault="unqualified" finalDefault="">  
+  <xsd:import namespace="http://www.w3.org/2001/XMLSchema"/>  
+  <xsd:element abstract="false" name="Agent" nillable="false" type="AgentType"> 
+        <xsd:annotation>
+
+
+
+
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+</xsd:annotation> 
+        <xsd:unique name="Agent">
+<xsd:selector xpath="."/>
+            <xsd:field xpath="AgentId"/>
+        </xsd:unique>
+    </xsd:element>  
+  <xsd:complexType abstract="false" mixed="false" name="AgentType"> 
+    <xsd:all maxOccurs="1" minOccurs="1"> 
+            <xsd:element maxOccurs="1" minOccurs="1" name="AgentId" nillable="false" type="UUID"> 
+        <xsd:annotation> 
+          <xsd:appinfo source="X_Label_EN">Identifier</xsd:appinfo>  
+          <xsd:appinfo source="X_Label_FR">Identifiant</xsd:appinfo> 
+        
+
+
+
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+</xsd:annotation> 
+      </xsd:element>  
+            <xsd:element maxOccurs="1" minOccurs="1" name="Firstname" nillable="false" type="xsd:string"> 
+        <xsd:annotation> 
+            
+           
+        
+
+
+
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Firstname</xsd:appinfo>
+<xsd:appinfo source="X_Label_FR">Prénom</xsd:appinfo>
+</xsd:annotation> 
+      </xsd:element>  
+            <xsd:element maxOccurs="1" minOccurs="1" name="Lastname" nillable="false" type="xsd:string"> 
+        <xsd:annotation> 
+          <xsd:appinfo source="X_Label_EN">Lastname</xsd:appinfo>  
+          <xsd:appinfo source="X_Label_FR">Nom</xsd:appinfo> 
+        
+
+
+
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+</xsd:annotation> 
+      </xsd:element>  
+            <xsd:element maxOccurs="1" minOccurs="1" name="Shortname" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+
+
+<xsd:appinfo source="X_Label_EN">Shortname</xsd:appinfo>
+<xsd:appinfo source="X_Label_FR">Nom abrégé</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="AgencyFk" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_ForeignKey_NotSep">false</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey">Agency/AgencyId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Agency/Name</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Agency/City</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+
+
+
+
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+            <xsd:element maxOccurs="1" minOccurs="1" name="CommissionCode" nillable="false" type="CommissionCodes"> 
+        <xsd:annotation> 
+          <xsd:appinfo source="X_Label_EN">Commission Code</xsd:appinfo>  
+          <xsd:appinfo source="X_Label_FR">Code Commission</xsd:appinfo> 
+        <xsd:appinfo source="X_Description_EN">Value between 1 (lowest) and 4 (highest) which determines the agent's commission rate</xsd:appinfo>
+
+
+
+
+
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+</xsd:annotation> 
+      </xsd:element>  
+            <xsd:element maxOccurs="1" minOccurs="0" name="CommissionChange" nillable="false" type="CommissionChangeType"> 
+        <xsd:annotation> 
+          <xsd:appinfo source="X_Label_EN">Commission code workflow</xsd:appinfo>  
+          <xsd:appinfo source="X_Label_FR">Workflow code commission</xsd:appinfo>  
+            
+           
+        
+
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Description_EN">Commission code changes are subject to approval by the General Manager</xsd:appinfo>
+<xsd:appinfo source="X_Description_FR">Le changement de code commission est soumis à l'approbation du General Manager</xsd:appinfo>
+</xsd:annotation> 
+      </xsd:element>  
+            <xsd:element maxOccurs="1" minOccurs="1" name="StartDate" nillable="false" type="xsd:date"> 
+        <xsd:annotation> 
+            
+           
+        
+
+
+
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Start date</xsd:appinfo>
+<xsd:appinfo source="X_Label_FR">Date d'entrée</xsd:appinfo>
+</xsd:annotation> 
+      </xsd:element>  
+            <xsd:element maxOccurs="1" minOccurs="0" name="TermDate" nillable="false" type="xsd:date"> 
+        <xsd:annotation> 
+          <xsd:appinfo source="X_Label_EN">Termination Date</xsd:appinfo>  
+          <xsd:appinfo source="X_Label_FR">Date de sortie</xsd:appinfo> 
+        
+
+
+
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+</xsd:annotation> 
+      </xsd:element>  
+            <xsd:element maxOccurs="1" minOccurs="0" name="Status" nillable="false" type="xsd:string"> 
+        <xsd:annotation> 
+          <xsd:appinfo source="X_Label_EN">Status</xsd:appinfo>  
+          <xsd:appinfo source="X_Label_FR">Statut</xsd:appinfo> 
+        
+
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+</xsd:annotation> 
+      </xsd:element> 
+        </xsd:all> 
+  </xsd:complexType>  
+  <xsd:simpleType name="CommissionCodes"> 
+    <xsd:restriction base="xsd:string"> 
+      <xsd:enumeration value="1"/>  
+      <xsd:enumeration value="2"/>  
+      <xsd:enumeration value="3"/>  
+      <xsd:enumeration value="4"/> 
+    </xsd:restriction> 
+  </xsd:simpleType>  
+  <xsd:element abstract="false" name="Agency" nillable="false" type="AgencyType"> 
+        <xsd:annotation>
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+</xsd:annotation>
+        <xsd:unique name="Agency"> 
+      <xsd:selector xpath="."/>   
+            <xsd:field xpath="AgencyId"/>
+        </xsd:unique> 
+  </xsd:element>  
+  <xsd:complexType abstract="false" mixed="false" name="AgencyType"> 
+    <xsd:all maxOccurs="1" minOccurs="1"> 
+      <xsd:element maxOccurs="1" minOccurs="1" name="AgencyId" nillable="false" type="AgencyID">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Facet_EN">The ID must be 4 characters long</xsd:appinfo>
+<xsd:appinfo source="X_Description_EN">The ID must be 4 characters long</xsd:appinfo>
+<xsd:appinfo source="X_Label_EN">Identifier</xsd:appinfo>
+<xsd:appinfo source="X_Label_FR">Identifiant</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>  
+      <xsd:element maxOccurs="1" minOccurs="1" name="Name" nillable="false" type="xsd:string"> 
+        <xsd:annotation> 
+          <xsd:appinfo source="X_Label_EN">Name</xsd:appinfo>  
+          <xsd:appinfo source="X_Label_FR">Nom</xsd:appinfo> 
+        <xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+</xsd:annotation> 
+      </xsd:element>  
+      <xsd:element maxOccurs="1" minOccurs="0" name="City" nillable="false" type="xsd:string"> 
+        <xsd:annotation> 
+          <xsd:appinfo source="X_Label_EN">City</xsd:appinfo>  
+          <xsd:appinfo source="X_Label_FR">Ville</xsd:appinfo> 
+        </xsd:annotation> 
+      </xsd:element>  
+      <xsd:element maxOccurs="1" minOccurs="0" name="State" nillable="false" type="xsd:string"> 
+        <xsd:annotation> 
+          <xsd:appinfo source="X_Label_EN">State</xsd:appinfo>  
+          <xsd:appinfo source="X_Label_FR">Etat</xsd:appinfo> 
+        </xsd:annotation> 
+      </xsd:element>  
+      <xsd:element maxOccurs="1" minOccurs="0" name="Zip" nillable="false" type="xsd:string"> 
+        <xsd:annotation> 
+          <xsd:appinfo source="X_Label_EN">Zip code</xsd:appinfo>  
+          <xsd:appinfo source="X_Label_FR">Code postal</xsd:appinfo> 
+        <xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+</xsd:annotation> 
+      </xsd:element>  
+      <xsd:element maxOccurs="1" minOccurs="0" name="MoreInfo" nillable="false" type="xsd:string"> 
+        <xsd:annotation> 
+          <xsd:appinfo source="X_Label_EN">More information</xsd:appinfo>  
+          <xsd:appinfo source="X_Label_FR">Plus d'info</xsd:appinfo> 
+        </xsd:annotation> 
+      </xsd:element> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="RegionFk" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey">Region/RegionId</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKey_NotSep">false</xsd:appinfo>
+<xsd:appinfo source="X_ForeignKeyInfo">Region/Label</xsd:appinfo>
+<xsd:appinfo source="X_Retrieve_FKinfos">true</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+        </xsd:all> 
+  </xsd:complexType>  
+  <xsd:complexType abstract="false" mixed="false" name="CommissionChangeType"> 
+    <xsd:all maxOccurs="1" minOccurs="1"> 
+      <xsd:element maxOccurs="1" minOccurs="0" name="ComChangeCode" nillable="false" type="CommissionCodes"> 
+        <xsd:annotation> 
+          <xsd:appinfo source="X_Label_EN">New commission code</xsd:appinfo>  
+          <xsd:appinfo source="X_Label_FR">Nouveau code commission</xsd:appinfo> 
+        
+
+
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+</xsd:annotation> 
+      </xsd:element>  
+      <xsd:element maxOccurs="1" minOccurs="0" name="ComChangeStatus" nillable="false" type="ComStatus"> 
+        <xsd:annotation> 
+          <xsd:appinfo source="X_Label_EN">Approval Status</xsd:appinfo>  
+          <xsd:appinfo source="X_Label_FR">Statut approbation</xsd:appinfo> 
+        
+
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+</xsd:annotation> 
+      </xsd:element> 
+    </xsd:all> 
+  </xsd:complexType> 
+    <xsd:simpleType name="AgencyID">
+<xsd:restriction base="xsd:string">
+<xsd:length value="4"/>
+</xsd:restriction>
+</xsd:simpleType>
+    <xsd:simpleType name="ComStatus">
+<xsd:restriction base="xsd:string">
+<xsd:enumeration value="Approved"/>
+<xsd:enumeration value="Pending"/>
+<xsd:enumeration value="Rejected"/>
+</xsd:restriction>
+</xsd:simpleType>
+    <xsd:simpleType name="PICTURE">
+<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
+    <xsd:simpleType name="URL">
+<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
+    <xsd:element name="Region">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType>
+<xsd:all>
+<xsd:element maxOccurs="1" minOccurs="1" name="RegionId" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+<xsd:element maxOccurs="1" minOccurs="1" name="Label" type="xsd:string">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
+</xsd:all>
+</xsd:complexType>
+<xsd:unique name="Region">
+<xsd:selector xpath="."/>
+<xsd:field xpath="RegionId"/>
+</xsd:unique>
+</xsd:element>
+    <xsd:simpleType name="UUID">
+<xsd:restriction base="xsd:string"/>
+</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_KssC4UrTEeSKF5QXMepjXg" name="Browse_items_Agency" description="[EN:Agency]" timestamp="1440929056352" digestValue="173d0101f730e81ebf9c4c4229f365be" transformerPK="">
+  <searchableBusinessElements>Agency/AgencyId</searchableBusinessElements>
+  <searchableBusinessElements>Agency/Name</searchableBusinessElements>
+  <searchableBusinessElements>Agency/City</searchableBusinessElements>
+  <searchableBusinessElements>Agency/State</searchableBusinessElements>
+  <searchableBusinessElements>Agency/Zip</searchableBusinessElements>
+  <viewableBusinessElements>Agency/AgencyId</viewableBusinessElements>
+  <viewableBusinessElements>Agency/Name</viewableBusinessElements>
+  <viewableBusinessElements>Agency/City</viewableBusinessElements>
+  <viewableBusinessElements>Agency/State</viewableBusinessElements>
+  <viewableBusinessElements>Agency/Zip</viewableBusinessElements>
+  <isTransformerActive xmi:id="_F4BeUAC4EeaaQdr7Sg5r5Q"/>
+</mdmserverobject:WSViewE>
