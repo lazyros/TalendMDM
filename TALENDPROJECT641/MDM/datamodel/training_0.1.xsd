@@ -8,6 +8,7 @@
 
 <xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
 <xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Schematron">&lt;pattern name="AgentValidation" &gt; &lt;rule context="Shortname"&gt;&lt;assert test=". = concat(substring(../Firstname,1,3),substring(../Lastname,1,2))"&gt;&lt;![CDATA[[EN:The short name must follow the following rule: first 3 characters of first name + first 2 characters of last name]]]&gt;&lt;/assert&gt;&lt;/rule&gt; &lt;rule context="."&gt;&lt;assert test="translate(TermDate,&amp;quot; &amp;quot;,&amp;quot;&amp;quot;) = &amp;quot;&amp;quot; or number(translate(StartDate,&amp;quot;-&amp;quot;,&amp;quot;&amp;quot;)) &amp;lt; number(translate(TermDate,&amp;quot;-&amp;quot;,&amp;quot;&amp;quot;))"&gt;&lt;![CDATA[[EN:The start date must be before the termination date]]]&gt;&lt;/assert&gt;&lt;/rule&gt; &lt;/pattern&gt;</xsd:appinfo>
 </xsd:annotation> 
         <xsd:unique name="Agent">
 <xsd:selector xpath="."/>
@@ -16,6 +17,12 @@
     </xsd:element>  
   <xsd:complexType abstract="false" mixed="false" name="AgentType"> 
     <xsd:all maxOccurs="1" minOccurs="1"> 
+            <xsd:element maxOccurs="1" minOccurs="0" name="Picture" type="PICTURE">
+<xsd:annotation>
+<xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+</xsd:annotation>
+</xsd:element>
             <xsd:element maxOccurs="1" minOccurs="1" name="AgentId" nillable="false" type="UUID"> 
         <xsd:annotation> 
           <xsd:appinfo source="X_Label_EN">Identifier</xsd:appinfo>  
@@ -198,7 +205,7 @@
         <xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
 </xsd:annotation> 
       </xsd:element>  
-      <xsd:element maxOccurs="1" minOccurs="0" name="MoreInfo" nillable="false" type="xsd:string"> 
+      <xsd:element maxOccurs="1" minOccurs="0" name="MoreInfo" nillable="false" type="URL"> 
         <xsd:annotation> 
           <xsd:appinfo source="X_Label_EN">More information</xsd:appinfo>  
           <xsd:appinfo source="X_Label_FR">Plus d'info</xsd:appinfo> 
