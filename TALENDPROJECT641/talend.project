@@ -197,6 +197,7 @@
     <deletedFolders>MDM/role/challenge_models</deletedFolders>
     <deletedFolders>MDM/role/sample_models</deletedFolders>
     <deletedFolders>MDM/view/web/challenge_models</deletedFolders>
+    <deletedFolders>MDM/view/web/sample_models</deletedFolders>
     <migrationTask xmi:id="_TeaggKRtEeeL8dXu-sPh5Q" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_TeaggaRtEeeL8dXu-sPh5Q" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_TeaggqRtEeeL8dXu-sPh5Q" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
