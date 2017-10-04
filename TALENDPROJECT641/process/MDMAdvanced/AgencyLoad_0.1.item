@@ -221,16 +221,16 @@
       <column comment="" key="false" length="0" name="RegionFk" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="AgenciesOut">
-        <mapperTableEntries name="AgencyId" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Name" type="id_String" nullable="true"/>
-        <mapperTableEntries name="City" type="id_String" nullable="true"/>
-        <mapperTableEntries name="State" type="id_String" nullable="true"/>
-        <mapperTableEntries name="Zip" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MoreInfo" type="id_String" nullable="true"/>
-        <mapperTableEntries name="RegionFk" type="id_String" nullable="true"/>
+        <mapperTableEntries name="AgencyId" expression="AgenciesIn.ID " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Name" expression="AgenciesIn.NAME " type="id_String" nullable="true"/>
+        <mapperTableEntries name="City" expression="AgenciesIn.CITY " type="id_String" nullable="true"/>
+        <mapperTableEntries name="State" expression="AgenciesIn.STATE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Zip" expression="AgenciesIn.POSTALCODE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MoreInfo" expression="" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RegionFk" expression="MDM.createFK(AgenciesIn.REGION) " type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="AgenciesIn" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="ID" type="id_String" nullable="true"/>
