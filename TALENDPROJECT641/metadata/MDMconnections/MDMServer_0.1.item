@@ -11,6 +11,22 @@
       <root xmi:id="_SdJjhqkdEeeL_bLdH1iwJQ" XMLPath="/Agency/RegionFk" RelatedColumn="RegionFk" Attribute="main" Order="8" Type="id_String"/>
       <loop xmi:id="_SdJjh6kdEeeL_bLdH1iwJQ" XMLPath="/Agency/AgencyId" RelatedColumn="AgencyId" Attribute="main" Order="2" Type="id_String"/>
     </schemas>
+    <schemas xmi:id="_axvP4KkdEeeL_bLdH1iwJQ" label="AgentOut" LoopLimit="50" conceptType="OUTPUT">
+      <root xmi:id="_3ajYgKkfEeeL_bLdH1iwJQ" XMLPath="/Agent" RelatedColumn="" Attribute="main" Order="29" Type="id_String"/>
+      <root xmi:id="_3ajYgakfEeeL_bLdH1iwJQ" XMLPath="/Agent/AgentId" RelatedColumn="AgentId" Attribute="main" Order="31" Type="id_String"/>
+      <root xmi:id="_3ajYgqkfEeeL_bLdH1iwJQ" XMLPath="/Agent/Firstname" RelatedColumn="Firstname" Attribute="main" Order="32" Type="id_String"/>
+      <root xmi:id="_3ajYg6kfEeeL_bLdH1iwJQ" XMLPath="/Agent/Lastname" RelatedColumn="Lastname" Attribute="main" Order="33" Type="id_String"/>
+      <root xmi:id="_3ajYhKkfEeeL_bLdH1iwJQ" XMLPath="/Agent/Shortname" RelatedColumn="Shortname" Attribute="main" Order="34" Type="id_String"/>
+      <root xmi:id="_3ajYhakfEeeL_bLdH1iwJQ" XMLPath="/Agent/AgencyFk" RelatedColumn="AgencyFk" Attribute="main" Order="35" Type="id_String"/>
+      <root xmi:id="_3ajYhqkfEeeL_bLdH1iwJQ" XMLPath="/Agent/CommissionCode" RelatedColumn="CommissionCode" Attribute="main" Order="36" Type="id_String"/>
+      <root xmi:id="_3ajYh6kfEeeL_bLdH1iwJQ" XMLPath="/Agent/CommissionChange" RelatedColumn="CommissionChange" Attribute="main" Order="37" Type="id_String"/>
+      <root xmi:id="_3ajYiKkfEeeL_bLdH1iwJQ" XMLPath="/Agent/CommissionChange/ComChangeCode" RelatedColumn="ComChangeCode" Attribute="branch" Order="38" Type="id_String"/>
+      <root xmi:id="_3ajYiakfEeeL_bLdH1iwJQ" XMLPath="/Agent/CommissionChange/ComChangeStatus" RelatedColumn="ComChangeStatus" Attribute="branch" Order="39" Type="id_String"/>
+      <root xmi:id="_3ajYiqkfEeeL_bLdH1iwJQ" XMLPath="/Agent/StartDate" RelatedColumn="StartDate" Attribute="main" Order="40" Type="id_Date"/>
+      <root xmi:id="_3ajYi6kfEeeL_bLdH1iwJQ" XMLPath="/Agent/TermDate" RelatedColumn="TermDate" Attribute="main" Order="41" Type="id_Date"/>
+      <root xmi:id="_3ajYjKkfEeeL_bLdH1iwJQ" XMLPath="/Agent/Status" RelatedColumn="Status" Attribute="main" Order="42" Type="id_String"/>
+      <loop xmi:id="_3ajYjakfEeeL_bLdH1iwJQ" XMLPath="/Agent/Picture" RelatedColumn="Picture" Attribute="main" Order="30" Type="id_String"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_XGjXkKkdEeeL_bLdH1iwJQ" name="training" dataManager="_E5xeEKkdEeeL_bLdH1iwJQ">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XGjXkakdEeeL_bLdH1iwJQ" id="_SdCOwKkdEeeL_bLdH1iwJQ" label="AgencyOut">
@@ -21,6 +37,20 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XGj-pKkdEeeL_bLdH1iwJQ" label="Zip" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XGj-pakdEeeL_bLdH1iwJQ" label="MoreInfo" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XGj-pqkdEeeL_bLdH1iwJQ" label="RegionFk" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_370SgKkfEeeL_bLdH1iwJQ" id="_bnP7kKkdEeeL_bLdH1iwJQ" label="AgentOut">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3705kKkfEeeL_bLdH1iwJQ" label="Picture" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3705kakfEeeL_bLdH1iwJQ" label="AgentId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3705kqkfEeeL_bLdH1iwJQ" label="Firstname" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3705k6kfEeeL_bLdH1iwJQ" label="Lastname" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3705lKkfEeeL_bLdH1iwJQ" label="Shortname" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3705lakfEeeL_bLdH1iwJQ" label="AgencyFk" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3705lqkfEeeL_bLdH1iwJQ" label="CommissionCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3705l6kfEeeL_bLdH1iwJQ" label="ComChangeCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3705mKkfEeeL_bLdH1iwJQ" label="ComChangeStatus" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3705makfEeeL_bLdH1iwJQ" label="StartDate" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3705mqkfEeeL_bLdH1iwJQ" label="TermDate" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3705m6kfEeeL_bLdH1iwJQ" label="Status" talendType="id_String"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
