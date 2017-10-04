@@ -222,7 +222,7 @@
       <column comment="" key="false" length="0" name="RegionFk" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="AgenciesOut">
         <mapperTableEntries name="AgencyId" expression="AgenciesIn.ID " type="id_String" nullable="true"/>
@@ -306,7 +306,7 @@
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_E5ct8KkdEeeL_bLdH1iwJQ - AgencyOut" show="false"/>
     <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="true"/>
-    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="AgencyId"/>
+    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="xml"/>
     <elementParameter field="PREV_COLUMN_LIST" name="DOCUMENT" value="AgencyId" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
