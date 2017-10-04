@@ -238,6 +238,26 @@
       <relatedItems xmi:id="_xFO0dalPEeeL_bLdH1iwJQ" id="_E5ct8KkdEeeL_bLdH1iwJQ - AgentOut" version="Latest" type="schema"/>
       <relatedItems xmi:id="_xFO0dqlPEeeL_bLdH1iwJQ" id="_E5ct8KkdEeeL_bLdH1iwJQ - AgencyOut" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_pr05sKlWEeeL_bLdH1iwJQ">
+      <baseItem xmi:id="_pr05salWEeeL_bLdH1iwJQ" id="_K9GikKlWEeeL_bLdH1iwJQ" version="0.1" type="job"/>
+      <relatedItems xmi:id="_pr05sqlWEeeL_bLdH1iwJQ" id="_E5ct8KkdEeeL_bLdH1iwJQ" version="Latest" type="property"/>
+      <relatedItems xmi:id="_pr05s6lWEeeL_bLdH1iwJQ" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pr05tKlWEeeL_bLdH1iwJQ" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pr05talWEeeL_bLdH1iwJQ" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pr05tqlWEeeL_bLdH1iwJQ" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pr05t6lWEeeL_bLdH1iwJQ" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pr05uKlWEeeL_bLdH1iwJQ" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pr05ualWEeeL_bLdH1iwJQ" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pr05uqlWEeeL_bLdH1iwJQ" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pr05u6lWEeeL_bLdH1iwJQ" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pr05vKlWEeeL_bLdH1iwJQ" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pr05valWEeeL_bLdH1iwJQ" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pr05vqlWEeeL_bLdH1iwJQ" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pr05v6lWEeeL_bLdH1iwJQ" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pr05wKlWEeeL_bLdH1iwJQ" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pr05walWEeeL_bLdH1iwJQ" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_pr05wqlWEeeL_bLdH1iwJQ" id="TalendStringUtil" version="Latest" type="routine"/>
+    </ItemsRelations>
     <deletedFolders>MDM/datacontainer/sample_models</deletedFolders>
     <deletedFolders>MDM/datacontainer/challenge_models</deletedFolders>
     <deletedFolders>MDM/datamodel/challenge_models</deletedFolders>
