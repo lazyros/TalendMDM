@@ -1,2 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TalendMetadata:MDMConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_E5xeEKkdEeeL_bLdH1iwJQ" name="MDMServer" label="MDMServer" version="s60" Username="administrator" Password="gYS5jltDdzLSfHIqaDxbXg==" Datamodel="training" Datacluster="training" serverUrl="http://server01:8180/talendmdm/services/soap"/>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:org.talend.cwm.xml="http://www.talend.org/cwm/resource/xml/2010">
+  <TalendMetadata:MDMConnection xmi:id="_E5xeEKkdEeeL_bLdH1iwJQ" name="MDMServer" label="MDMServer" dataPackage="_XGjXkKkdEeeL_bLdH1iwJQ" version="s60" Username="administrator" Password="gYS5jltDdzLSfHIqaDxbXg==" Datamodel="training" Datacluster="training" serverUrl="http://server01:8180/talendmdm/services/soap">
+    <schemas xmi:id="_IH8qQKkdEeeL_bLdH1iwJQ" label="AgencyOut" LoopLimit="50" conceptType="OUTPUT">
+      <root xmi:id="_SdJjgKkdEeeL_bLdH1iwJQ" XMLPath="/Agency" RelatedColumn="" Attribute="main" Order="1" Type="id_String"/>
+      <root xmi:id="_SdJjgakdEeeL_bLdH1iwJQ" XMLPath="/Agency/Name" RelatedColumn="Name" Attribute="main" Order="3" Type="id_String"/>
+      <root xmi:id="_SdJjgqkdEeeL_bLdH1iwJQ" XMLPath="/Agency/City" RelatedColumn="City" Attribute="main" Order="4" Type="id_String"/>
+      <root xmi:id="_SdJjg6kdEeeL_bLdH1iwJQ" XMLPath="/Agency/State" RelatedColumn="State" Attribute="main" Order="5" Type="id_String"/>
+      <root xmi:id="_SdJjhKkdEeeL_bLdH1iwJQ" XMLPath="/Agency/Zip" RelatedColumn="Zip" Attribute="main" Order="6" Type="id_String"/>
+      <root xmi:id="_SdJjhakdEeeL_bLdH1iwJQ" XMLPath="/Agency/MoreInfo" RelatedColumn="MoreInfo" Attribute="main" Order="7" Type="id_String"/>
+      <root xmi:id="_SdJjhqkdEeeL_bLdH1iwJQ" XMLPath="/Agency/RegionFk" RelatedColumn="RegionFk" Attribute="main" Order="8" Type="id_String"/>
+      <loop xmi:id="_SdJjh6kdEeeL_bLdH1iwJQ" XMLPath="/Agency/AgencyId" RelatedColumn="AgencyId" Attribute="main" Order="2" Type="id_String"/>
+    </schemas>
+  </TalendMetadata:MDMConnection>
+  <org.talend.cwm.xml:TdXmlSchema xmi:id="_XGjXkKkdEeeL_bLdH1iwJQ" name="training" dataManager="_E5xeEKkdEeeL_bLdH1iwJQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XGjXkakdEeeL_bLdH1iwJQ" id="_SdCOwKkdEeeL_bLdH1iwJQ" label="AgencyOut">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XGj-oKkdEeeL_bLdH1iwJQ" label="AgencyId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XGj-oakdEeeL_bLdH1iwJQ" label="Name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XGj-oqkdEeeL_bLdH1iwJQ" label="City" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XGj-o6kdEeeL_bLdH1iwJQ" label="State" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XGj-pKkdEeeL_bLdH1iwJQ" label="Zip" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XGj-pakdEeeL_bLdH1iwJQ" label="MoreInfo" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_XGj-pqkdEeeL_bLdH1iwJQ" label="RegionFk" talendType="id_String"/>
+    </ownedElement>
+  </org.talend.cwm.xml:TdXmlSchema>
+</xmi:XMI>
