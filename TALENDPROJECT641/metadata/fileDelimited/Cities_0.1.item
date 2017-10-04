@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_EPadMKlDEeeL_bLdH1iwJQ" name="Cities" dataPackage="_EPadMalDEeeL_bLdH1iwJQ" Server="Localhost 127.0.0.1" FilePath="/Users/rosa/Documents/TG/Talend training/MDM_Advanced/Lab_Files/Cities.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_EPadMalDEeeL_bLdH1iwJQ" name="default" dataManager="_EPadMKlDEeeL_bLdH1iwJQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_EPadMqlDEeeL_bLdH1iwJQ" id="_BxhT4KlCEeeL_bLdH1iwJQ" label="Cities">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EPadM6lDEeeL_bLdH1iwJQ" label="zip" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EPadNKlDEeeL_bLdH1iwJQ" label="city" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EPadNalDEeeL_bLdH1iwJQ" label="state" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EPadNqlDEeeL_bLdH1iwJQ" label="latitude" length="-1" precision="7" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EPadN6lDEeeL_bLdH1iwJQ" label="longitude" length="-1" precision="7" talendType="id_Double" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EPadOKlDEeeL_bLdH1iwJQ" label="timezone" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EPadOalDEeeL_bLdH1iwJQ" label="dst" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_EPadOqlDEeeL_bLdH1iwJQ" label="REGION" length="-1" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
