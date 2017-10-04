@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSRoutingRuleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_gJRokKlaEeeL_bLdH1iwJQ" name="CallJob_SimpleTrigger" description="Trigger that calls the Talend Job: SimpleTrigger" concept="Update" serviceJNDI="amalto/local/service/callJob" parameters="&lt;configuration>&#xA;&lt;url>ltj://SimpleTrigger/0.1&lt;/url>&lt;/configuration>&#xA;" condition="C1 Or C2 Or C3">
+<mdmserverobject:WSRoutingRuleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_gJRokKlaEeeL_bLdH1iwJQ" name="CallJob_SimpleTrigger" description="Trigger that calls the Talend Job: SimpleTrigger" timestamp="1507159408718" digestValue="a43e8ea4d4353badc69282eb639f44a5" lastServerName="SandboxMDM" concept="Update" serviceJNDI="amalto/local/service/callJob" parameters="&lt;configuration>&#xA;&lt;url>ltj://SimpleTrigger/0.1&lt;/url>&lt;/configuration>&#xA;" condition="C1 Or C2 Or C3">
   <wsRoutingRuleExpressions xmi:id="_gJS2sKlaEeeL_bLdH1iwJQ" name="C1" xpath="Update/OperationType" value="CREATE">
     <wsOperator xmi:id="_gJS2salaEeeL_bLdH1iwJQ" value="CONTAINS"/>
   </wsRoutingRuleExpressions>
