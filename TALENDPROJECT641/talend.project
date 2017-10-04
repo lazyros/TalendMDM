@@ -210,6 +210,9 @@
       <relatedItems xmi:id="_mrpik6kwEeeL_bLdH1iwJQ" id="TalendStringUtil" version="Latest" type="routine"/>
       <relatedItems xmi:id="_mrpilKkwEeeL_bLdH1iwJQ" id="_E5ct8KkdEeeL_bLdH1iwJQ - AgencyOut" version="Latest" type="schema"/>
       <relatedItems xmi:id="_mrpilakwEeeL_bLdH1iwJQ" id="_dAL8EKkrEeeL_bLdH1iwJQ - metadata" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_Nubf4KlEEeeL_bLdH1iwJQ" id="_EPZPEKlDEeeL_bLdH1iwJQ" version="Latest" type="property"/>
+      <relatedItems xmi:id="_Nubf4alEEeeL_bLdH1iwJQ" id="GoogleMapURL" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_Nubf4qlEEeeL_bLdH1iwJQ" id="_EPZPEKlDEeeL_bLdH1iwJQ - Cities" version="Latest" type="schema"/>
     </ItemsRelations>
     <deletedFolders>MDM/datacontainer/sample_models</deletedFolders>
     <deletedFolders>MDM/datacontainer/challenge_models</deletedFolders>
