@@ -277,7 +277,7 @@
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_E5ct8KkdEeeL_bLdH1iwJQ - AgencyOut" show="false"/>
     <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="true"/>
-    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="Picture"/>
+    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="xml"/>
     <elementParameter field="PREV_COLUMN_LIST" name="DOCUMENT" value="Picture" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
