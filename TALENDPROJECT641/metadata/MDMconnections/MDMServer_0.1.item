@@ -27,6 +27,13 @@
       <root xmi:id="_3ajYjKkfEeeL_bLdH1iwJQ" XMLPath="/Agent/Status" RelatedColumn="Status" Attribute="main" Order="42" Type="id_String"/>
       <loop xmi:id="_3ajYjakfEeeL_bLdH1iwJQ" XMLPath="/Agent/Picture" RelatedColumn="Picture" Attribute="main" Order="30" Type="id_String"/>
     </schemas>
+    <schemas xmi:id="_tw5HEKlVEeeL_bLdH1iwJQ" label="AgentIn" LoopExpression="/Agent" LoopLimit="50">
+      <conceptTargets xmi:id="_7sW8YKlVEeeL_bLdH1iwJQ" targetName="AgentId" RelativeLoopExpression="AgentId"/>
+      <conceptTargets xmi:id="_7sW8YalVEeeL_bLdH1iwJQ" targetName="Firstname" RelativeLoopExpression="Firstname"/>
+      <conceptTargets xmi:id="_7sW8YqlVEeeL_bLdH1iwJQ" targetName="Lastname" RelativeLoopExpression="Lastname"/>
+      <conceptTargets xmi:id="_7sW8Y6lVEeeL_bLdH1iwJQ" targetName="Shortname" RelativeLoopExpression="Shortname"/>
+      <conceptTargets xmi:id="_7sW8aalVEeeL_bLdH1iwJQ" targetName="StartDate" RelativeLoopExpression="StartDate"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_XGjXkKkdEeeL_bLdH1iwJQ" name="training" dataManager="_E5xeEKkdEeeL_bLdH1iwJQ">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XGjXkakdEeeL_bLdH1iwJQ" id="_SdCOwKkdEeeL_bLdH1iwJQ" label="AgencyOut">
@@ -51,6 +58,13 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3705makfEeeL_bLdH1iwJQ" label="StartDate" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3705mqkfEeeL_bLdH1iwJQ" label="TermDate" talendType="id_Date" pattern="&quot;yyyy-MM-dd&quot;"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_3705m6kfEeeL_bLdH1iwJQ" label="Status" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_HzIg8KlWEeeL_bLdH1iwJQ" id="_HzGrwKlWEeeL_bLdH1iwJQ" label="AgentIn">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HzIg8alWEeeL_bLdH1iwJQ" label="AgentId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HzIg8qlWEeeL_bLdH1iwJQ" label="Firstname" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HzIg86lWEeeL_bLdH1iwJQ" label="Lastname" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HzIg9KlWEeeL_bLdH1iwJQ" label="Shortname" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HzIg9alWEeeL_bLdH1iwJQ" label="StartDate" talendType="id_Date"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
