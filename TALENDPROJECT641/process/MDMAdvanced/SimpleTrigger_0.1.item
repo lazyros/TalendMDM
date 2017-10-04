@@ -122,7 +122,7 @@
   </node>
   <node componentName="tFileOutputXML" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="320" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputXML_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/Users/rosa/Documents/TG/Talend training/MDM_Advanced/Temp/out.xml&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Temp/out.xml&quot;"/>
     <elementParameter field="CHECK" name="INPUT_IS_DOCUMENT" value="true"/>
     <elementParameter field="COLUMN_LIST" name="DOCUMENT_COL" value="MDM_Message"/>
     <elementParameter field="TEXT" name="ROW_TAG" value="&quot;row&quot;" show="false"/>
