@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSTransformerV2E xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_SoqBUKoMEee96aJ4KpltLA" name="Runnable_Agent#StartWorkflow_wfAgentCommission" description="Runnable_Agent#StartWorkflow_wfAgentCommission">
+  <processSteps xmi:id="_SoqBUaoMEee96aJ4KpltLA" pluginJNDI="amalto/local/transformer/plugin/workflowcontexttrigger" description="Invoke the workflow" parameters="&lt;parameters>&#xA;&lt;processId>wfAgentCommission&lt;/processId>&lt;processVersion>1.0&lt;/processVersion>&#xA;&lt;defaultDataModel>training&lt;/defaultDataModel>&lt;/parameters>">
+    <inputMappings xmi:id="_SoqBUqoMEee96aJ4KpltLA" pipelineVariable="_DEFAULT_" pluginVariable="update_report"/>
+    <outputMappings xmi:id="_SoqBU6oMEee96aJ4KpltLA" pipelineVariable="output" pluginVariable="execution_result"/>
+  </processSteps>
+</mdmserverobject:WSTransformerV2E>
