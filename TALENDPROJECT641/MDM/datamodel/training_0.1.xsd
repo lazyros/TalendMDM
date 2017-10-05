@@ -9,6 +9,8 @@
 <xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
 <xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
 <xsd:appinfo source="X_Schematron">&lt;pattern name="AgentValidation" &gt; &lt;rule context="Shortname"&gt;&lt;assert test=". = concat(substring(../Firstname,1,3),substring(../Lastname,1,2))"&gt;&lt;![CDATA[[EN:The short name must follow the following rule: first 3 characters of first name + first 2 characters of last name]]]&gt;&lt;/assert&gt;&lt;/rule&gt; &lt;rule context="."&gt;&lt;assert test="translate(TermDate,&amp;quot; &amp;quot;,&amp;quot;&amp;quot;) = &amp;quot;&amp;quot; or number(translate(StartDate,&amp;quot;-&amp;quot;,&amp;quot;&amp;quot;)) &amp;lt; number(translate(TermDate,&amp;quot;-&amp;quot;,&amp;quot;&amp;quot;))"&gt;&lt;![CDATA[[EN:The start date must be before the termination date]]]&gt;&lt;/assert&gt;&lt;/rule&gt; &lt;/pattern&gt;</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">MWest_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">General_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
 </xsd:annotation> 
         <xsd:unique name="Agent">
 <xsd:selector xpath="."/>
@@ -21,6 +23,8 @@
 <xsd:annotation>
 <xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
 <xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">MWest_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">General_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
             <xsd:element maxOccurs="1" minOccurs="1" name="AgentId" nillable="false" type="UUID"> 
@@ -33,6 +37,8 @@
 
 <xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
 <xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">MWest_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">General_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
 </xsd:annotation> 
       </xsd:element>  
             <xsd:element maxOccurs="1" minOccurs="1" name="Firstname" nillable="false" type="xsd:string"> 
@@ -47,6 +53,8 @@
 <xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
 <xsd:appinfo source="X_Label_EN">Firstname</xsd:appinfo>
 <xsd:appinfo source="X_Label_FR">Prénom</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">MWest_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">General_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
 </xsd:annotation> 
       </xsd:element>  
             <xsd:element maxOccurs="1" minOccurs="1" name="Lastname" nillable="false" type="xsd:string"> 
@@ -59,6 +67,8 @@
 
 <xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
 <xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">MWest_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">General_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
 </xsd:annotation> 
       </xsd:element>  
             <xsd:element maxOccurs="1" minOccurs="1" name="Shortname" type="xsd:string">
@@ -69,6 +79,8 @@
 
 <xsd:appinfo source="X_Label_EN">Shortname</xsd:appinfo>
 <xsd:appinfo source="X_Label_FR">Nom abrégé</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">MWest_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">General_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
             <xsd:element maxOccurs="1" minOccurs="1" name="AgencyFk" type="xsd:string">
@@ -84,6 +96,8 @@
 
 <xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
 <xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">MWest_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">General_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
 </xsd:annotation>
 </xsd:element>
             <xsd:element maxOccurs="1" minOccurs="1" name="CommissionCode" nillable="false" type="CommissionCodes"> 
@@ -96,6 +110,9 @@
 
 
 
+
+<xsd:appinfo source="X_Workflow">MWest_Manager#wfAgentCommission_1.0#Writable</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">General_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
 <xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
 </xsd:annotation> 
       </xsd:element>  
@@ -111,6 +128,8 @@
 <xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
 <xsd:appinfo source="X_Description_EN">Commission code changes are subject to approval by the General Manager</xsd:appinfo>
 <xsd:appinfo source="X_Description_FR">Le changement de code commission est soumis à l'approbation du General Manager</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">MWest_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">General_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
 </xsd:annotation> 
       </xsd:element>  
             <xsd:element maxOccurs="1" minOccurs="1" name="StartDate" nillable="false" type="xsd:date"> 
@@ -125,6 +144,8 @@
 <xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
 <xsd:appinfo source="X_Label_EN">Start date</xsd:appinfo>
 <xsd:appinfo source="X_Label_FR">Date d'entrée</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">MWest_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">General_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
 </xsd:annotation> 
       </xsd:element>  
             <xsd:element maxOccurs="1" minOccurs="0" name="TermDate" nillable="false" type="xsd:date"> 
@@ -137,6 +158,8 @@
 
 <xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
 <xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">MWest_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">General_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
 </xsd:annotation> 
       </xsd:element>  
             <xsd:element maxOccurs="1" minOccurs="0" name="Status" nillable="false" type="xsd:string"> 
@@ -147,6 +170,8 @@
 
 <xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
 <xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">MWest_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">General_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
 </xsd:annotation> 
       </xsd:element> 
         </xsd:all> 
@@ -233,6 +258,8 @@
 
 <xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
 <xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">MWest_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">General_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
 </xsd:annotation> 
       </xsd:element>  
       <xsd:element maxOccurs="1" minOccurs="0" name="ComChangeStatus" nillable="false" type="ComStatus"> 
@@ -243,6 +270,8 @@
 
 <xsd:appinfo source="X_Write">General_Manager</xsd:appinfo>
 <xsd:appinfo source="X_Write">MWest_Manager</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">MWest_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
+<xsd:appinfo source="X_Workflow">General_Manager#wfAgentCommission_1.0#Read-only</xsd:appinfo>
 </xsd:annotation> 
       </xsd:element> 
     </xsd:all> 
