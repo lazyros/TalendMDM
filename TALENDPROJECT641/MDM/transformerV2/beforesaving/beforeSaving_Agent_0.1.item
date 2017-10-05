@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSTransformerV2E xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_Txqo4KntEee96aJ4KpltLA" name="beforeSaving_Agent" description="Check Agent Duplicates ">
+<mdmserverobject:WSTransformerV2E xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_Txqo4KntEee96aJ4KpltLA" name="beforeSaving_Agent" description="Check Agent Duplicates " timestamp="1507227286210" digestValue="fc16e9e7f8efaa8ac08efbabcdf4dc7d" lastServerName="SandboxMDM">
   <processSteps xmi:id="_3aYNwKntEee96aJ4KpltLA" pluginJNDI="amalto/local/transformer/plugin/callJob" description="Call Job" parameters="&lt;configuration>&lt;url>ltj://beforeSaving_Agent/0.1&lt;/url>&lt;contextParam>&lt;name>xmlInput&lt;/name>&lt;value>{_DEFAULT_}&lt;/value>&lt;/contextParam>&lt;/configuration>">
     <inputMappings xmi:id="_3aYNwantEee96aJ4KpltLA" pipelineVariable="_DEFAULT_" pluginVariable="text"/>
     <outputMappings xmi:id="_3aYNwqntEee96aJ4KpltLA" pipelineVariable="output_report" pluginVariable="result"/>
