@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_RzyO0KoMEee96aJ4KpltLA" name="wfAgentCommission" author="Talend" bonitaVersion="7.2.3" bonitaModelVersion="7.2.0-002" configId="ACED00057400174D794469616772616D372E322E302D303032372E322E33">
     <elements xmi:type="process:Pool" xmi:id="_RzyO0aoMEee96aJ4KpltLA" name="wfAgentCommission" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="_Rzy14aoMEee96aJ4KpltLA" name="wfAgentCommission" actor="_Rzy14KoMEee96aJ4KpltLA">
@@ -14,6 +14,17 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_141KYaoMEee96aJ4KpltLA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_141KYKoMEee96aJ4KpltLA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_141KYqoMEee96aJ4KpltLA" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_tGGTAKoYEee96aJ4KpltLA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_tGSgQKoYEee96aJ4KpltLA" name="mdm_context" content="mdm_context" type="TYPE_VARIABLE" returnType="org.talend.mdm.workflow.client.MDMContext">
+              <referencedElements xmi:type="process:JavaObjectData" xmi:id="_vYkE4KoYEee96aJ4KpltLA" name="mdm_context" dataType="_vyXb62KUEeaDbeg_vFJw6Q" className="org.talend.mdm.workflow.client.MDMContext"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_tGR5MKoYEee96aJ4KpltLA" name="Set the user for update" content="import org.talend.mdm.workflow.client.MDMContextUser;&#xA;MDMContextUser contextUser = mdm_context.getCurrentUser();&#xA;return contextUser.getName();" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:JavaObjectData" xmi:id="_2kgHIKoYEee96aJ4KpltLA" name="mdm_context" dataType="_vyXb62KUEeaDbeg_vFJw6Q" className="org.talend.mdm.workflow.client.MDMContext"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_tGGTAaoYEee96aJ4KpltLA" type="JAVA_METHOD" expression="setUpdateUsername">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_141KZqoMEee96aJ4KpltLA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_141KZ6oMEee96aJ4KpltLA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_141KaKoMEee96aJ4KpltLA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -138,6 +149,40 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_8QYiUaoMEee96aJ4KpltLA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_8QYiUKoMEee96aJ4KpltLA" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_8QYiUqoMEee96aJ4KpltLA" name="" content="" returnTypeFixed="true"/>
+          <connectors xmi:type="process:Connector" xmi:id="_Iv_AIKoZEee96aJ4KpltLA" name="Submit Update" definitionId="TalendMDMContextConnector" event="ON_FINISH" definitionVersion="6.0">
+            <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_Iv_AIaoZEee96aJ4KpltLA" definitionId="TalendMDMContextConnector" version="6.0" modelVersion="7.2.0-002">
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Iv_AIqoZEee96aJ4KpltLA" key="contextName">
+                <expression xmi:type="expression:Expression" xmi:id="_Iv_AI6oZEee96aJ4KpltLA" name="mdm_context" content="mdm_context" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Iv_AJKoZEee96aJ4KpltLA" key="endpointUrl">
+                <expression xmi:type="expression:Expression" xmi:id="_Iv_AJaoZEee96aJ4KpltLA" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Iv_AJqoZEee96aJ4KpltLA" key="user">
+                <expression xmi:type="expression:Expression" xmi:id="_Iv_AJ6oZEee96aJ4KpltLA" name="administrator" content="administrator" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Iv_AKKoZEee96aJ4KpltLA" key="password">
+                <expression xmi:type="expression:Expression" xmi:id="_Iv_AKaoZEee96aJ4KpltLA" name="administrator" content="administrator" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Iv_AKqoZEee96aJ4KpltLA" key="partial">
+                <expression xmi:type="expression:Expression" xmi:id="_Iv_AK6oZEee96aJ4KpltLA" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Iv_ALKoZEee96aJ4KpltLA" key="overwrite">
+                <expression xmi:type="expression:Expression" xmi:id="_Iv_ALaoZEee96aJ4KpltLA" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Iv_ALqoZEee96aJ4KpltLA" key="delete">
+                <expression xmi:type="expression:Expression" xmi:id="_Iv_AL6oZEee96aJ4KpltLA" name="false" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Iv_AMKoZEee96aJ4KpltLA" key="key">
+                <expression xmi:type="expression:Expression" xmi:id="_Iv_AMaoZEee96aJ4KpltLA" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Iv_AMqoZEee96aJ4KpltLA" key="pivot">
+                <expression xmi:type="expression:Expression" xmi:id="_Iv_AM6oZEee96aJ4KpltLA" content="" returnTypeFixed="true"/>
+              </parameters>
+              <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_Iv_ANKoZEee96aJ4KpltLA" key="position">
+                <expression xmi:type="expression:Expression" xmi:id="_Iv_ANaoZEee96aJ4KpltLA" name="-1" content="-1" returnType="java.lang.Integer" returnTypeFixed="true"/>
+              </parameters>
+            </configuration>
+          </connectors>
           <loopCondition xmi:type="expression:Expression" xmi:id="_8QYiVKoMEee96aJ4KpltLA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_8QYiVaoMEee96aJ4KpltLA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_8QYiVqoMEee96aJ4KpltLA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
