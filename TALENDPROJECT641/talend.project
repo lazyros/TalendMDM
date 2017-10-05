@@ -300,27 +300,6 @@
       <relatedItems xmi:id="_X6d6hqliEeeL_bLdH1iwJQ" id="_EPZPEKlDEeeL_bLdH1iwJQ - Cities" version="Latest" type="schema"/>
       <relatedItems xmi:id="_X6d6h6liEeeL_bLdH1iwJQ" id="_E5ct8KkdEeeL_bLdH1iwJQ - AgencyOut" version="Latest" type="schema"/>
     </ItemsRelations>
-    <ItemsRelations xmi:id="_iyA04KnoEee96aJ4KpltLA">
-      <baseItem xmi:id="_iyA04anoEee96aJ4KpltLA" id="_vJsJUAF0EeaJSPKMJ4A-Iw" version="0.1" type="job"/>
-      <relatedItems xmi:id="_iyA04qnoEee96aJ4KpltLA" id="_hHDQoAFWEeaTBrvP_AN6Tg" version="Latest" type="property"/>
-      <relatedItems xmi:id="_iyA046noEee96aJ4KpltLA" id="SQLike" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_iyA05KnoEee96aJ4KpltLA" id="Numeric" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_iyA05anoEee96aJ4KpltLA" id="TalendString" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_iyA05qnoEee96aJ4KpltLA" id="DataOperation" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_iyA056noEee96aJ4KpltLA" id="StringHandling" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_iyA06KnoEee96aJ4KpltLA" id="TalendDataGenerator" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_iyA06anoEee96aJ4KpltLA" id="DqStringHandling" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_iyA06qnoEee96aJ4KpltLA" id="TalendDate" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_iyA066noEee96aJ4KpltLA" id="DataQuality" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_iyA07KnoEee96aJ4KpltLA" id="Mathematical" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_iyA07anoEee96aJ4KpltLA" id="Relational" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_iyA07qnoEee96aJ4KpltLA" id="DQTechnical" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_iyA076noEee96aJ4KpltLA" id="DataQualityDependencies" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_iyA08KnoEee96aJ4KpltLA" id="MDM" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_iyA08anoEee96aJ4KpltLA" id="GoogleMapURL" version="Latest" type="routine"/>
-      <relatedItems xmi:id="_iyA08qnoEee96aJ4KpltLA" id="_BxKakAFQEeaTBrvP_AN6Tg - AgencyOut" version="Latest" type="schema"/>
-      <relatedItems xmi:id="_iyA086noEee96aJ4KpltLA" id="_hHDQoAFWEeaTBrvP_AN6Tg - Cities" version="Latest" type="schema"/>
-    </ItemsRelations>
     <deletedFolders>MDM/datacontainer/sample_models</deletedFolders>
     <deletedFolders>MDM/datacontainer/challenge_models</deletedFolders>
     <deletedFolders>MDM/datamodel/challenge_models</deletedFolders>
