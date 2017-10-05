@@ -34,6 +34,15 @@
       <conceptTargets xmi:id="_7sW8Y6lVEeeL_bLdH1iwJQ" targetName="Shortname" RelativeLoopExpression="Shortname"/>
       <conceptTargets xmi:id="_7sW8aalVEeeL_bLdH1iwJQ" targetName="StartDate" RelativeLoopExpression="StartDate"/>
     </schemas>
+    <schemas xmi:id="_M9w8UKliEeeL_bLdH1iwJQ" label="AgencyReceive" LoopExpression="/Agency" LoopLimit="50" conceptType="RECEIVE" xPathPrefix="NONE_ITEM">
+      <conceptTargets xmi:id="_RAntwKliEeeL_bLdH1iwJQ" targetName="AgencyId" RelativeLoopExpression="AgencyId"/>
+      <conceptTargets xmi:id="_RAntwaliEeeL_bLdH1iwJQ" targetName="Name" RelativeLoopExpression="Name"/>
+      <conceptTargets xmi:id="_RAntwqliEeeL_bLdH1iwJQ" targetName="City" RelativeLoopExpression="City"/>
+      <conceptTargets xmi:id="_RAntw6liEeeL_bLdH1iwJQ" targetName="State" RelativeLoopExpression="State"/>
+      <conceptTargets xmi:id="_RAntxKliEeeL_bLdH1iwJQ" targetName="Zip" RelativeLoopExpression="Zip"/>
+      <conceptTargets xmi:id="_RAntxaliEeeL_bLdH1iwJQ" targetName="MoreInfo" RelativeLoopExpression="MoreInfo"/>
+      <conceptTargets xmi:id="_RAntxqliEeeL_bLdH1iwJQ" targetName="RegionFk" RelativeLoopExpression="RegionFk"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_XGjXkKkdEeeL_bLdH1iwJQ" name="training" dataManager="_E5xeEKkdEeeL_bLdH1iwJQ">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XGjXkakdEeeL_bLdH1iwJQ" id="_SdCOwKkdEeeL_bLdH1iwJQ" label="AgencyOut">
@@ -65,6 +74,15 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HzIg86lWEeeL_bLdH1iwJQ" label="Lastname" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HzIg9KlWEeeL_bLdH1iwJQ" label="Shortname" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_HzIg9alWEeeL_bLdH1iwJQ" label="StartDate" talendType="id_Date"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_SuHxYKliEeeL_bLdH1iwJQ" id="_SuEuEKliEeeL_bLdH1iwJQ" label="AgencyReceive">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SuHxYaliEeeL_bLdH1iwJQ" label="AgencyId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SuHxYqliEeeL_bLdH1iwJQ" label="Name" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SuHxY6liEeeL_bLdH1iwJQ" label="City" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SuHxZKliEeeL_bLdH1iwJQ" label="State" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SuHxZaliEeeL_bLdH1iwJQ" label="Zip" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SuHxZqliEeeL_bLdH1iwJQ" label="MoreInfo" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SuHxZ6liEeeL_bLdH1iwJQ" label="RegionFk" talendType="id_String"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
