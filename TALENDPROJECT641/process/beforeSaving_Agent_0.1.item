@@ -282,7 +282,7 @@
     </elementParameter>
     <elementParameter field="TEXT" name="SKIP" value="0"/>
     <elementParameter field="TEXT" name="MAXVALUE" value="0"/>
-    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
     <elementParameter field="TEXT" name="FETCHSIZE" value="50"/>
     <elementParameter field="TEXT" name="LOOP_QUERY_BASE" value="&quot;/result&quot;" show="false"/>
     <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/Agent&quot;"/>
