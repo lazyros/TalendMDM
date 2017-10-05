@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:form="http://www.bonitasoft.org/ns/studio/form" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_RzyO0KoMEee96aJ4KpltLA" name="wfAgentCommission" author="Talend" bonitaVersion="7.2.3" bonitaModelVersion="7.2.0-002" configId="ACED00057400174D794469616772616D372E322E302D303032372E322E33">
-    <elements xmi:type="process:Pool" xmi:id="_RzyO0aoMEee96aJ4KpltLA" name="wfAgentCommission" welcomePageInternal="false" basedOnLookAndFeel="talend">
+    <elements xmi:type="process:Pool" xmi:id="_RzyO0aoMEee96aJ4KpltLA" name="wfAgentCommission" welcomePageInternal="false" basedOnLookAndFeel="Default Application">
       <elements xmi:type="process:Lane" xmi:id="_Rzy14aoMEee96aJ4KpltLA" name="wfAgentCommission" actor="_Rzy14KoMEee96aJ4KpltLA">
         <elements xmi:type="process:StartEvent" xmi:id="_vyXbs2KUEeaDbeg_vFJw6Q" name="Start" outgoing="_dP0X0KoNEee96aJ4KpltLA">
           <viewPageFlowRedirectionURL xmi:type="expression:Expression" xmi:id="_vyXbtGKUEeaDbeg_vFJw6Q" name="" content="" returnTypeFixed="true"/>
@@ -151,13 +151,15 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_UzH4UqoNEee96aJ4KpltLA" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <resourceFolders xmi:type="process:ResourceFolder" xmi:id="_CoWmEGKcEeaDbeg_vFJw6Q" path="_RzyO0aoMEee96aJ4KpltLA/application/application"/>
+      <resourceFolders xmi:type="process:ResourceFolder" xmi:id="_BShiUKoUEee96aJ4KpltLA" path="_RzyO0aoMEee96aJ4KpltLA/application/application"/>
       <mandatorySymbol xmi:type="expression:Expression" xmi:id="_vyXbx2KUEeaDbeg_vFJw6Q" name="" content="" returnTypeFixed="true"/>
       <mandatoryLabel xmi:type="expression:Expression" xmi:id="_vyXbyGKUEeaDbeg_vFJw6Q" name="" content="" returnTypeFixed="true"/>
-      <processTemplate xmi:type="process:AssociatedFile" xmi:id="_CoWmEWKcEeaDbeg_vFJw6Q" path="_RzyO0aoMEee96aJ4KpltLA/html/process.html"/>
-      <pageTemplate xmi:type="process:AssociatedFile" xmi:id="_CoWmE2KcEeaDbeg_vFJw6Q" path="_RzyO0aoMEee96aJ4KpltLA/html/page.html"/>
-      <consultationTemplate xmi:type="process:AssociatedFile" xmi:id="_CoWmEmKcEeaDbeg_vFJw6Q" path="_RzyO0aoMEee96aJ4KpltLA/html/consultation.html"/>
+      <errorTemplate xmi:type="process:AssociatedFile" xmi:id="_BSiJY6oUEee96aJ4KpltLA" path="_RzyO0aoMEee96aJ4KpltLA/html/error.html"/>
+      <processTemplate xmi:type="process:AssociatedFile" xmi:id="_BSiJYKoUEee96aJ4KpltLA" path="_RzyO0aoMEee96aJ4KpltLA/html/process.html"/>
+      <pageTemplate xmi:type="process:AssociatedFile" xmi:id="_BSiJZKoUEee96aJ4KpltLA" path="_RzyO0aoMEee96aJ4KpltLA/html/page.html"/>
+      <consultationTemplate xmi:type="process:AssociatedFile" xmi:id="_BSiJYaoUEee96aJ4KpltLA" path="_RzyO0aoMEee96aJ4KpltLA/html/consultation.html"/>
       <data xmi:type="process:JavaObjectData" xmi:id="_Rz48gKoMEee96aJ4KpltLA" name="mdm_context" dataType="_vyXb62KUEeaDbeg_vFJw6Q" className="org.talend.mdm.workflow.client.MDMContext"/>
+      <confirmationTemplate xmi:type="process:AssociatedFile" xmi:id="_BSiJYqoUEee96aJ4KpltLA" path="_RzyO0aoMEee96aJ4KpltLA/html/confirmation.html"/>
       <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_vyXbyWKUEeaDbeg_vFJw6Q" name="" content="" returnTypeFixed="true"/>
       <confirmationMessage xmi:type="expression:Expression" xmi:id="_vyXbymKUEeaDbeg_vFJw6Q" name="" content="" returnTypeFixed="true"/>
       <formMapping xmi:type="process:FormMapping" xmi:id="_vyXby2KUEeaDbeg_vFJw6Q" type="NONE">
