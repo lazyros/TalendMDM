@@ -324,7 +324,7 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="Matches" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="Firstname" type="id_String" xpath="Matches/Firstname"/>
+        <nodes name="Firstname" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.5" xpath="Matches/Firstname"/>
         <nodes name="Lastname" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.0" xpath="Matches/Lastname"/>
         <nodes name="Shortname" type="id_String" xpath="Matches/Shortname"/>
         <nodes name="LKP_AgentId" type="id_String" outgoingConnections="//@node.4/@nodeData/@connections.3" xpath="Matches/LKP_AgentId"/>
@@ -337,7 +337,7 @@
       <outputTrees name="error">
         <nodes name="MDM_Message" expression="" type="id_Document" xpath="error/MDM_Message" pattern="">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="report" type="id_String" xpath="error.MDM_Message:/report" loop="true" main="true">
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="message" expression="String.format(&quot;Duplicate found: %s, %s is a duplicate of %s, %s (AgentId=%s) with a score of %.5s %%&quot;, Matches.First-&#xA;name, Matches.Lastname, Matches.LKP_Firstname, Matches.LKP_Lastname, Matches.LKP_AgentId, Matches.MATCHING_WEIGHT * 100.0f) " type="id_String" incomingConnections="//@node.4/@nodeData/@connections.0 //@node.4/@nodeData/@connections.1 //@node.4/@nodeData/@connections.2 //@node.4/@nodeData/@connections.3 //@node.4/@nodeData/@connections.4" xpath="error.MDM_Message:/report/message">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="message" expression="String.format(&quot;Duplicate found: %s, %s is a duplicate of %s, %s (AgentId=%s) with a score of %.5s %%&quot;, Matches.Firstname, Matches.Lastname, Matches.LKP_Firstname, Matches.LKP_Lastname, Matches.LKP_AgentId, Matches.MATCHING_WEIGHT * 100.0f) " type="id_String" incomingConnections="//@node.4/@nodeData/@connections.0 //@node.4/@nodeData/@connections.1 //@node.4/@nodeData/@connections.2 //@node.4/@nodeData/@connections.3 //@node.4/@nodeData/@connections.4 //@node.4/@nodeData/@connections.5" xpath="error.MDM_Message:/report/message">
               <children xsi:type="TalendXMLMap:OutputTreeNode" name="type" expression="&quot;error&quot;" type="id_String" xpath="error.MDM_Message:/report/message/@type" nodeType="ATTRIBUT"/>
             </children>
           </children>
@@ -349,6 +349,7 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.5" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.3" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.8" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.4/@nodeData/@inputTrees.0/@nodes.0" target="//@node.4/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
     </nodeData>
   </node>
   <node componentName="tMDMTriggerOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="320">
