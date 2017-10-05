@@ -88,21 +88,41 @@
                 <operator xmi:type="expression:Operator" xmi:id="_sWOZe6oREee96aJ4KpltLA" type="ASSIGNMENT" expression="="/>
               </action>
             </widgets>
-            <widgets xmi:type="form:FormButton" xmi:id="_6c_qYKoSEee96aJ4KpltLA" name="Allow">
-              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_6dCtsqoSEee96aJ4KpltLA" line="4" column="1"/>
-              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_6dA4g6oSEee96aJ4KpltLA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_6dA4hKoSEee96aJ4KpltLA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <inputExpression xmi:type="expression:Expression" xmi:id="_6dA4gqoSEee96aJ4KpltLA" name="" content=""/>
-              <afterEventExpression xmi:type="expression:Expression" xmi:id="_6dA4haoSEee96aJ4KpltLA" name="" content=""/>
-              <tooltip xmi:type="expression:Expression" xmi:id="_6dA4gaoSEee96aJ4KpltLA" name="" content="" returnTypeFixed="true"/>
-              <helpMessage xmi:type="expression:Expression" xmi:id="_6dA4gKoSEee96aJ4KpltLA" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_6dARcKoSEee96aJ4KpltLA" name="Approve New Commission" content="Approve New Commission" returnTypeFixed="true"/>
-              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_6dARcaoSEee96aJ4KpltLA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-              <action xmi:type="expression:Operation" xmi:id="_6dA4hqoSEee96aJ4KpltLA">
-                <leftOperand xmi:type="expression:Expression" xmi:id="_6dA4h6oSEee96aJ4KpltLA"/>
-                <rightOperand xmi:type="expression:Expression" xmi:id="_6dA4iKoSEee96aJ4KpltLA"/>
-                <operator xmi:type="expression:Operator" xmi:id="_6dA4iaoSEee96aJ4KpltLA" type="ASSIGNMENT" expression="="/>
+            <widgets xmi:type="form:SubmitFormButton" xmi:id="_RYy3wKoTEee96aJ4KpltLA" name="Allow">
+              <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_RY17EKoTEee96aJ4KpltLA" line="4" column="1"/>
+              <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_RYze1aoTEee96aJ4KpltLA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_RYze1qoTEee96aJ4KpltLA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              <inputExpression xmi:type="expression:Expression" xmi:id="_RYze1KoTEee96aJ4KpltLA" name="" content=""/>
+              <afterEventExpression xmi:type="expression:Expression" xmi:id="_RYze16oTEee96aJ4KpltLA" name="" content=""/>
+              <tooltip xmi:type="expression:Expression" xmi:id="_RYze06oTEee96aJ4KpltLA" name="" content="" returnTypeFixed="true"/>
+              <helpMessage xmi:type="expression:Expression" xmi:id="_RYze0qoTEee96aJ4KpltLA" name="" content="" returnTypeFixed="true"/>
+              <displayLabel xmi:type="expression:Expression" xmi:id="_RYze0KoTEee96aJ4KpltLA" name="Approve New Commission" content="Approve New Commission" returnTypeFixed="true"/>
+              <injectWidgetScript xmi:type="expression:Expression" xmi:id="_RYze0aoTEee96aJ4KpltLA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+              <action xmi:type="expression:Operation" xmi:id="_RYze2KoTEee96aJ4KpltLA">
+                <leftOperand xmi:type="expression:Expression" xmi:id="_RYze2aoTEee96aJ4KpltLA"/>
+                <rightOperand xmi:type="expression:Expression" xmi:id="_RYze2qoTEee96aJ4KpltLA"/>
+                <operator xmi:type="expression:Operator" xmi:id="_RYze26oTEee96aJ4KpltLA" type="ASSIGNMENT" expression="="/>
               </action>
+              <actions xmi:type="expression:Operation" xmi:id="_WWkZUKoTEee96aJ4KpltLA">
+                <leftOperand xmi:type="expression:Expression" xmi:id="_WWybwaoTEee96aJ4KpltLA" name="mdm_context" content="mdm_context" type="TYPE_VARIABLE" returnType="org.talend.mdm.workflow.client.MDMContext">
+                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_W-sJQKoTEee96aJ4KpltLA" name="mdm_context" dataType="_vyXb62KUEeaDbeg_vFJw6Q" className="org.talend.mdm.workflow.client.MDMContext"/>
+                </leftOperand>
+                <rightOperand xmi:type="expression:Expression" xmi:id="_WWybwKoTEee96aJ4KpltLA" name="Set Approved Status" content="&quot;Agent/CommissionChange/ComChangeStatus#Approved&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+                <operator xmi:type="expression:Operator" xmi:id="_WWkZUaoTEee96aJ4KpltLA" type="JAVA_METHOD" expression="setValue">
+                  <inputTypes>java.lang.String</inputTypes>
+                </operator>
+              </actions>
+              <actions xmi:type="expression:Operation" xmi:id="_edqcQKoTEee96aJ4KpltLA">
+                <leftOperand xmi:type="expression:Expression" xmi:id="_ed_MYaoTEee96aJ4KpltLA" name="mdm_context" content="mdm_context" type="TYPE_VARIABLE" returnType="org.talend.mdm.workflow.client.MDMContext">
+                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_e8YYkKoTEee96aJ4KpltLA" name="mdm_context" dataType="_vyXb62KUEeaDbeg_vFJw6Q" className="org.talend.mdm.workflow.client.MDMContext"/>
+                </leftOperand>
+                <rightOperand xmi:type="expression:Expression" xmi:id="_ed_MYKoTEee96aJ4KpltLA" name="Set New Commission Code" content="&quot;Agent/CommissionCode#&quot; + mdm_context.getValue(&quot;Agent/CommissionChange/ComChangeCode&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_lbOEQKoTEee96aJ4KpltLA" name="mdm_context" dataType="_vyXb62KUEeaDbeg_vFJw6Q" className="org.talend.mdm.workflow.client.MDMContext"/>
+                </rightOperand>
+                <operator xmi:type="expression:Operator" xmi:id="_edqcQaoTEee96aJ4KpltLA" type="JAVA_METHOD" expression="setValue">
+                  <inputTypes>java.lang.String</inputTypes>
+                </operator>
+              </actions>
             </widgets>
             <pageLabel xmi:type="expression:Expression" xmi:id="_Dn40BKoQEee96aJ4KpltLA" name="Commission Approval" content="Commission Approval" returnTypeFixed="true"/>
           </form>
@@ -282,9 +302,12 @@
       <children xmi:type="notation:DecorationNode" xmi:id="_sWXjYKoREee96aJ4KpltLA" type="5188"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_sWVHIKoREee96aJ4KpltLA"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_6dCGoKoSEee96aJ4KpltLA" type="2138" element="_6c_qYKoSEee96aJ4KpltLA" fontName=".SF NS Text">
-      <children xmi:type="notation:DecorationNode" xmi:id="_6dCtsaoSEee96aJ4KpltLA" type="5193"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6dCtsKoSEee96aJ4KpltLA"/>
+    <children xmi:type="notation:Node" xmi:id="_RY1UAKoTEee96aJ4KpltLA" type="2126" element="_RYy3wKoTEee96aJ4KpltLA">
+      <children xmi:type="notation:DecorationNode" xmi:id="_RY1UBaoTEee96aJ4KpltLA" type="5160"/>
+      <styles xmi:type="notation:DescriptionStyle" xmi:id="_RY1UAaoTEee96aJ4KpltLA"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_RY1UAqoTEee96aJ4KpltLA" fontName=".SF NS Text"/>
+      <styles xmi:type="notation:LineStyle" xmi:id="_RY1UA6oTEee96aJ4KpltLA"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RY1UBKoTEee96aJ4KpltLA"/>
     </children>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_DpZ28aoQEee96aJ4KpltLA"/>
   </notation:Diagram>
