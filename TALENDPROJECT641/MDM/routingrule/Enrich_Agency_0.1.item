@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSRoutingRuleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_5FJa8QF2EeaJSPKMJ4A-Iw" name="Enrich_Agency" description="Enrich Agency" timestamp="1460552634183" digestValue="7cf118f99d288457a91efc631059cb92" synchronous="true" concept="Update" serviceJNDI="amalto/local/service/callJob" parameters="&lt;configuration>&#xA;  &lt;url>ltj://Enrich_Agency/0.1&lt;/url>&#xA;  &lt;contextParam>&#xA;    &lt;name>?&lt;/name>&#xA;    &lt;value>?&lt;/value>&#xA;  &lt;/contextParam>&#xA;  &lt;username>?&lt;/username>&#xA;  &lt;password>?&lt;/password>&#xA;&lt;/configuration>" condition="concept AND (create OR (update AND zip)) AND dmIsTraining">
+  <wsRoutingRuleExpressions xmi:id="_DQHksAF4EeaJSPKMJ4A-Iw" name="concept" xpath="Update/Concept" value="Agency">
+    <wsOperator xmi:id="_DQHksQF4EeaJSPKMJ4A-Iw" value="EQUALS"/>
+  </wsRoutingRuleExpressions>
+  <wsRoutingRuleExpressions xmi:id="_DQHksgF4EeaJSPKMJ4A-Iw" name="create" xpath="Update/OperationType" value="CREATE">
+    <wsOperator xmi:id="_DQHkswF4EeaJSPKMJ4A-Iw" value="EQUALS"/>
+  </wsRoutingRuleExpressions>
+  <wsRoutingRuleExpressions xmi:id="_DQHktAF4EeaJSPKMJ4A-Iw" name="zip" xpath="Update/Item/path" value="Zip">
+    <wsOperator xmi:id="_DQHktQF4EeaJSPKMJ4A-Iw" value="EQUALS"/>
+  </wsRoutingRuleExpressions>
+  <wsRoutingRuleExpressions xmi:id="_DQHktgF4EeaJSPKMJ4A-Iw" name="update" xpath="Update/OperationType" value="UPDATE">
+    <wsOperator xmi:id="_DQHktwF4EeaJSPKMJ4A-Iw" value="EQUALS"/>
+  </wsRoutingRuleExpressions>
+  <wsRoutingRuleExpressions xmi:id="_DQHkuAF4EeaJSPKMJ4A-Iw" name="dmIsTraining" xpath="Update/DataModel" value="training">
+    <wsOperator xmi:id="_DQHkuQF4EeaJSPKMJ4A-Iw" value="EQUALS"/>
+  </wsRoutingRuleExpressions>
+</mdmserverobject:WSRoutingRuleE>
