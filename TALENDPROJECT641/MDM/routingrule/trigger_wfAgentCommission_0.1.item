@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSRoutingRuleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_lpUi8KoZEee96aJ4KpltLA" name="trigger_wfAgentCommission" description="" concept="*" serviceJNDI="" parameters=""/>
+<mdmserverobject:WSRoutingRuleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_lpUi8KoZEee96aJ4KpltLA" name="trigger_wfAgentCommission" description="start commission change workflow" concept="Update" serviceJNDI="amalto/local/service/workflowcontext" parameters="&lt;parameters>&#xA;  &lt;processId>wfAgentCommission&lt;/processId>&#xA;  &lt;processVersion>1.0&lt;/processVersion>&#xA;  &lt;username/>&#xA;  &lt;password/>&#xA;  &lt;useBuiltInVariable>false&lt;/useBuiltInVariable>&#xA;  &lt;defaultDataModel/>&#xA;&lt;/parameters>" condition="a AND b AND c AND dmIsTraining">
+  <wsRoutingRuleExpressions xmi:id="_UcnJ4KoaEee96aJ4KpltLA" name="a" xpath="Update/OperationType" value="UPDATE">
+    <wsOperator xmi:id="_UcnJ4aoaEee96aJ4KpltLA" value="EQUALS"/>
+  </wsRoutingRuleExpressions>
+  <wsRoutingRuleExpressions xmi:id="_UcnJ4qoaEee96aJ4KpltLA" name="dmIsTraining" xpath="Update/DataModel" value="training">
+    <wsOperator xmi:id="_Ucnw8KoaEee96aJ4KpltLA" value="EQUALS"/>
+  </wsRoutingRuleExpressions>
+  <wsRoutingRuleExpressions xmi:id="_Ucnw8aoaEee96aJ4KpltLA" name="b" xpath="Update/Concept" value="Agent">
+    <wsOperator xmi:id="_Ucnw8qoaEee96aJ4KpltLA" value="EQUALS"/>
+  </wsRoutingRuleExpressions>
+  <wsRoutingRuleExpressions xmi:id="_Ucnw86oaEee96aJ4KpltLA" name="c" xpath="Update/Item/path" value="CommissionChange/ComChangeCode">
+    <wsOperator xmi:id="_Ucnw9KoaEee96aJ4KpltLA" value="EQUALS"/>
+  </wsRoutingRuleExpressions>
+</mdmserverobject:WSRoutingRuleE>
