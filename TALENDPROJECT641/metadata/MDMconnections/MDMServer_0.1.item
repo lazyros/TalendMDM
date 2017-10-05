@@ -43,6 +43,20 @@
       <conceptTargets xmi:id="_RAntxaliEeeL_bLdH1iwJQ" targetName="MoreInfo" RelativeLoopExpression="MoreInfo"/>
       <conceptTargets xmi:id="_RAntxqliEeeL_bLdH1iwJQ" targetName="RegionFk" RelativeLoopExpression="RegionFk"/>
     </schemas>
+    <schemas xmi:id="_UH-aoKnuEee96aJ4KpltLA" label="AgentReceive" LoopExpression="/Agent" LoopLimit="50" conceptType="RECEIVE" xPathPrefix="NONE_ITEM">
+      <conceptTargets xmi:id="_dRVy4KnuEee96aJ4KpltLA" targetName="Picture" RelativeLoopExpression="Picture"/>
+      <conceptTargets xmi:id="_dRVy4anuEee96aJ4KpltLA" targetName="AgentId" RelativeLoopExpression="AgentId"/>
+      <conceptTargets xmi:id="_dRVy4qnuEee96aJ4KpltLA" targetName="Firstname" RelativeLoopExpression="Firstname"/>
+      <conceptTargets xmi:id="_dRVy46nuEee96aJ4KpltLA" targetName="Lastname" RelativeLoopExpression="Lastname"/>
+      <conceptTargets xmi:id="_dRVy5KnuEee96aJ4KpltLA" targetName="Shortname" RelativeLoopExpression="Shortname"/>
+      <conceptTargets xmi:id="_dRVy5anuEee96aJ4KpltLA" targetName="AgencyFk" RelativeLoopExpression="AgencyFk"/>
+      <conceptTargets xmi:id="_dRVy5qnuEee96aJ4KpltLA" targetName="CommissionCode" RelativeLoopExpression="CommissionCode"/>
+      <conceptTargets xmi:id="_dRVy6KnuEee96aJ4KpltLA" targetName="ComChangeCode" RelativeLoopExpression="CommissionChange/ComChangeCode"/>
+      <conceptTargets xmi:id="_dRVy6anuEee96aJ4KpltLA" targetName="ComChangeStatus" RelativeLoopExpression="CommissionChange/ComChangeStatus"/>
+      <conceptTargets xmi:id="_dRVy6qnuEee96aJ4KpltLA" targetName="StartDate" RelativeLoopExpression="StartDate"/>
+      <conceptTargets xmi:id="_dRVy66nuEee96aJ4KpltLA" targetName="TermDate" RelativeLoopExpression="TermDate"/>
+      <conceptTargets xmi:id="_dRVy7KnuEee96aJ4KpltLA" targetName="Status" RelativeLoopExpression="Status"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_XGjXkKkdEeeL_bLdH1iwJQ" name="training" dataManager="_E5xeEKkdEeeL_bLdH1iwJQ">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XGjXkakdEeeL_bLdH1iwJQ" id="_SdCOwKkdEeeL_bLdH1iwJQ" label="AgencyOut">
@@ -83,6 +97,20 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SuHxZaliEeeL_bLdH1iwJQ" label="Zip" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SuHxZqliEeeL_bLdH1iwJQ" label="MoreInfo" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_SuHxZ6liEeeL_bLdH1iwJQ" label="RegionFk" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_g-KC4KnuEee96aJ4KpltLA" id="_g8B78KnuEee96aJ4KpltLA" label="AgentReceive">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g-KC4anuEee96aJ4KpltLA" label="Picture" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g-KC4qnuEee96aJ4KpltLA" label="AgentId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g-KC46nuEee96aJ4KpltLA" label="Firstname" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g-KC5KnuEee96aJ4KpltLA" label="Lastname" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g-KC5anuEee96aJ4KpltLA" label="Shortname" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g-KC5qnuEee96aJ4KpltLA" label="AgencyFk" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g-KC56nuEee96aJ4KpltLA" label="CommissionCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g-KC6KnuEee96aJ4KpltLA" label="ComChangeCode" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g-KC6anuEee96aJ4KpltLA" label="ComChangeStatus" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g-KC6qnuEee96aJ4KpltLA" label="StartDate" talendType="id_Date"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g-KC66nuEee96aJ4KpltLA" label="TermDate" talendType="id_Date"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g-KC7KnuEee96aJ4KpltLA" label="Status" talendType="id_String"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
