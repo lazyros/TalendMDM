@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSDataModelE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_vSk5l0zBEeGQEqYI89S44A" name="training" description="This is the training data model" timestamp="1507053579472" digestValue="cbc54ea650c293a77d0e6760fe5fd380" lastServerName="SandboxMDM"/>
+<mdmserverobject:WSDataModelE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_vSk5l0zBEeGQEqYI89S44A" name="training" description="This is the training data model" timestamp="1507166661153" digestValue="cbc54ea650c293a77d0e6760fe5fd380" lastServerName="SandboxMDM"/>
