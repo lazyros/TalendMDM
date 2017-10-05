@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSTransformerV2E xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_Txqo4KntEee96aJ4KpltLA" name="beforeSaving_Agent" description="beforeSaving_Agent template process">
+  <processSteps xmi:id="_Txqo4antEee96aJ4KpltLA" pluginJNDI="amalto/local/transformer/plugin/callJob" description="Call Job" parameters="&lt;configuration>&lt;url>ltj://beforeSaving_Agent/0.1&lt;/url>&lt;contextParam>&lt;name>xmlInput&lt;/name>&lt;value>{_DEFAULT_}&lt;/value>&lt;/contextParam>&lt;/configuration>">
+    <inputMappings xmi:id="_Txqo4qntEee96aJ4KpltLA" pipelineVariable="_DEFAULT_" pluginVariable="text"/>
+    <outputMappings xmi:id="_Txqo46ntEee96aJ4KpltLA" pipelineVariable="output_report" pluginVariable="result"/>
+  </processSteps>
+</mdmserverobject:WSTransformerV2E>

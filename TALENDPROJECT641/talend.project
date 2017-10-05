@@ -299,6 +299,25 @@
       <relatedItems xmi:id="_X6d6hqliEeeL_bLdH1iwJQ" id="_EPZPEKlDEeeL_bLdH1iwJQ - Cities" version="Latest" type="schema"/>
       <relatedItems xmi:id="_X6d6h6liEeeL_bLdH1iwJQ" id="_E5ct8KkdEeeL_bLdH1iwJQ - AgencyOut" version="Latest" type="schema"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_TzFlMKntEee96aJ4KpltLA">
+      <baseItem xmi:id="_TzFlMantEee96aJ4KpltLA" id="_Tyvm8KntEee96aJ4KpltLA" version="0.1" type="job"/>
+      <relatedItems xmi:id="_TzFlMqntEee96aJ4KpltLA" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TzFlM6ntEee96aJ4KpltLA" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TzFlNKntEee96aJ4KpltLA" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TzFlNantEee96aJ4KpltLA" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TzFlNqntEee96aJ4KpltLA" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TzFlN6ntEee96aJ4KpltLA" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TzFlOKntEee96aJ4KpltLA" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TzFlOantEee96aJ4KpltLA" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TzFlOqntEee96aJ4KpltLA" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TzFlO6ntEee96aJ4KpltLA" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TzFlPKntEee96aJ4KpltLA" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TzFlPantEee96aJ4KpltLA" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TzFlPqntEee96aJ4KpltLA" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TzFlP6ntEee96aJ4KpltLA" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TzFlQKntEee96aJ4KpltLA" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_TzFlQantEee96aJ4KpltLA" id="TalendStringUtil" version="Latest" type="routine"/>
+    </ItemsRelations>
     <deletedFolders>MDM/datacontainer/sample_models</deletedFolders>
     <deletedFolders>MDM/datacontainer/challenge_models</deletedFolders>
     <deletedFolders>MDM/datamodel/challenge_models</deletedFolders>
