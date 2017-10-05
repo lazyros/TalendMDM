@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdmserverobject:WSRoutingRuleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_WILOsKloEeeL_bLdH1iwJQ" name="EnrichAgency" description="Enrich Agency" timestamp="1507166662053" digestValue="300c76685ad75212e9986d21411b0162" lastServerName="SandboxMDM" synchronous="true" concept="Update" serviceJNDI="amalto/local/service/callJob" parameters="&lt;configuration>&#xA;  &lt;url>ltj://EnrichAgency/0.1&lt;/url>&#xA;  &lt;contextParam>&#xA;    &lt;name>?&lt;/name>&#xA;    &lt;value>?&lt;/value>&#xA;  &lt;/contextParam>&#xA;  &lt;username>?&lt;/username>&#xA;  &lt;password>?&lt;/password>&#xA;&lt;/configuration>" condition="concept AND (create OR (update AND zip)) AND dmIsTraining">
-  <wsRoutingRuleExpressions xmi:id="_27elUKlrEeeL_bLdH1iwJQ" name="concept" xpath="Update/Concept" value="Agency">
-    <wsOperator xmi:id="_27elUalrEeeL_bLdH1iwJQ" value="EQUALS"/>
+  <wsRoutingRuleExpressions xmi:id="_X8zBcKl9EeeL_bLdH1iwJQ" name="concept" xpath="Update/Concept" value="Agency">
+    <wsOperator xmi:id="_X8zBcal9EeeL_bLdH1iwJQ" value="EQUALS"/>
   </wsRoutingRuleExpressions>
-  <wsRoutingRuleExpressions xmi:id="_27elUqlrEeeL_bLdH1iwJQ" name="create" xpath="Update/OperationType" value="CREATE">
-    <wsOperator xmi:id="_27elU6lrEeeL_bLdH1iwJQ" value="EQUALS"/>
+  <wsRoutingRuleExpressions xmi:id="_X8zBcql9EeeL_bLdH1iwJQ" name="create" xpath="Update/OperationType" value="CREATE">
+    <wsOperator xmi:id="_X8zBc6l9EeeL_bLdH1iwJQ" value="EQUALS"/>
   </wsRoutingRuleExpressions>
-  <wsRoutingRuleExpressions xmi:id="_27elVKlrEeeL_bLdH1iwJQ" name="update" xpath="Update/OperationType" value="UPDATE">
-    <wsOperator xmi:id="_27elValrEeeL_bLdH1iwJQ" value="EQUALS"/>
+  <wsRoutingRuleExpressions xmi:id="_X8zBdKl9EeeL_bLdH1iwJQ" name="update" xpath="Update/OperationType" value="UPDATE">
+    <wsOperator xmi:id="_X8zBdal9EeeL_bLdH1iwJQ" value="EQUALS"/>
   </wsRoutingRuleExpressions>
-  <wsRoutingRuleExpressions xmi:id="_27elVqlrEeeL_bLdH1iwJQ" name="zip" xpath="Update/Item/path" value="Zip">
-    <wsOperator xmi:id="_27elV6lrEeeL_bLdH1iwJQ" value="EQUALS"/>
+  <wsRoutingRuleExpressions xmi:id="_X8zBdql9EeeL_bLdH1iwJQ" name="zip" xpath="Update/Item/path" value="Zip">
+    <wsOperator xmi:id="_X8zBd6l9EeeL_bLdH1iwJQ" value="EQUALS"/>
   </wsRoutingRuleExpressions>
-  <wsRoutingRuleExpressions xmi:id="_27elWKlrEeeL_bLdH1iwJQ" name="dmIsTraining" xpath="Update/DataModel" value="training">
-    <wsOperator xmi:id="_27elWalrEeeL_bLdH1iwJQ" value="EQUALS"/>
+  <wsRoutingRuleExpressions xmi:id="_X8zBeKl9EeeL_bLdH1iwJQ" name="dmIsTraining" xpath="Update/DataModel" value="training">
+    <wsOperator xmi:id="_X8zBeal9EeeL_bLdH1iwJQ" value="EQUALS"/>
   </wsRoutingRuleExpressions>
 </mdmserverobject:WSRoutingRuleE>
