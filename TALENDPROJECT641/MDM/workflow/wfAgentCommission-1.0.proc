@@ -33,7 +33,7 @@
           <form xmi:type="form:Form" xmi:id="_EuO5sAJCEeaJSPKMJ4A-Iw" name="CommissionApproval" nColumn="2">
             <widgets xmi:type="form:SubmitFormButton" xmi:id="_EuO5sQJCEeaJSPKMJ4A-Iw" name="Cancel">
               <widgetLayoutInfo xmi:type="form:WidgetLayoutInfo" xmi:id="_EuO5sgJCEeaJSPKMJ4A-Iw" line="3"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_EuO5swJCEeaJSPKMJ4A-Iw" name="Reject New Commission&#xD;&#xA;" content="Reject New Commission&#xD;&#xA;" returnTypeFixed="true"/>
+              <displayLabel xmi:type="expression:Expression" xmi:id="_EuO5swJCEeaJSPKMJ4A-Iw" name="Reject New Commission" content="Reject New Commission" returnTypeFixed="true"/>
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_EuO5tAJCEeaJSPKMJ4A-Iw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <actions xmi:type="expression:Operation" xmi:id="_pKhQkAJCEeaJSPKMJ4A-Iw">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_pKrBkQJCEeaJSPKMJ4A-Iw" name="mdm_context" content="mdm_context" type="TYPE_VARIABLE" returnType="org.talend.mdm.workflow.client.MDMContext">
@@ -50,12 +50,14 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_Gq9FFQJCEeaJSPKMJ4A-Iw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_Gq9FFgJCEeaJSPKMJ4A-Iw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_Gq9FFAJCEeaJSPKMJ4A-Iw" name="Get Agent Name" content="mdm_context.getValue(&quot;Agent/Firstname&quot;) + &quot; &quot; + mdm_context.getValue(&quot;Agent/Lastname&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_SoQkkAJCEeaJSPKMJ4A-Iw" name="mdm_context" dataType="_GbAVsMPYEeS11cr5KOnhxQ" className="org.talend.mdm.workflow.client.MDMContext"/>
+                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_y-O8EKq9Eee96aJ4KpltLA" name="mdm_context" dataType="_GbAVsMPYEeS11cr5KOnhxQ" className="org.talend.mdm.workflow.client.MDMContext"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_Gq9FFwJCEeaJSPKMJ4A-Iw" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_Gq9FEwJCEeaJSPKMJ4A-Iw" name="" content="" returnTypeFixed="true"/>
               <helpMessage xmi:type="expression:Expression" xmi:id="_Gq9FEgJCEeaJSPKMJ4A-Iw" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_Gq9FEAJCEeaJSPKMJ4A-Iw" name="Agent Name&#xD;&#xA;" content="Agent Name&#xD;&#xA;" returnTypeFixed="true"/>
+              <displayLabel xmi:type="expression:Expression" xmi:id="_Gq9FEAJCEeaJSPKMJ4A-Iw" name="Agent Name" content="Agent Name" interpreter="GROOVY" returnTypeFixed="true">
+                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_Do14MKq-Eee96aJ4KpltLA" name="mdm_context" dataType="_GbAVsMPYEeS11cr5KOnhxQ" className="org.talend.mdm.workflow.client.MDMContext"/>
+              </displayLabel>
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_Gq9FEQJCEeaJSPKMJ4A-Iw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_Gq9FGAJCEeaJSPKMJ4A-Iw">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_Gq9FGQJCEeaJSPKMJ4A-Iw"/>
@@ -68,7 +70,7 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_U7ekZQJCEeaJSPKMJ4A-Iw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_U7ekZgJCEeaJSPKMJ4A-Iw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_U7ekZAJCEeaJSPKMJ4A-Iw" name="Get Current Commission Code" content="mdm_context.getValue(&quot;Agent/CommissionCode&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_cvZzsAJCEeaJSPKMJ4A-Iw" name="mdm_context" dataType="_GbAVsMPYEeS11cr5KOnhxQ" className="org.talend.mdm.workflow.client.MDMContext"/>
+                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_HXiXgKq-Eee96aJ4KpltLA" name="mdm_context" dataType="_GbAVsMPYEeS11cr5KOnhxQ" className="org.talend.mdm.workflow.client.MDMContext"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_U7ekZwJCEeaJSPKMJ4A-Iw" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_U7ekYwJCEeaJSPKMJ4A-Iw" name="" content="" returnTypeFixed="true"/>
@@ -86,12 +88,12 @@
               <displayDependentWidgetOnlyAfterFirstEventTriggeredAndCondition xmi:type="expression:Expression" xmi:id="_d0P75gJCEeaJSPKMJ4A-Iw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <displayAfterEventDependsOnConditionScript xmi:type="expression:Expression" xmi:id="_d0P75wJCEeaJSPKMJ4A-Iw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <inputExpression xmi:type="expression:Expression" xmi:id="_d0P75QJCEeaJSPKMJ4A-Iw" name="Get New Commission Code" content="mdm_context.getValue(&quot;Agent/CommissionChange/ComChangeCode&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_lMTukAJCEeaJSPKMJ4A-Iw" name="mdm_context" dataType="_GbAVsMPYEeS11cr5KOnhxQ" className="org.talend.mdm.workflow.client.MDMContext"/>
+                <referencedElements xmi:type="process:JavaObjectData" xmi:id="_OcMGAKq-Eee96aJ4KpltLA" name="mdm_context" dataType="_GbAVsMPYEeS11cr5KOnhxQ" className="org.talend.mdm.workflow.client.MDMContext"/>
               </inputExpression>
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_d0P76AJCEeaJSPKMJ4A-Iw" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_d0P75AJCEeaJSPKMJ4A-Iw" name="" content="" returnTypeFixed="true"/>
               <helpMessage xmi:type="expression:Expression" xmi:id="_d0P74wJCEeaJSPKMJ4A-Iw" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_d0P74QJCEeaJSPKMJ4A-Iw" name="Review New Commission Code&#xD;&#xA;" content="Review New Commission Code&#xD;&#xA;" returnTypeFixed="true"/>
+              <displayLabel xmi:type="expression:Expression" xmi:id="_d0P74QJCEeaJSPKMJ4A-Iw" name="Review New Commission Code" content="Review New Commission Code" returnTypeFixed="true"/>
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_d0P74gJCEeaJSPKMJ4A-Iw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_d0P76QJCEeaJSPKMJ4A-Iw">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_d0P76gJCEeaJSPKMJ4A-Iw"/>
@@ -107,7 +109,7 @@
               <afterEventExpression xmi:type="expression:Expression" xmi:id="_2QY6qAJCEeaJSPKMJ4A-Iw" name="" content=""/>
               <tooltip xmi:type="expression:Expression" xmi:id="_2QY6pAJCEeaJSPKMJ4A-Iw" name="" content="" returnTypeFixed="true"/>
               <helpMessage xmi:type="expression:Expression" xmi:id="_2QY6owJCEeaJSPKMJ4A-Iw" name="" content="" returnTypeFixed="true"/>
-              <displayLabel xmi:type="expression:Expression" xmi:id="_2QY6oQJCEeaJSPKMJ4A-Iw" name="Approve New Commission&#xD;&#xA;" content="Approve New Commission&#xD;&#xA;" returnTypeFixed="true"/>
+              <displayLabel xmi:type="expression:Expression" xmi:id="_2QY6oQJCEeaJSPKMJ4A-Iw" name="Approve New Commission" content="Approve New Commission" returnTypeFixed="true"/>
               <injectWidgetScript xmi:type="expression:Expression" xmi:id="_2QY6ogJCEeaJSPKMJ4A-Iw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
               <action xmi:type="expression:Operation" xmi:id="_2QY6qQJCEeaJSPKMJ4A-Iw">
                 <leftOperand xmi:type="expression:Expression" xmi:id="_2QY6qgJCEeaJSPKMJ4A-Iw"/>
@@ -128,7 +130,7 @@
                   <referencedElements xmi:type="process:JavaObjectData" xmi:id="_-_xFkAJCEeaJSPKMJ4A-Iw" name="mdm_context" dataType="_GbAVsMPYEeS11cr5KOnhxQ" className="org.talend.mdm.workflow.client.MDMContext"/>
                 </leftOperand>
                 <rightOperand xmi:type="expression:Expression" xmi:id="_-fu6oAJCEeaJSPKMJ4A-Iw" name="Set New Commission Code" content="&quot;Agent/CommissionCode#&quot; + mdm_context.getValue(&quot;Agent/CommissionChange/ComChangeCode&quot;)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_BjYR0AJDEeaJSPKMJ4A-Iw" name="mdm_context" dataType="_GbAVsMPYEeS11cr5KOnhxQ" className="org.talend.mdm.workflow.client.MDMContext"/>
+                  <referencedElements xmi:type="process:JavaObjectData" xmi:id="_W_EtEKq-Eee96aJ4KpltLA" name="mdm_context" dataType="_GbAVsMPYEeS11cr5KOnhxQ" className="org.talend.mdm.workflow.client.MDMContext"/>
                 </rightOperand>
                 <operator xmi:type="expression:Operator" xmi:id="_-flJoQJCEeaJSPKMJ4A-Iw" type="JAVA_METHOD" expression="setValue">
                   <inputTypes>java.lang.String</inputTypes>
