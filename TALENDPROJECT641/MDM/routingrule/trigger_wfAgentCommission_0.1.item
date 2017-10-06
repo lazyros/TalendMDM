@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSRoutingRuleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_lpUi8KoZEee96aJ4KpltLA" name="trigger_wfAgentCommission" description="start commission change workflow" timestamp="1507244661995" digestValue="3d6a014678379693c2cff7608b0af930" lastServerName="SandboxMDM" concept="Update" serviceJNDI="amalto/local/service/workflowcontext" parameters="&lt;parameters>&#xA;  &lt;processId>wfAgentCommission&lt;/processId>&#xA;  &lt;processVersion>1.0&lt;/processVersion>&#xA;  &lt;username/>&#xA;  &lt;password/>&#xA;  &lt;useBuiltInVariable>false&lt;/useBuiltInVariable>&#xA;  &lt;defaultDataModel/>&#xA;&lt;/parameters>" condition="a AND b AND c AND dmIsTraining">
-  <wsRoutingRuleExpressions xmi:id="_UcnJ4KoaEee96aJ4KpltLA" name="a" xpath="Update/OperationType" value="UPDATE">
-    <wsOperator xmi:id="_UcnJ4aoaEee96aJ4KpltLA" value="EQUALS"/>
+<mdmserverobject:WSRoutingRuleE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_lpUi8KoZEee96aJ4KpltLA" name="trigger_wfAgentCommission" description="start commission change workflow" timestamp="1507244661995" digestValue="3d6a014678379693c2cff7608b0af930" lastServerName="SandboxMDM" concept="Update" serviceJNDI="amalto/local/service/workflowcontext" parameters="&lt;parameters>&#xA;  &lt;processId>wfAgentCommission_Rosa&lt;/processId>&#xA;  &lt;processVersion>1.0&lt;/processVersion>&#xA;  &lt;username/>&#xA;  &lt;password/>&#xA;  &lt;useBuiltInVariable>false&lt;/useBuiltInVariable>&#xA;  &lt;defaultDataModel/>&#xA;&lt;/parameters>" condition="a AND b AND c AND dmIsTraining">
+  <wsRoutingRuleExpressions xmi:id="_Hx3toKq_Eee96aJ4KpltLA" name="a" xpath="Update/OperationType" value="UPDATE">
+    <wsOperator xmi:id="_Hx3toaq_Eee96aJ4KpltLA" value="EQUALS"/>
   </wsRoutingRuleExpressions>
-  <wsRoutingRuleExpressions xmi:id="_UcnJ4qoaEee96aJ4KpltLA" name="dmIsTraining" xpath="Update/DataModel" value="training">
-    <wsOperator xmi:id="_Ucnw8KoaEee96aJ4KpltLA" value="EQUALS"/>
+  <wsRoutingRuleExpressions xmi:id="_Hx3toqq_Eee96aJ4KpltLA" name="dmIsTraining" xpath="Update/DataModel" value="training">
+    <wsOperator xmi:id="_Hx3to6q_Eee96aJ4KpltLA" value="EQUALS"/>
   </wsRoutingRuleExpressions>
-  <wsRoutingRuleExpressions xmi:id="_Ucnw8aoaEee96aJ4KpltLA" name="b" xpath="Update/Concept" value="Agent">
-    <wsOperator xmi:id="_Ucnw8qoaEee96aJ4KpltLA" value="EQUALS"/>
+  <wsRoutingRuleExpressions xmi:id="_Hx3tpKq_Eee96aJ4KpltLA" name="b" xpath="Update/Concept" value="Agent">
+    <wsOperator xmi:id="_Hx3tpaq_Eee96aJ4KpltLA" value="EQUALS"/>
   </wsRoutingRuleExpressions>
-  <wsRoutingRuleExpressions xmi:id="_Ucnw86oaEee96aJ4KpltLA" name="c" xpath="Update/Item/path" value="CommissionChange/ComChangeCode">
-    <wsOperator xmi:id="_Ucnw9KoaEee96aJ4KpltLA" value="EQUALS"/>
+  <wsRoutingRuleExpressions xmi:id="_Hx3tpqq_Eee96aJ4KpltLA" name="c" xpath="Update/Item/path" value="CommissionChange/ComChangeCode">
+    <wsOperator xmi:id="_Hx3tp6q_Eee96aJ4KpltLA" value="EQUALS"/>
   </wsRoutingRuleExpressions>
 </mdmserverobject:WSRoutingRuleE>
