@@ -139,7 +139,7 @@
           </form>
           <entryRedirectionURL xmi:type="expression:Expression" xmi:id="_141KZKoMEee96aJ4KpltLA" name="" content="" returnTypeFixed="true"/>
           <confirmationMessage xmi:type="expression:Expression" xmi:id="_141KZaoMEee96aJ4KpltLA" name="" content="" returnTypeFixed="true"/>
-          <formMapping xmi:type="process:FormMapping" xmi:id="_141xcqoMEee96aJ4KpltLA">
+          <formMapping xmi:type="process:FormMapping" xmi:id="_141xcqoMEee96aJ4KpltLA" type="LEGACY">
             <targetForm xmi:type="expression:Expression" xmi:id="_141xc6oMEee96aJ4KpltLA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_141xcaoMEee96aJ4KpltLA"/>
