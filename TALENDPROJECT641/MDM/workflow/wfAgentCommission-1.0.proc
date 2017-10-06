@@ -25,6 +25,11 @@
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_u4RW0Kq-Eee96aJ4KpltLA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_u4gAUaq-Eee96aJ4KpltLA"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_u4gAUKq-Eee96aJ4KpltLA"/>
+            <operator xmi:type="expression:Operator" xmi:id="_u4RW0aq-Eee96aJ4KpltLA" type="ASSIGNMENT"/>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_RnWWpgJBEeaJSPKMJ4A-Iw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_RnWWpwJBEeaJSPKMJ4A-Iw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_RnWWqAJBEeaJSPKMJ4A-Iw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
