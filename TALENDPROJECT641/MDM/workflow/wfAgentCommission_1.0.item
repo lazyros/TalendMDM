@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdmserverobject:WSWorkflowE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_M6DhEQJBEeaJSPKMJ4A-Iw" name="wfAgentCommission" description="" digestValue="32d3a3410a525e81209084f67341043d" lastServerName="SandboxMDM"/>
+<mdmserverobject:WSWorkflowE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_M6DhEQJBEeaJSPKMJ4A-Iw" name="wfAgentCommission" description="" digestValue="15ba23972bf233afe14332d67f9443ca"/>
