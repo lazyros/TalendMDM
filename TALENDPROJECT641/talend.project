@@ -318,6 +318,25 @@
       <relatedItems xmi:id="_TzFlQKntEee96aJ4KpltLA" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_TzFlQantEee96aJ4KpltLA" id="TalendStringUtil" version="Latest" type="routine"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_tEAT8K0bEee_J-4MpYCo_g">
+      <baseItem xmi:id="_tEAT8a0bEee_J-4MpYCo_g" id="_vVm_oK0aEee_J-4MpYCo_g" version="0.1" type="job"/>
+      <relatedItems xmi:id="_tEAT8q0bEee_J-4MpYCo_g" id="SQLike" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tEAT860bEee_J-4MpYCo_g" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tEAT9K0bEee_J-4MpYCo_g" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tEAT9a0bEee_J-4MpYCo_g" id="DataMasking" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tEAT9q0bEee_J-4MpYCo_g" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tEAT960bEee_J-4MpYCo_g" id="DqStringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tEA7AK0bEee_J-4MpYCo_g" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tEA7Aa0bEee_J-4MpYCo_g" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tEA7Aq0bEee_J-4MpYCo_g" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tEA7A60bEee_J-4MpYCo_g" id="DataQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tEA7BK0bEee_J-4MpYCo_g" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tEA7Ba0bEee_J-4MpYCo_g" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tEA7Bq0bEee_J-4MpYCo_g" id="DQTechnical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tEA7B60bEee_J-4MpYCo_g" id="DataQualityDependencies" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tEA7CK0bEee_J-4MpYCo_g" id="MDM" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_tEA7Ca0bEee_J-4MpYCo_g" id="TalendStringUtil" version="Latest" type="routine"/>
+    </ItemsRelations>
     <deletedFolders>MDM/datacontainer/sample_models</deletedFolders>
     <deletedFolders>MDM/datacontainer/challenge_models</deletedFolders>
     <deletedFolders>MDM/datamodel/challenge_models</deletedFolders>
