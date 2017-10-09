@@ -57,6 +57,11 @@
       <conceptTargets xmi:id="_dRVy66nuEee96aJ4KpltLA" targetName="TermDate" RelativeLoopExpression="TermDate"/>
       <conceptTargets xmi:id="_dRVy7KnuEee96aJ4KpltLA" targetName="Status" RelativeLoopExpression="Status"/>
     </schemas>
+    <schemas xmi:id="_gxyJ0K0aEee_J-4MpYCo_g" label="RegionOut" LoopLimit="50" conceptType="OUTPUT">
+      <root xmi:id="_miT-AK0aEee_J-4MpYCo_g" XMLPath="/Region" RelatedColumn="" Attribute="main" Order="1" Type="id_String"/>
+      <root xmi:id="_miT-Aa0aEee_J-4MpYCo_g" XMLPath="/Region/Label" RelatedColumn="Label" Attribute="main" Order="3" Type="id_String"/>
+      <loop xmi:id="_miT-Aq0aEee_J-4MpYCo_g" XMLPath="/Region/RegionId" RelatedColumn="RegionId" Attribute="main" Order="2" Type="id_String"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_XGjXkKkdEeeL_bLdH1iwJQ" name="training" dataManager="_E5xeEKkdEeeL_bLdH1iwJQ">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XGjXkakdEeeL_bLdH1iwJQ" id="_SdCOwKkdEeeL_bLdH1iwJQ" label="AgencyOut">
@@ -111,6 +116,10 @@
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g-KC6qnuEee96aJ4KpltLA" label="StartDate" talendType="id_Date"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g-KC66nuEee96aJ4KpltLA" label="TermDate" talendType="id_Date"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_g-KC7KnuEee96aJ4KpltLA" label="Status" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_osKmcK0aEee_J-4MpYCo_g" id="_miQToK0aEee_J-4MpYCo_g" label="RegionOut">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_osKmca0aEee_J-4MpYCo_g" label="RegionId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_osKmcq0aEee_J-4MpYCo_g" label="Label" talendType="id_String"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
