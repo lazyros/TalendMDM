@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="createRegionService"
+		xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+		xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+		xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+		xmlns:tns="http://www.talend.org/service/"
+		targetNamespace="http://www.talend.org/service/">
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.talend.org/service/">
+			<xsd:element name="createRegionServiceOperationRequest">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="in" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="createRegionServiceOperationResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:message name="createRegionServiceOperationRequest">
+		<wsdl:part name="parameters" element="tns:createRegionServiceOperationRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="createRegionServiceOperationResponse">
+		<wsdl:part name="parameters" element="tns:createRegionServiceOperationResponse"></wsdl:part>
+	</wsdl:message>
+
+	<wsdl:portType name="createRegionServicePortType">
+		<wsdl:operation name="createRegionServiceOperation">
+			<wsdl:input message="tns:createRegionServiceOperationRequest"></wsdl:input>
+			<wsdl:output message="tns:createRegionServiceOperationResponse"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:binding name="createRegionServiceBinding" type="tns:createRegionServicePortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="createRegionServiceOperation">
+			<soap:operation soapAction="http://www.talend.org/service/createRegionServiceOperation" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:service name="createRegionService">
+		<wsdl:port name="createRegionServicePort" binding="tns:createRegionServiceBinding">
+			<soap:address location="http://localhost:8090/services/createRegionService" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
