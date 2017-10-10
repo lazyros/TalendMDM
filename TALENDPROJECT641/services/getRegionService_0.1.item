@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Services="http://www.talend.org/Services">
-  <Services:ServiceConnection xmi:id="_zoX0sK1vEee_J-4MpYCo_g" servicePort="_yjeMsK1wEee_J-4MpYCo_g"/>
-  <Services:ServicePort xmi:id="_yjeMsK1wEee_J-4MpYCo_g" name="getRegionServicePortType" id="_zrINwK1vEee_J-4MpYCo_g" serviceOperation="_yjeMsa1wEee_J-4MpYCo_g"/>
-  <Services:ServiceOperation xmi:id="_yjeMsa1wEee_J-4MpYCo_g" label="getRegionServiceById" name="getRegionServiceById" id="_xvPTYK1wEee_J-4MpYCo_g"/>
+  <Services:ServiceConnection xmi:id="_zoX0sK1vEee_J-4MpYCo_g" servicePort="_ERu-MK1xEee_J-4MpYCo_g"/>
+  <Services:ServicePort xmi:id="_ERu-MK1xEee_J-4MpYCo_g" name="getRegionServicePortType" id="_zrINwK1vEee_J-4MpYCo_g" serviceOperation="_ERu-Ma1xEee_J-4MpYCo_g"/>
+  <Services:ServiceOperation xmi:id="_ERu-Ma1xEee_J-4MpYCo_g" label="getRegionServiceById" name="getRegionServiceById" id="_xvPTYK1wEee_J-4MpYCo_g"/>
 </xmi:XMI>
