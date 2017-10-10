@@ -181,12 +181,13 @@
         <mapperTableEntries name="RegionId" expression="in.RegionId" type="id_String" nullable="true"/>
         <mapperTableEntries name="Label" expression="regionLkp.Label " type="id_String" nullable="true"/>
       </outputTables>
-      <inputTables sizeState="INTERMEDIATE" name="in" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+      <inputTables sizeState="INTERMEDIATE" name="in" columnNameFilter="" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
         <mapperTableEntries name="RegionId" type="id_String" nullable="true"/>
       </inputTables>
-      <inputTables sizeState="INTERMEDIATE" name="regionLkp" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+      <inputTables sizeState="INTERMEDIATE" name="regionLkp" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="RELOAD" innerJoin="true">
         <mapperTableEntries name="RegionId" expression="in.RegionId " type="id_String" nullable="true" operator="="/>
         <mapperTableEntries name="Label" type="id_String" nullable="true"/>
+        <globalMapKeysValues name="&quot;in.RegionId&quot;" expression="in.RegionId "/>
       </inputTables>
     </nodeData>
   </node>
@@ -207,14 +208,16 @@
     <elementParameter field="TEXT" name="CONCEPT" value="&quot;Region&quot;"/>
     <elementParameter field="TEXT" name="DATACLUSTER" value="&quot;training&quot;"/>
     <elementParameter field="CLOSED_LIST" name="CONTAINER_TYPE" value="MASTER"/>
-    <elementParameter field="CHECK" name="USE_ITEMS" value="true"/>
-    <elementParameter field="LABEL" name="NOTE" value="Add all the key values below for the item" show="false"/>
-    <elementParameter field="TABLE" name="IDS" show="false"/>
-    <elementParameter field="TABLE" name="OPERATIONS"/>
-    <elementParameter field="TEXT" name="SKIP" value="0"/>
-    <elementParameter field="TEXT" name="MAXVALUE" value="0"/>
+    <elementParameter field="CHECK" name="USE_ITEMS" value="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="Add all the key values below for the item"/>
+    <elementParameter field="TABLE" name="IDS">
+      <elementValue elementRef="IDVALUE" value="(String)globalMap.get(&quot;in.RegionId&quot;)"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="OPERATIONS" show="false"/>
+    <elementParameter field="TEXT" name="SKIP" value="0" show="false"/>
+    <elementParameter field="TEXT" name="MAXVALUE" value="0" show="false"/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
-    <elementParameter field="TEXT" name="FETCHSIZE" value="50"/>
+    <elementParameter field="TEXT" name="FETCHSIZE" value="50" show="false"/>
     <elementParameter field="TEXT" name="LOOP_QUERY_BASE" value="&quot;/result&quot;" show="false"/>
     <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/Region&quot;"/>
     <elementParameter field="TABLE" name="MAPPING">
