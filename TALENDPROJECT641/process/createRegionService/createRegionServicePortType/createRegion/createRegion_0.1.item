@@ -263,7 +263,7 @@
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="out" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="RegionId" type="id_String" xpath="out/RegionId"/>
+        <nodes name="RegionId" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="out/RegionId"/>
         <nodes name="Label" type="id_String" xpath="out/Label"/>
         <nodes name="xml" type="id_String" xpath="out/xml"/>
       </inputTrees>
@@ -271,11 +271,12 @@
         <nodes name="payload" expression="" type="id_Document" xpath="response/payload">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="tns:createRegionResponse" type="id_String" xpath="response.payload:/tns:createRegionResponse" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="tns" type="id_String" xpath="response.payload:/tns:createRegionResponse/xmlns:tns" nodeType="NAME_SPACE" defaultValue="http://www.talend.org/service/"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="out" type="id_String" xpath="response.payload:/tns:createRegionResponse/out" loop="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="RegionId" expression="out.RegionId" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="response.payload:/tns:createRegionResponse/RegionId" loop="true"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
     </nodeData>
   </node>
   <node componentName="tESBProviderResponse" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="128">
@@ -288,6 +289,7 @@
   </node>
   <node componentName="tESBProviderFault" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tESBProviderFault_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
     <elementParameter field="TEXT" name="ESB_FAULT_TITLE" value="&quot;fault&quot;"/>
     <elementParameter field="TABLE" name="SERVICE_ACTIVITY_CUSTOM_PROPERTIES" show="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
