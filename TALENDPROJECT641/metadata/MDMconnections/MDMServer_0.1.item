@@ -62,6 +62,10 @@
       <root xmi:id="_miT-Aa0aEee_J-4MpYCo_g" XMLPath="/Region/Label" RelatedColumn="Label" Attribute="main" Order="3" Type="id_String"/>
       <loop xmi:id="_miT-Aq0aEee_J-4MpYCo_g" XMLPath="/Region/RegionId" RelatedColumn="RegionId" Attribute="main" Order="2" Type="id_String"/>
     </schemas>
+    <schemas xmi:id="_KmJtIK1yEee_J-4MpYCo_g" label="RegionIn" LoopExpression="/Region" LoopLimit="50">
+      <conceptTargets xmi:id="_NfstIK1yEee_J-4MpYCo_g" targetName="RegionId" RelativeLoopExpression="RegionId"/>
+      <conceptTargets xmi:id="_NfstIa1yEee_J-4MpYCo_g" targetName="Label" RelativeLoopExpression="Label"/>
+    </schemas>
   </TalendMetadata:MDMConnection>
   <org.talend.cwm.xml:TdXmlSchema xmi:id="_XGjXkKkdEeeL_bLdH1iwJQ" name="training" dataManager="_E5xeEKkdEeeL_bLdH1iwJQ">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_XGjXkakdEeeL_bLdH1iwJQ" id="_SdCOwKkdEeeL_bLdH1iwJQ" label="AgencyOut">
@@ -120,6 +124,10 @@
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_osKmcK0aEee_J-4MpYCo_g" id="_miQToK0aEee_J-4MpYCo_g" label="RegionOut">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_osKmca0aEee_J-4MpYCo_g" label="RegionId" talendType="id_String"/>
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_osKmcq0aEee_J-4MpYCo_g" label="Label" talendType="id_String"/>
+    </ownedElement>
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_NqBt0K1yEee_J-4MpYCo_g" id="_NqBGwK1yEee_J-4MpYCo_g" label="RegionIn">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NqBt0a1yEee_J-4MpYCo_g" label="RegionId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_NqBt0q1yEee_J-4MpYCo_g" label="Label" talendType="id_String"/>
     </ownedElement>
   </org.talend.cwm.xml:TdXmlSchema>
 </xmi:XMI>
