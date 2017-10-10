@@ -141,7 +141,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="in" name="in">
       <column comment="" key="false" length="-1" name="RegionId" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="RegionLabel" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Label" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="request" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
@@ -157,7 +157,7 @@
       </inputTrees>
       <outputTrees name="in">
         <nodes name="RegionId" expression="[request.payload:/tns:createRegionRequest/Region/RegionId]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="in/RegionId"/>
-        <nodes name="RegionLabel" expression="[request.payload:/tns:createRegionRequest/Region/RegionLabel]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.1" xpath="in/RegionLabel"/>
+        <nodes name="Label" expression="[request.payload:/tns:createRegionRequest/Region/RegionLabel]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.1" xpath="in/Label"/>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0"/>
@@ -209,7 +209,7 @@
       <elementValue elementRef="ATTRIBUTE" value="main"/>
       <elementValue elementRef="ORDER" value="1"/>
       <elementValue elementRef="PATH" value="/Region/Label"/>
-      <elementValue elementRef="COLUMN" value="Label"/>
+      <elementValue elementRef="COLUMN" value=""/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="main"/>
       <elementValue elementRef="ORDER" value="3"/>
@@ -235,18 +235,18 @@
     <elementParameter field="CHECK" name="STORE_FLOW" value="true" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="RegionOut"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="RegionOut" name="tMDMOutput_1">
-      <column comment="" key="false" length="0" name="RegionId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="Label" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" label="in" name="tMDMOutput_1">
+      <column comment="" key="false" length="-1" name="RegionId" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Label" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-    <metadata connector="OUTPUT" label="RegionOut" name="OUTPUT">
-      <column comment="" key="false" length="0" name="RegionId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="Label" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    <metadata connector="OUTPUT" label="in" name="OUTPUT">
+      <column comment="" key="false" length="-1" name="RegionId" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Label" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-    <metadata connector="REJECT" label="RegionOut" name="REJECT">
-      <column comment="" key="false" length="0" name="RegionId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="0" name="Label" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+    <metadata connector="REJECT" label="in" name="REJECT">
+      <column comment="" key="false" length="-1" name="RegionId" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Label" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
