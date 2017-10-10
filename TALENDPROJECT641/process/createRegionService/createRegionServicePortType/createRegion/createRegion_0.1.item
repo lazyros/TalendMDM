@@ -139,9 +139,9 @@
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
     <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="in" name="in">
-      <column comment="" key="false" length="-1" name="RegionId" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Label" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" label="RegionIn" name="in">
+      <column comment="" key="false" length="0" name="RegionId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Label" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
       <inputTrees name="request" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
@@ -166,12 +166,16 @@
   </node>
   <node componentName="tMDMOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMDMOutput_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_E5ct8KkdEeeL_bLdH1iwJQ" show="false"/>
+    <elementParameter field="TECHNICAL" name="INPUT_SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="INPUT_SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_E5ct8KkdEeeL_bLdH1iwJQ - RegionOut" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_E5ct8KkdEeeL_bLdH1iwJQ - RegionOut" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_E5ct8KkdEeeL_bLdH1iwJQ - RegionIn" show="false"/>
     <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
-    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_E5ct8KkdEeeL_bLdH1iwJQ - RegionOut" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA_REJECT:REPOSITORY_SCHEMA_TYPE" value="_E5ct8KkdEeeL_bLdH1iwJQ - RegionIn" show="false"/>
     <elementParameter field="CHECK" name="IS_VIRTUAL_COMPONENT" value="true"/>
-    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="xml"/>
+    <elementParameter field="COLUMN_LIST" name="XMLFIELD" value="RegionId"/>
     <elementParameter field="PREV_COLUMN_LIST" name="DOCUMENT" value="RegionId" show="false"/>
     <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tMDMConnection_1"/>
@@ -209,7 +213,7 @@
       <elementValue elementRef="ATTRIBUTE" value="main"/>
       <elementValue elementRef="ORDER" value="1"/>
       <elementValue elementRef="PATH" value="/Region/Label"/>
-      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="COLUMN" value="Label"/>
       <elementValue elementRef="VALUE" value=""/>
       <elementValue elementRef="ATTRIBUTE" value="main"/>
       <elementValue elementRef="ORDER" value="3"/>
@@ -235,18 +239,18 @@
     <elementParameter field="CHECK" name="STORE_FLOW" value="true" show="false"/>
     <elementParameter field="TEXT" name="LABEL" value="RegionOut"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="in" name="tMDMOutput_1">
-      <column comment="" key="false" length="-1" name="RegionId" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Label" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="FLOW" label="RegionIn" name="tMDMOutput_1">
+      <column comment="" key="false" length="0" name="RegionId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Label" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
     </metadata>
-    <metadata connector="OUTPUT" label="in" name="OUTPUT">
-      <column comment="" key="false" length="-1" name="RegionId" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Label" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="OUTPUT" label="RegionOut" name="OUTPUT">
+      <column comment="" key="false" length="0" name="RegionId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Label" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
-    <metadata connector="REJECT" label="in" name="REJECT">
-      <column comment="" key="false" length="-1" name="RegionId" nullable="true" precision="-1" sourceType="id_String" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="Label" nullable="true" precision="-1" sourceType="id_String" type="id_String" originalLength="-1" usefulColumn="true"/>
+    <metadata connector="REJECT" label="RegionOut" name="REJECT">
+      <column comment="" key="false" length="0" name="RegionId" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="Label" nullable="true" pattern="" precision="0" type="id_String" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="xml" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
@@ -262,21 +266,15 @@
       <column defaultValue="" key="false" length="0" name="payload" nullable="true" precision="0" sourceType="" type="id_Document" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendXMLMap:XmlMapData">
-      <inputTrees name="out" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
-        <nodes name="RegionId" type="id_String" outgoingConnections="//@node.3/@nodeData/@connections.0" xpath="out/RegionId"/>
-        <nodes name="Label" type="id_String" xpath="out/Label"/>
-        <nodes name="xml" type="id_String" xpath="out/xml"/>
-      </inputTrees>
       <outputTrees name="response">
         <nodes name="payload" expression="" type="id_Document" xpath="response/payload">
           <children xsi:type="TalendXMLMap:OutputTreeNode" name="tns:createRegionResponse" type="id_String" xpath="response.payload:/tns:createRegionResponse" main="true">
             <children xsi:type="TalendXMLMap:OutputTreeNode" name="tns" type="id_String" xpath="response.payload:/tns:createRegionResponse/xmlns:tns" nodeType="NAME_SPACE" defaultValue="http://www.talend.org/service/"/>
-            <children xsi:type="TalendXMLMap:OutputTreeNode" name="RegionId" expression="out.RegionId" type="id_String" incomingConnections="//@node.3/@nodeData/@connections.0" xpath="response.payload:/tns:createRegionResponse/RegionId" loop="true"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="RegionId" expression="out.RegionId" type="id_String" xpath="response.payload:/tns:createRegionResponse/RegionId" loop="true"/>
           </children>
         </nodes>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
-      <connections xsi:type="TalendXMLMap:Connection" source="//@node.3/@nodeData/@inputTrees.0/@nodes.0" target="//@node.3/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.1"/>
     </nodeData>
   </node>
   <node componentName="tESBProviderResponse" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="672" posY="128">
