@@ -1,2 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TalendMetadata:MDMConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_cDzlYK6nEeeuicME0oU-Nw" name="CustomerIM" label="CustomerIM" version="s60" Username="administrator" Password="gYS5jltDdzLSfHIqaDxbXg==" Datamodel="Cust_IM" Datacluster="Cust_IM" serverUrl="http://server01:8180/talendmdm/services/soap"/>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:org.talend.cwm.xml="http://www.talend.org/cwm/resource/xml/2010">
+  <TalendMetadata:MDMConnection xmi:id="_cDzlYK6nEeeuicME0oU-Nw" name="CustomerIM" label="CustomerIM" dataPackage="_h7B3cK6nEeeuicME0oU-Nw" version="s60" Username="administrator" Password="gYS5jltDdzLSfHIqaDxbXg==" Datamodel="Cust_IM" Datacluster="Cust_IM" serverUrl="http://server01:8180/talendmdm/services/soap">
+    <schemas xmi:id="_cv4oQK6nEeeuicME0oU-Nw" label="Customer_IMOut" LoopLimit="50" conceptType="OUTPUT">
+      <root xmi:id="_gKqtEK6nEeeuicME0oU-Nw" XMLPath="/Customer_IM" RelatedColumn="" Attribute="main" Order="1" Type="id_String"/>
+      <root xmi:id="_gKqtEa6nEeeuicME0oU-Nw" XMLPath="/Customer_IM/firstName" RelatedColumn="firstName" Attribute="main" Order="3" Type="id_String"/>
+      <root xmi:id="_gKqtEq6nEeeuicME0oU-Nw" XMLPath="/Customer_IM/lastName" RelatedColumn="lastName" Attribute="main" Order="4" Type="id_String"/>
+      <root xmi:id="_gKqtE66nEeeuicME0oU-Nw" XMLPath="/Customer_IM/street" RelatedColumn="street" Attribute="main" Order="5" Type="id_String"/>
+      <root xmi:id="_gKqtFK6nEeeuicME0oU-Nw" XMLPath="/Customer_IM/zip" RelatedColumn="zip" Attribute="main" Order="6" Type="id_String"/>
+      <root xmi:id="_gKqtFa6nEeeuicME0oU-Nw" XMLPath="/Customer_IM/city" RelatedColumn="city" Attribute="main" Order="7" Type="id_String"/>
+      <root xmi:id="_gKqtFq6nEeeuicME0oU-Nw" XMLPath="/Customer_IM/country" RelatedColumn="country" Attribute="main" Order="8" Type="id_String"/>
+      <loop xmi:id="_gKqtF66nEeeuicME0oU-Nw" XMLPath="/Customer_IM/Customer_IMId" RelatedColumn="Customer_IMId" Attribute="main" Order="2" Type="id_String"/>
+    </schemas>
+  </TalendMetadata:MDMConnection>
+  <org.talend.cwm.xml:TdXmlSchema xmi:id="_h7B3cK6nEeeuicME0oU-Nw" name="Cust_IM" dataManager="_cDzlYK6nEeeuicME0oU-Nw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_h7B3ca6nEeeuicME0oU-Nw" id="_gKoQ0K6nEeeuicME0oU-Nw" label="Customer_IMOut">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_h7B3cq6nEeeuicME0oU-Nw" label="Customer_IMId" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_h7B3c66nEeeuicME0oU-Nw" label="firstName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_h7B3dK6nEeeuicME0oU-Nw" label="lastName" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_h7B3da6nEeeuicME0oU-Nw" label="street" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_h7B3dq6nEeeuicME0oU-Nw" label="zip" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_h7B3d66nEeeuicME0oU-Nw" label="city" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_h7B3eK6nEeeuicME0oU-Nw" label="country" talendType="id_String"/>
+    </ownedElement>
+  </org.talend.cwm.xml:TdXmlSchema>
+</xmi:XMI>
