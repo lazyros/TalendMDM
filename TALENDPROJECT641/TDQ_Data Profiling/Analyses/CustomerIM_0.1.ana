@@ -25,13 +25,26 @@
     <resultMetadata xmi:id="_mTUfqa6iEeeuicME0oU-Nw"/>
     <indicators xsi:type="dataquality.indicators.columnset:BlockKeyIndicator" xmi:id="_mTVtwK6iEeeuicME0oU-Nw"/>
     <indicators xsi:type="dataquality.indicators.columnset:RecordMatchingIndicator" xmi:id="_mTVtwa6iEeeuicME0oU-Nw">
-      <builtInMatchRuleDefinition xmi:id="_mTVtwq6iEeeuicME0oU-Nw" recordLinkageAlgorithm="T_SwooshAlgorithm">
+      <builtInMatchRuleDefinition xmi:id="_mTVtwq6iEeeuicME0oU-Nw" recordLinkageAlgorithm="T_SwooshAlgorithm" matchGroupQualityThreshold="0.98">
         <blockKeys xmi:id="_3AXEsK6iEeeuicME0oU-Nw" name="LastName" column="lastName">
           <preAlgorithm xmi:id="_3AXEsa6iEeeuicME0oU-Nw" algorithmType="NON_ALGO" algorithmParameters=""/>
           <algorithm xmi:id="_3AXEsq6iEeeuicME0oU-Nw" algorithmType="first_N_Char" algorithmParameters="1"/>
           <postAlgorithm xmi:id="_3AXEs66iEeeuicME0oU-Nw" algorithmType="NON_ALGO" algorithmParameters=""/>
         </blockKeys>
-        <matchRules xmi:id="_mmpEQK6iEeeuicME0oU-Nw" name="Match Rule 1"/>
+        <matchRules xmi:id="_HbCR8K6kEeeuicME0oU-Nw" name="Match Rule 5" matchInterval="0.95">
+          <matchKeys xmi:id="_LjNoQK6kEeeuicME0oU-Nw" name="FirstName" column="firstName" confidenceWeight="3" handleNull="nullMatchNull" threshold="0.9" tokenizationType="No">
+            <algorithm xmi:id="_LjNoQa6kEeeuicME0oU-Nw" algorithmType="JARO_WINKLER" algorithmParameters=""/>
+          </matchKeys>
+          <matchKeys xmi:id="_QlDKcK6kEeeuicME0oU-Nw" name="LastName" column="lastName" confidenceWeight="5" handleNull="nullMatchNull" threshold="0.95" tokenizationType="No">
+            <algorithm xmi:id="_QlDKca6kEeeuicME0oU-Nw" algorithmType="JARO_WINKLER" algorithmParameters=""/>
+          </matchKeys>
+        </matchRules>
+        <survivorshipKeys xmi:id="_LjNoQq6kEeeuicME0oU-Nw" name="FirstName" column="firstName" allowManualResolution="true">
+          <function xmi:id="_LjNoQ66kEeeuicME0oU-Nw" algorithmType="MostCommon" algorithmParameters=""/>
+        </survivorshipKeys>
+        <survivorshipKeys xmi:id="_QlDKcq6kEeeuicME0oU-Nw" name="LastName" column="lastName" allowManualResolution="true">
+          <function xmi:id="_QlDKc66kEeeuicME0oU-Nw" algorithmType="MostCommon" algorithmParameters=""/>
+        </survivorshipKeys>
       </builtInMatchRuleDefinition>
     </indicators>
   </results>
