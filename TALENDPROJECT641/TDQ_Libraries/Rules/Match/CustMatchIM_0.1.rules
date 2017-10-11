@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.rules:MatchRuleDefinition xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.rules="http://dataquality.rules" xmi:id="_FtG7EK6lEeeuicME0oU-Nw" name="CustMatchIM" recordLinkageAlgorithm="T_SwooshAlgorithm" matchGroupQualityThreshold="0.98">
+  <taggedValue xmi:id="_FtG7Ea6lEeeuicME0oU-Nw" tag="Status" value="development"/>
+  <taggedValue xmi:id="_FtG7Eq6lEeeuicME0oU-Nw" tag="Author" value="admin@company.com"/>
+  <taggedValue xmi:id="_FtG7E66lEeeuicME0oU-Nw" tag="Purpose"/>
+  <taggedValue xmi:id="_FtG7FK6lEeeuicME0oU-Nw" tag="Description"/>
+  <taggedValue xmi:id="_FtG7Fa6lEeeuicME0oU-Nw" tag="Version" value="0.1"/>
+  <taggedValue xmi:id="_FtG7Fq6lEeeuicME0oU-Nw" tag="Validation_Status" value="true"/>
+  <blockKeys xmi:id="_FtG7F66lEeeuicME0oU-Nw" name="LastName" column="lastName">
+    <preAlgorithm xmi:id="_FtG7GK6lEeeuicME0oU-Nw" algorithmType="NON_ALGO" algorithmParameters=""/>
+    <algorithm xmi:id="_FtG7Ga6lEeeuicME0oU-Nw" algorithmType="first_N_Char" algorithmParameters="1"/>
+    <postAlgorithm xmi:id="_FtG7Gq6lEeeuicME0oU-Nw" algorithmType="NON_ALGO" algorithmParameters=""/>
+  </blockKeys>
+  <matchRules xmi:id="_FtG7G66lEeeuicME0oU-Nw" name="Match Rule 5" matchInterval="0.95">
+    <matchKeys xmi:id="_FtG7HK6lEeeuicME0oU-Nw" name="FirstName" column="firstName" confidenceWeight="3" handleNull="nullMatchNull" threshold="0.9" tokenizationType="No">
+      <algorithm xmi:id="_FtG7Ha6lEeeuicME0oU-Nw" algorithmType="JARO_WINKLER" algorithmParameters=""/>
+    </matchKeys>
+    <matchKeys xmi:id="_FtG7Hq6lEeeuicME0oU-Nw" name="LastName" column="lastName" confidenceWeight="5" handleNull="nullMatchNull" threshold="0.95" tokenizationType="No">
+      <algorithm xmi:id="_FtG7H66lEeeuicME0oU-Nw" algorithmType="JARO_WINKLER" algorithmParameters=""/>
+    </matchKeys>
+  </matchRules>
+  <survivorshipKeys xmi:id="_FtG7IK6lEeeuicME0oU-Nw" name="FirstName" column="firstName" allowManualResolution="true">
+    <function xmi:id="_FtG7Ia6lEeeuicME0oU-Nw" algorithmType="MostCommon" algorithmParameters=""/>
+  </survivorshipKeys>
+  <survivorshipKeys xmi:id="_FtG7Iq6lEeeuicME0oU-Nw" name="LastName" column="lastName" allowManualResolution="true">
+    <function xmi:id="_FtG7I66lEeeuicME0oU-Nw" algorithmType="MostCommon" algorithmParameters=""/>
+  </survivorshipKeys>
+</dataquality.rules:MatchRuleDefinition>
