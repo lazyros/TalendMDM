@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdmserverobject:WSViewE xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:mdmserverobject="http://www.talend.org/mdmserverobject" xmi:id="_Z12SECq5EeWdH5ksl8ZG0Q" name="Browse_items_Customer_IM" description="[EN:Customer_IM]" transformerPK="">
+  <searchableBusinessElements>Customer_IM/Customer_IMId</searchableBusinessElements>
+  <searchableBusinessElements>Customer_IM/firstName</searchableBusinessElements>
+  <searchableBusinessElements>Customer_IM/lastName</searchableBusinessElements>
+  <searchableBusinessElements>Customer_IM/street</searchableBusinessElements>
+  <searchableBusinessElements>Customer_IM/zip</searchableBusinessElements>
+  <searchableBusinessElements>Customer_IM/city</searchableBusinessElements>
+  <searchableBusinessElements>Customer_IM/country</searchableBusinessElements>
+  <viewableBusinessElements>Customer_IM/Customer_IMId</viewableBusinessElements>
+  <viewableBusinessElements>Customer_IM/firstName</viewableBusinessElements>
+  <viewableBusinessElements>Customer_IM/lastName</viewableBusinessElements>
+  <viewableBusinessElements>Customer_IM/street</viewableBusinessElements>
+  <viewableBusinessElements>Customer_IM/zip</viewableBusinessElements>
+  <viewableBusinessElements>Customer_IM/city</viewableBusinessElements>
+  <viewableBusinessElements>Customer_IM/country</viewableBusinessElements>
+  <isTransformerActive xmi:id="_eGAfsCq5EeWdH5ksl8ZG0Q"/>
+</mdmserverobject:WSViewE>
