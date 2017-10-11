@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TalendMetadata:MDMConnection xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmi:id="_cDzlYK6nEeeuicME0oU-Nw" name="CustomerIM" label="CustomerIM" version="s60" Username="administrator" Password="gYS5jltDdzLSfHIqaDxbXg==" Datamodel="Cust_IM" Datacluster="Cust_IM" serverUrl="http://server01:8180/talendmdm/services/soap"/>
