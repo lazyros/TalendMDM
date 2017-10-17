@@ -422,14 +422,8 @@
       <relatedItems xmi:id="_1MhEX66pEeeuicME0oU-Nw" id="_k8og4K6fEeeuicME0oU-Nw - CustomerMetadata" version="Latest" type="schema"/>
       <relatedItems xmi:id="_1MhEYK6pEeeuicME0oU-Nw" id="_cDy-UK6nEeeuicME0oU-Nw - Customer_IMOut" version="Latest" type="schema"/>
     </ItemsRelations>
-    <deletedFolders>MDM/datacontainer/sample_models</deletedFolders>
-    <deletedFolders>MDM/datacontainer/challenge_models</deletedFolders>
     <deletedFolders>MDM/datamodel/challenge_models</deletedFolders>
     <deletedFolders>MDM/datamodel/sample_models</deletedFolders>
-    <deletedFolders>MDM/role/challenge_models</deletedFolders>
-    <deletedFolders>MDM/role/sample_models</deletedFolders>
-    <deletedFolders>MDM/view/web/challenge_models</deletedFolders>
-    <deletedFolders>MDM/view/web/sample_models</deletedFolders>
     <migrationTask xmi:id="_TeaggKRtEeeL8dXu-sPh5Q" id="org.talend.repository.localprovider.RemoveRoutineFolderTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_TeaggaRtEeeL8dXu-sPh5Q" id="org.talend.repository.localprovider.model.migration.ChangeXmiSerialization" breaks="5.1.1" version="5.1.2" status="noimpact"/>
     <migrationTask xmi:id="_TeaggqRtEeeL8dXu-sPh5Q" id="org.talend.repository.model.migration.CleanFoldersMigrationTask" breaks="5.1.1" version="5.1.2" status="noimpact"/>
