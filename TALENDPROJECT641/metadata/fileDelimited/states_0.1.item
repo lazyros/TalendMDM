@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_QRaugLNfEeeNMOtRzpG6vQ" name="states" dataPackage="_QRp_ELNfEeeNMOtRzpG6vQ" Server="Localhost 127.0.0.1" FilePath="/Users/rosa/Documents/TG/Talend training/TDS/Overview/us_states.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_QRp_ELNfEeeNMOtRzpG6vQ" name="default" dataManager="_QRaugLNfEeeNMOtRzpG6vQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_QRsbULNfEeeNMOtRzpG6vQ" id="_A6_XELNfEeeNMOtRzpG6vQ" label="states">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRsbUbNfEeeNMOtRzpG6vQ" label="Abbr" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRsbUrNfEeeNMOtRzpG6vQ" label="State" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRsbU7NfEeeNMOtRzpG6vQ" label="Capital" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QRsbVLNfEeeNMOtRzpG6vQ" label="MostPopulousCity" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
