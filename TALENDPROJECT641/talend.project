@@ -502,6 +502,7 @@
       <relatedItems xmi:id="_Pt-CL7QuEeeVp_8dGEqQhQ" id="DataQualityDependencies" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Pt-CMLQuEeeVp_8dGEqQhQ" id="MDM" version="Latest" type="routine"/>
       <relatedItems xmi:id="_Pt-CMbQuEeeVp_8dGEqQhQ" id="TalendStringUtil" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_oNa8ILRFEeeVp_8dGEqQhQ" id="_gx8CALRFEeeVp_8dGEqQhQ" version="Latest" type="property"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_Pt-CMrQuEeeVp_8dGEqQhQ">
       <baseItem xmi:id="_Pt-CM7QuEeeVp_8dGEqQhQ" id="_5oGg4LKxEeee5phlNaB8Tw" version="0.1" type="job"/>
