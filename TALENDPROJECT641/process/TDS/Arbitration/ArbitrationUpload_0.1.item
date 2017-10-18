@@ -167,7 +167,7 @@
         <mapperTableEntries name="id" expression="row1.id " type="id_String" nullable="true"/>
         <mapperTableEntries name="gender" expression="row2.gender " type="id_String" nullable="true"/>
         <mapperTableEntries name="name" expression="row1.name " type="id_String" nullable="true"/>
-        <mapperTableEntries name="last_name" expression="row1.last_name " type="id_String" nullable="true"/>
+        <mapperTableEntries name="last_name" expression="row1.lastName " type="id_String" nullable="true"/>
         <mapperTableEntries name="email" expression="row1.email " type="id_String" nullable="true"/>
         <mapperTableEntries name="city" expression="row1.city " type="id_String" nullable="true"/>
         <mapperTableEntries name="state" expression="row1.state " type="id_String" nullable="true"/>
