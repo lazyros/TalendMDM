@@ -441,13 +441,13 @@
   </node>
   <node componentName="tStewardshipTaskOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="384" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tStewardshipTaskOutput_1" show="false"/>
-    <elementParameter field="TEXT" name="URL" value="&quot;http://server01:8180/talendmdm/services/dsctaskloader&quot;"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;http://server01:8080/org.talend.datastewardship/services/dsctaskloader&quot;"/>
     <elementParameter field="TEXT" name="USERNAME" value="&quot;administrator&quot;"/>
     <elementParameter field="PASSWORD" name="PASSWORD" value="fmyLBcXusWxdAhEGcREikA=="/>
     <elementParameter field="TEXT" name="TASKNAME" value="&quot;Bad state&quot;"/>
     <elementParameter field="CLOSED_LIST" name="TASKTYPE" value="2"/>
-    <elementParameter field="TEXT" name="CREATED_BY" value="&quot;administrator&quot;"/>
-    <elementParameter field="TEXT" name="OWNER" value="&quot;administrator&quot;"/>
+    <elementParameter field="TEXT" name="CREATED_BY" value="&quot;user&quot;"/>
+    <elementParameter field="TEXT" name="OWNER" value="&quot;user&quot;"/>
     <elementParameter field="TEXT" name="STAR_RANKING" value="3"/>
     <elementParameter field="TEXT" name="TAGS" value="&quot;tag1&quot;"/>
     <elementParameter field="PREV_COLUMN_LIST" name="LOOPING_COLUMN" value="id" show="false"/>
